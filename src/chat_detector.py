@@ -50,7 +50,10 @@ def sjekk_nettside(browser: Browser, url: str) -> tuple[bool, list[str]]:
     page.on("request", lambda req: innlastede_urler.append(req.url))
 
     try:
-        page.goto(url, wait_until="networkidle", timeout=NETTSIDE_TIMEOUT_MS)
+        # «load» + kort ro-periode er raskere enn networkidle og fanger
+        # likevel widgets som lastes rett etter sidelast.
+        page.goto(url, wait_until="load", timeout=NETTSIDE_TIMEOUT_MS)
+        page.wait_for_timeout(3000)
     except PWTimeout:
         logger.debug("Timeout ved lasting av %s (fortsetter med det vi har)", url)
     except Exception as e:

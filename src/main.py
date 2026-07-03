@@ -15,6 +15,7 @@ from typing import Iterable
 from playwright.sync_api import sync_playwright
 
 from . import brreg
+from .browser_util import launch_argumenter
 from .chat_detector import sjekk_nettside
 from .config import CSV_UTFIL, REGIONER
 from .csv_writer import skriv_leads
@@ -69,28 +70,65 @@ def hent_via_brreg(regioner: list[str]) -> list[dict]:
     return leads
 
 
-def berik_med_chatbot_sjekk(leads: list[dict]) -> list[dict]:
-    """Besøk hver nettside via Playwright og sjekk chatbot-signaturer."""
-    with sync_playwright() as pw:
-        browser = pw.chromium.launch(headless=True)
-        try:
-            for lead in leads:
-                url = lead.get("nettside")
-                if not url:
-                    lead["har_chatbot"] = False
-                    lead["chatbot_navn"] = []
-                    continue
-                har_chat, funn = sjekk_nettside(browser, url)
-                lead["har_chatbot"] = har_chat
-                lead["chatbot_navn"] = funn
-                logger.info(
-                    "Nettside-sjekk: %s -> chatbot=%s (%s)",
-                    url,
-                    har_chat,
-                    ",".join(funn) if funn else "-",
-                )
-        finally:
-            browser.close()
+def berik_med_chatbot_sjekk(leads: list[dict], antall_traader: int = 4) -> list[dict]:
+    """Besøk hver nettside via Playwright og sjekk chatbot-signaturer.
+
+    Sjekkene går mot mange ulike domener (én forespørsel per nettsted),
+    så vi kan trygt kjøre noen få tråder i parallell. Hver tråd har sin
+    egen Playwright-instans siden sync-API-et ikke er trådsikkert.
+    """
+    import queue
+    import threading
+
+    ko: queue.Queue[dict] = queue.Queue()
+    for lead in leads:
+        if lead.get("nettside"):
+            ko.put(lead)
+        else:
+            lead["har_chatbot"] = False
+            lead["chatbot_navn"] = []
+
+    ferdig_teller = {"n": 0}
+    laas = threading.Lock()
+    totalt = ko.qsize()
+
+    def arbeider() -> None:
+        with sync_playwright() as pw:
+            browser = pw.chromium.launch(**launch_argumenter())
+            try:
+                while True:
+                    try:
+                        lead = ko.get_nowait()
+                    except queue.Empty:
+                        return
+                    try:
+                        har_chat, funn = sjekk_nettside(browser, lead["nettside"])
+                    except Exception as e:
+                        logger.warning(
+                            "Nettside-sjekk feilet for %s: %s", lead["nettside"], e
+                        )
+                        har_chat, funn = False, []
+                    lead["har_chatbot"] = har_chat
+                    lead["chatbot_navn"] = funn
+                    with laas:
+                        ferdig_teller["n"] += 1
+                        n = ferdig_teller["n"]
+                    logger.info(
+                        "Nettside-sjekk %d/%d: %s -> chatbot=%s (%s)",
+                        n, totalt, lead["nettside"], har_chat,
+                        ",".join(funn) if funn else "-",
+                    )
+            finally:
+                browser.close()
+
+    traader = [
+        threading.Thread(target=arbeider, daemon=True)
+        for _ in range(min(antall_traader, max(totalt, 1)))
+    ]
+    for t in traader:
+        t.start()
+    for t in traader:
+        t.join()
     return leads
 
 
@@ -108,21 +146,27 @@ def filtrer_og_scor(leads: list[dict]) -> list[dict]:
     return resultat
 
 
-def kjor(regioner: list[str], utfil: str = CSV_UTFIL) -> int:
+def kjor(regioner: list[str], utfil: str = CSV_UTFIL, kilde_valg: str = "auto") -> int:
     logger.info("Starter innhenting for regioner: %s", ", ".join(regioner))
 
-    # 1. Prøv Proff.no først
-    try:
-        raa = hent_via_proff(regioner)
-        kilde = "Proff.no"
-    except ProffBlokkert as e:
-        logger.warning("Proff.no blokkerte oss: %s — bytter til Brreg", e)
+    # 1. Hent grunndata. «auto» prøver Proff.no først og faller tilbake til
+    #    Brreg; «brreg» hopper rett til registeret (raskere og mer komplett,
+    #    men uten Proff-spesifikke felter).
+    if kilde_valg == "brreg":
         raa = hent_via_brreg(regioner)
-        kilde = "Brreg (fallback)"
-    except Exception as e:
-        logger.exception("Uventet feil under Proff-scraping: %s — prøver Brreg", e)
-        raa = hent_via_brreg(regioner)
-        kilde = "Brreg (fallback)"
+        kilde = "Brreg (valgt)"
+    else:
+        try:
+            raa = hent_via_proff(regioner)
+            kilde = "Proff.no"
+        except ProffBlokkert as e:
+            logger.warning("Proff.no blokkerte oss: %s — bytter til Brreg", e)
+            raa = hent_via_brreg(regioner)
+            kilde = "Brreg (fallback)"
+        except Exception as e:
+            logger.exception("Uventet feil under Proff-scraping: %s — prøver Brreg", e)
+            raa = hent_via_brreg(regioner)
+            kilde = "Brreg (fallback)"
 
     logger.info("Hentet %d rå oppføringer fra %s", len(raa), kilde)
 
@@ -166,8 +210,14 @@ def main() -> None:
         default=CSV_UTFIL,
         help="Sti til CSV-utfil (standard: leads.csv)",
     )
+    p.add_argument(
+        "--kilde",
+        choices=["auto", "brreg"],
+        default="auto",
+        help="Datakilde: auto = Proff.no med Brreg-fallback, brreg = kun registeret",
+    )
     args = p.parse_args()
-    kjor(args.regioner, args.utfil)
+    kjor(args.regioner, args.utfil, args.kilde)
 
 
 if __name__ == "__main__":

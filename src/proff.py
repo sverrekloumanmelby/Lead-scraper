@@ -21,6 +21,7 @@ from typing import Iterator
 
 from playwright.sync_api import Page, TimeoutError as PWTimeout, sync_playwright
 
+from .browser_util import launch_argumenter
 from .config import PROFF_PAUSE_MAX, PROFF_PAUSE_MIN
 
 logger = logging.getLogger(__name__)
@@ -41,8 +42,15 @@ def _sov_litt() -> None:
     time.sleep(pause)
 
 
-def _sjekk_blokkering(page: Page) -> None:
-    """Ser etter kjente blokkeringsindikatorer i den lastede siden."""
+def _sjekk_blokkering(page: Page, har_innhold: bool) -> None:
+    """Ser etter kjente blokkeringsindikatorer i den lastede siden.
+
+    Ord som «captcha» kan forekomme i vanlige skript (f.eks. reCAPTCHA på
+    kontaktskjema), så vi regner siden som blokkert bare når vi IKKE fant
+    innholdet vi lette etter OG et blokkeringsord er til stede.
+    """
+    if har_innhold:
+        return
     innhold = page.content().lower()
     blokk_ord = ["captcha", "access denied", "for mange forespørsler", "cloudflare"]
     if any(o in innhold for o in blokk_ord):
@@ -75,12 +83,12 @@ def hent_profillenker(page: Page, sted: str, maks_sider: int = 20) -> list[str]:
             url = f"{url}&page={sidenr}"
         logger.info("Henter Proff-liste %s side %s", sted, sidenr)
         page.goto(url, wait_until="domcontentloaded", timeout=30000)
-        _sjekk_blokkering(page)
 
         # Proff bruker gjerne en lenke til /selskap/<slug>/<orgnr>
         nye = page.locator("a[href*='/selskap/']").evaluate_all(
             "els => Array.from(new Set(els.map(a => a.href)))"
         )
+        _sjekk_blokkering(page, har_innhold=bool(nye))
         if not nye:
             break
         lenker.extend(nye)
@@ -99,9 +107,9 @@ def hent_profillenker(page: Page, sted: str, maks_sider: int = 20) -> list[str]:
 def hent_foretaksdetaljer(page: Page, url: str) -> dict:
     """Besøker en profilside og trekker ut felter vi trenger."""
     page.goto(url, wait_until="domcontentloaded", timeout=30000)
-    _sjekk_blokkering(page)
 
     firmanavn = _hent_tekst(page, "h1")
+    _sjekk_blokkering(page, har_innhold=bool(firmanavn))
     telefon = _hent_tekst(page, "a[href^='tel:']")
     epost = _hent_tekst(page, "a[href^='mailto:']")
 
@@ -142,7 +150,7 @@ def hent_foretaksdetaljer(page: Page, url: str) -> dict:
 def scrap_proff(steder: list[str]) -> Iterator[dict]:
     """Iterer over foretak i alle regioner. Kaster ProffBlokkert ved blokk."""
     with sync_playwright() as pw:
-        browser = pw.chromium.launch(headless=True)
+        browser = pw.chromium.launch(**launch_argumenter())
         context = browser.new_context(
             user_agent=(
                 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
