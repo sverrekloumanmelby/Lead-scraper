@@ -1,8 +1,8 @@
 """Orkestrator for leadmaskinen.
 
 Kjøring:
-    python -m src.main            # Standard: Oslo + Viken (Akershus/Buskerud/Østfold)
-    python -m src.main --hele-landet   # Utvid (kun etter avtale med bruker)
+    python -m src.main                      # Standard: hele landet
+    python -m src.main --regioner Oslo      # Begrens til utvalgte fylker
 """
 
 from __future__ import annotations
@@ -24,18 +24,14 @@ from .scoring import beregn_score, er_kjede, passer_ansatt_filter, prioritet
 logger = logging.getLogger(__name__)
 
 
-def _kommunenumre_for_regioner(regioner: Iterable[str]) -> list[str]:
-    """Slår opp kommunenummerintervall for hver region og lager komplett liste."""
-    numre: list[str] = []
+def _fylkesprefikser_for_regioner(regioner: Iterable[str]) -> list[str]:
+    """Slår opp fylkesnummer (to første sifre i kommunenummeret) per region."""
+    prefikser: list[str] = []
     for navn in regioner:
         cfg = REGIONER.get(navn)
-        if not cfg:
-            continue
-        start, slutt = cfg["kommunenummer_range"]
-        for n in range(start, slutt + 1):
-            # Kommunenummer skal alltid være 4 sifre
-            numre.append(f"{n:04d}")
-    return numre
+        if cfg:
+            prefikser.append(cfg["fylkesnummer"])
+    return prefikser
 
 
 def _steder_for_proff(regioner: Iterable[str]) -> list[str]:
@@ -53,9 +49,12 @@ def hent_via_proff(regioner: list[str]) -> list[dict]:
 
 def hent_via_brreg(regioner: list[str]) -> list[dict]:
     """Fallback-strategi: Brønnøysundregistrenes åpne API."""
-    kommunenumre = _kommunenumre_for_regioner(regioner)
+    # Dekker regionene alle fylker, dropper vi filteret helt
+    prefikser: list[str] | None = _fylkesprefikser_for_regioner(regioner)
+    if set(prefikser) == {cfg["fylkesnummer"] for cfg in REGIONER.values()}:
+        prefikser = None
     leads: list[dict] = []
-    for enhet in brreg.hent_enheter_for_kommuner(kommunenumre):
+    for enhet in brreg.hent_enheter(prefikser):
         lead = brreg.normaliser_enhet(enhet)
         # Suppler daglig leder – kun for leads som kan bli aktuelle,
         # slik at vi ikke overbelaster rolle-API-et.
@@ -154,8 +153,13 @@ def main() -> None:
     p.add_argument(
         "--regioner",
         nargs="+",
-        default=["Oslo", "Akershus", "Buskerud", "Østfold"],
-        help="Regioner som skal søkes (standard: Oslo + Viken)",
+        default=list(REGIONER),
+        choices=list(REGIONER),
+        metavar="FYLKE",
+        help=(
+            "Fylker som skal søkes (standard: hele landet). "
+            f"Gyldige: {', '.join(REGIONER)}"
+        ),
     )
     p.add_argument(
         "--utfil",

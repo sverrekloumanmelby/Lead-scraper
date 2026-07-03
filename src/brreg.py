@@ -19,40 +19,47 @@ BRREG_ROLLER_BASE = "https://data.brreg.no/enhetsregisteret/api/enheter/{orgnr}/
 logger = logging.getLogger(__name__)
 
 
-def hent_enheter_for_kommuner(kommunenumre: Iterable[str]) -> Iterator[dict]:
-    """Hent alle eiendomsmeglerforetak for en liste kommuner via Brreg.
+def hent_enheter(fylkesprefikser: Iterable[str] | None = None) -> Iterator[dict]:
+    """Hent alle eiendomsmeglerforetak i landet via Brreg.
 
-    Vi paginerer 200 av gangen og returnerer rå enheter fra API-et.
+    Vi paginerer én landsdekkende spørring på næringskoden (langt færre
+    API-kall enn å spørre per kommune). Hvis fylkesprefikser er oppgitt
+    (to første sifre i kommunenummeret), filtreres resultatet lokalt.
     """
-    for kommunenr in kommunenumre:
-        side = 0
-        while True:
-            params = {
-                "naeringskode": NAERINGSKODE_EIENDOMSMEGLING,
-                "kommunenummer": kommunenr,
-                "size": 200,
-                "page": side,
-            }
-            try:
-                r = requests.get(BRREG_BASE, params=params, timeout=20)
-                r.raise_for_status()
-            except requests.RequestException as e:
-                logger.warning("Brreg-feil for kommune %s side %s: %s", kommunenr, side, e)
-                break
+    prefikser = set(fylkesprefikser) if fylkesprefikser else None
+    side = 0
+    while True:
+        params = {
+            "naeringskode": NAERINGSKODE_EIENDOMSMEGLING,
+            "size": 200,
+            "page": side,
+        }
+        try:
+            r = requests.get(BRREG_BASE, params=params, timeout=20)
+            r.raise_for_status()
+        except requests.RequestException as e:
+            logger.warning("Brreg-feil på side %s: %s", side, e)
+            break
 
-            data = r.json()
-            enheter = data.get("_embedded", {}).get("enheter", [])
-            if not enheter:
-                break
+        data = r.json()
+        enheter = data.get("_embedded", {}).get("enheter", [])
+        if not enheter:
+            break
 
-            for enhet in enheter:
-                yield enhet
+        for enhet in enheter:
+            if prefikser is not None:
+                kommunenr = (enhet.get("forretningsadresse") or {}).get(
+                    "kommunenummer", ""
+                )
+                if kommunenr[:2] not in prefikser:
+                    continue
+            yield enhet
 
-            # Sjekk om det er flere sider
-            side_info = data.get("page", {})
-            if side + 1 >= side_info.get("totalPages", 0):
-                break
-            side += 1
+        # Sjekk om det er flere sider
+        side_info = data.get("page", {})
+        if side + 1 >= side_info.get("totalPages", 0):
+            break
+        side += 1
 
 
 def hent_daglig_leder(orgnr: str) -> str | None:

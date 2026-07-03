@@ -36,16 +36,16 @@ python -m playwright install chromium
 
 ## Kjøring
 
-Standard er Oslo + Viken (Akershus, Buskerud, Østfold):
+Standard er hele landet (alle 15 fylker):
 
 ```bash
 python -m src.main
 ```
 
-Andre regioner:
+Begrens til utvalgte fylker:
 
 ```bash
-python -m src.main --regioner Oslo Akershus
+python -m src.main --regioner Oslo Akershus Buskerud Østfold
 ```
 
 Utfil:

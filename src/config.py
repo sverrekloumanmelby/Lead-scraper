@@ -3,26 +3,25 @@
 # Næringskode for eiendomsmegling i henhold til SN2007
 NAERINGSKODE_EIENDOMSMEGLING = "68.310"
 
-# Regioner vi starter med (Oslo og Viken).
-# Viken ble fra 2024 splittet tilbake til Akershus, Buskerud og Østfold,
-# så vi dekker de tre fylkene sammen med Oslo.
+# Alle fylker per 2024-inndelingen (Viken/Vestfold og Telemark/Troms og
+# Finnmark er splittet tilbake). Fylkesnummeret er de to første sifrene i
+# kommunenummeret, som vi bruker til å filtrere Brreg-data per region.
 REGIONER = {
-    "Oslo": {
-        "fylkesnummer": "03",
-        "kommunenummer_range": (301, 301),
-    },
-    "Akershus": {
-        "fylkesnummer": "32",
-        "kommunenummer_range": (3201, 3238),
-    },
-    "Buskerud": {
-        "fylkesnummer": "33",
-        "kommunenummer_range": (3301, 3352),
-    },
-    "Østfold": {
-        "fylkesnummer": "31",
-        "kommunenummer_range": (3101, 3138),
-    },
+    "Oslo": {"fylkesnummer": "03"},
+    "Rogaland": {"fylkesnummer": "11"},
+    "Møre og Romsdal": {"fylkesnummer": "15"},
+    "Nordland": {"fylkesnummer": "18"},
+    "Østfold": {"fylkesnummer": "31"},
+    "Akershus": {"fylkesnummer": "32"},
+    "Buskerud": {"fylkesnummer": "33"},
+    "Innlandet": {"fylkesnummer": "34"},
+    "Vestfold": {"fylkesnummer": "39"},
+    "Telemark": {"fylkesnummer": "40"},
+    "Agder": {"fylkesnummer": "42"},
+    "Vestland": {"fylkesnummer": "46"},
+    "Trøndelag": {"fylkesnummer": "50"},
+    "Troms": {"fylkesnummer": "55"},
+    "Finnmark": {"fylkesnummer": "56"},
 }
 
 # Kjeder som skal ekskluderes fra listen.
