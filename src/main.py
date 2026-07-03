@@ -19,8 +19,15 @@ from .browser_util import launch_argumenter
 from .chat_detector import sjekk_nettside
 from .config import CSV_UTFIL, REGIONER
 from .csv_writer import skriv_leads
+from .dl_telefon import slaa_opp_telefon
 from .proff import ProffBlokkert, scrap_proff
-from .scoring import beregn_score, er_kjede, passer_ansatt_filter, prioritet
+from .scoring import (
+    ansatt_gruppe,
+    beregn_score,
+    er_kjede,
+    passer_ansatt_filter,
+    prioritet,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -136,14 +143,43 @@ def filtrer_og_scor(leads: list[dict]) -> list[dict]:
     """Bruker ansatt-filter og kjede-eksklusjon, og beregner score/prioritet."""
     resultat: list[dict] = []
     for lead in leads:
-        if not passer_ansatt_filter(lead.get("antall_ansatte", 0)):
+        gruppe = ansatt_gruppe(lead.get("antall_ansatte", 0))
+        if gruppe is None:
             continue
         if er_kjede(lead.get("firmanavn", ""), lead.get("nettside", "")):
             continue
+        lead["ansattgruppe"] = gruppe
         lead["score"] = beregn_score(lead)
         lead["prioritet"] = prioritet(lead["score"])
         resultat.append(lead)
     return resultat
+
+
+def berik_med_dl_telefon(leads: list[dict]) -> list[dict]:
+    """Slår opp daglig leders telefonnummer i 1881.no.
+
+    Sekvensielt med innebygd pause i oppslaget — katalogtjenesten skal
+    ikke belastes hardt. Kontorets by brukes til å skille navnebrødre.
+    """
+    med_navn = [l for l in leads if l.get("daglig_leder")]
+    logger.info("Slår opp telefon for %d daglige ledere i 1881", len(med_navn))
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch(**launch_argumenter())
+        try:
+            for i, lead in enumerate(med_navn, 1):
+                nummer = slaa_opp_telefon(
+                    browser, lead["daglig_leder"], lead.get("by", "")
+                )
+                lead["dl_telefon"] = nummer
+                logger.info(
+                    "DL-telefon %d/%d: %s -> %s",
+                    i, len(med_navn), lead["daglig_leder"], nummer or "(ikke funnet)",
+                )
+        finally:
+            browser.close()
+    for lead in leads:
+        lead.setdefault("dl_telefon", "")
+    return leads
 
 
 def kjor(regioner: list[str], utfil: str = CSV_UTFIL, kilde_valg: str = "auto") -> int:
@@ -181,7 +217,10 @@ def kjor(regioner: list[str], utfil: str = CSV_UTFIL, kilde_valg: str = "auto") 
     # 3. Nettside- og chatbot-sjekk
     kandidater = berik_med_chatbot_sjekk(kandidater)
 
-    # 4. Scor og sorter
+    # 4. Daglig leders telefonnummer fra 1881
+    kandidater = berik_med_dl_telefon(kandidater)
+
+    # 5. Scor og sorter
     ferdige = filtrer_og_scor(kandidater)
     antall = skriv_leads(utfil, ferdige)
     logger.info("Skrev %d leads til %s", antall, utfil)

@@ -78,9 +78,22 @@ PROFF_PAUSE_MAX = 5.0
 # Timeout for nettside-sjekk (millisekunder for Playwright)
 NETTSIDE_TIMEOUT_MS = 15000
 
-# Ansatt-filter
-MIN_ANSATTE = 3
-MAKS_ANSATTE = 15
+# Ansattgrupper vi jakter på. Hver gruppe er (min, maks, etikett) med
+# inklusive grenser. Grensene overlapper ikke (15-30 betyr 16-30 osv.)
+# slik at hvert kontor havner i nøyaktig én gruppe.
+ANSATT_GRUPPER = [
+    (3, 15, "3-15"),
+    (16, 30, "15-30"),
+    (31, 50, "30-50"),
+]
+
+# Bakoverkompatible grenser (minste og største av gruppene)
+MIN_ANSATTE = ANSATT_GRUPPER[0][0]
+MAKS_ANSATTE = ANSATT_GRUPPER[-1][1]
+
+# Pause mellom oppslag mot 1881.no (sekunder) — vær skånsom
+KATALOG_PAUSE_MIN = 2.0
+KATALOG_PAUSE_MAX = 3.5
 
 # Grenser for prioritetsklassifisering
 PRIORITET_HOY_MIN = 80

@@ -10,10 +10,12 @@ FELTER = [
     "prioritet",
     "score",
     "firmanavn",
+    "ansattgruppe",
+    "antall_ansatte",
     "daglig_leder",
+    "dl_telefon",
     "telefon",
     "epost",
-    "antall_ansatte",
     "by",
     "nettside",
     "har_chatbot",
@@ -25,7 +27,12 @@ FELTER = [
 
 def skriv_leads(sti: str | Path, leads: Iterable[dict]) -> int:
     """Skriv leads sortert etter score (høyeste først). Returnerer antall rader."""
-    sortert = sorted(leads, key=lambda x: x.get("score", 0), reverse=True)
+    # Høyeste score først; ved lik score kommer størst kontor øverst
+    sortert = sorted(
+        leads,
+        key=lambda x: (x.get("score", 0), x.get("antall_ansatte", 0)),
+        reverse=True,
+    )
     with open(sti, "w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=FELTER, extrasaction="ignore")
         writer.writeheader()

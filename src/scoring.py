@@ -6,10 +6,9 @@ import re
 from urllib.parse import urlparse
 
 from .config import (
+    ANSATT_GRUPPER,
     KJEDE_DOMENER,
     KJEDE_NAVN_MONSTRE,
-    MAKS_ANSATTE,
-    MIN_ANSATTE,
     PRIORITET_HOY_MIN,
     PRIORITET_MIDDELS_MIN,
 )
@@ -43,9 +42,17 @@ def er_kjede(firmanavn: str, nettside: str = "") -> bool:
     return False
 
 
+def ansatt_gruppe(antall: int) -> str | None:
+    """Returnerer etiketten for gruppen antallet faller i, ellers None."""
+    for minst, maks, etikett in ANSATT_GRUPPER:
+        if minst <= antall <= maks:
+            return etikett
+    return None
+
+
 def passer_ansatt_filter(antall: int) -> bool:
-    """3–15 ansatte inklusive."""
-    return MIN_ANSATTE <= antall <= MAKS_ANSATTE
+    """Faller antallet i en av målgruppene?"""
+    return ansatt_gruppe(antall) is not None
 
 
 def beregn_score(lead: dict) -> int:
