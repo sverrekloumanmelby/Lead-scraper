@@ -25,16 +25,29 @@ REGIONER = {
 }
 
 # Kjeder som skal ekskluderes fra listen.
-# Vi matcher case-insensitive substring mot firmanavn.
-EKSKLUDERTE_KJEDER = [
-    "DNB Eiendom",
-    "EiendomsMegler 1",
-    "Eiendomsmegler 1",
-    "EM1",
-    "Aktiv Eiendomsmegling",
-    "PrivatMegleren",
-    "Privatmegleren",
-    "Krogsveen",
+# Franchisekontorer har ofte egne AS-navn (f.eks. «AKTIV MOSS AS» eller
+# «Komplett Eiendomsmegling AS» med nettside hos privatmegleren.no), så vi
+# matcher både navnemønstre (regex, case-insensitive) og nettside-domener.
+KJEDE_NAVN_MONSTRE = [
+    r"\bdnb\s*eiendom\b",
+    r"\beiendomsmegler\s*1\b",
+    r"\bem\s?1\b",
+    r"^aktiv\b",                 # franchisenavn som «Aktiv Moss AS»
+    r"\baktiv eiendomsmegling\b",
+    r"\bprivatmegleren\b",
+    r"\bkrogsveen\b",
+]
+
+# Offisielle kjededomener. Et lead med nettside på et av disse domenene
+# er et kjedekontor uansett hva selskapet heter. Merk eksakt vertsmatch,
+# slik at f.eks. proaktiv.no IKKE rammes av aktiv.no.
+KJEDE_DOMENER = [
+    "dnbeiendom.no",
+    "eiendomsmegler1.no",
+    "em1.no",
+    "aktiv.no",
+    "privatmegleren.no",
+    "krogsveen.no",
 ]
 
 # Signaturer på vanlige chatbot-widgets.

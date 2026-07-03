@@ -60,7 +60,7 @@ def hent_via_brreg(regioner: list[str]) -> list[dict]:
         # Suppler daglig leder – kun for leads som kan bli aktuelle,
         # slik at vi ikke overbelaster rolle-API-et.
         if passer_ansatt_filter(lead["antall_ansatte"]) and not er_kjede(
-            lead["firmanavn"]
+            lead["firmanavn"], lead.get("nettside", "")
         ):
             dagl = brreg.hent_daglig_leder(lead["orgnr"])
             if dagl:
@@ -138,7 +138,7 @@ def filtrer_og_scor(leads: list[dict]) -> list[dict]:
     for lead in leads:
         if not passer_ansatt_filter(lead.get("antall_ansatte", 0)):
             continue
-        if er_kjede(lead.get("firmanavn", "")):
+        if er_kjede(lead.get("firmanavn", ""), lead.get("nettside", "")):
             continue
         lead["score"] = beregn_score(lead)
         lead["prioritet"] = prioritet(lead["score"])
@@ -174,7 +174,7 @@ def kjor(regioner: list[str], utfil: str = CSV_UTFIL, kilde_valg: str = "auto") 
     kandidater = [
         l for l in raa
         if passer_ansatt_filter(l.get("antall_ansatte", 0))
-        and not er_kjede(l.get("firmanavn", ""))
+        and not er_kjede(l.get("firmanavn", ""), l.get("nettside", ""))
     ]
     logger.info("Etter ansatt- og kjede-filter: %d kandidater", len(kandidater))
 

@@ -101,7 +101,7 @@ def normaliser_enhet(enhet: dict) -> dict:
         "firmanavn": enhet.get("navn", ""),
         "antall_ansatte": enhet.get("antallAnsatte", 0) or 0,
         "by": by,
-        "telefon": enhet.get("telefonnummer", "") or "",
+        "telefon": enhet.get("telefon", "") or enhet.get("mobil", "") or "",
         "epost": enhet.get("epostadresse", "") or "",
         "nettside": enhet.get("hjemmeside", "") or "",
         "daglig_leder": "",  # Fylles inn via rolle-oppslag ved behov
