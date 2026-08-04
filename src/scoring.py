@@ -55,16 +55,68 @@ def passer_ansatt_filter(antall: int) -> bool:
     return ansatt_gruppe(antall) is not None
 
 
+def segment(firmanavn: str) -> str:
+    """Grovsorterer kontoret etter hva slags megling det driver.
+
+    Skillet betyr mye for et chatbot-salg: et boligmeglerkontor har
+    publikumstrafikk på nettsiden hele døgnet og mange like spørsmål,
+    mens næringsmegling har få og tunge henvendelser der en bot gir
+    langt mindre.
+    """
+    navn = firmanavn.lower()
+    if "næringsmegl" in navn or "naringsmegl" in navn or "næring" in navn:
+        return "Næring"
+    if "landbruk" in navn or "skogbruk" in navn:
+        return "Landbruk"
+    if "utleie" in navn:
+        return "Utleie"
+    if "oppgjør" in navn or "oppgjor" in navn:
+        return "Oppgjør"
+    if "prosjekt" in navn:
+        return "Prosjekt"
+    return "Bolig"
+
+
 def beregn_score(lead: dict) -> int:
-    """Beregner score 0–100 basert på reglene i oppgaven."""
-    score = 0
-    if passer_ansatt_filter(lead.get("antall_ansatte", 0)):
-        score += 30
-    if not lead.get("har_chatbot", False):
-        score += 40
-    if not er_kjede(lead.get("firmanavn", "")):
-        score += 30
-    return score
+    """Scorer hvor godt kontoret passer som kjøper av en AI-chatbot (0–100).
+
+    Chat-situasjonen veier tyngst. Merk at et kontor med bemannet
+    live-chat scorer *høyere* enn et helt uten: de har allerede bestemt
+    seg for at chat er riktig kanal, og betaler i dag med bemanning —
+    det er en kortere vei til et salg enn å overbevise noen som ikke har
+    chat i det hele tatt. Har kontoret allerede en AI-bot, er det nesten
+    ikke et lead.
+    """
+    kategori = lead.get("chatbot_kategori", "")
+    if "AI" in kategori:
+        score = 5
+    elif "Live" in kategori:
+        score = 45
+    elif kategori == "ingen":
+        score = 40
+    else:  # ukjent — nettsiden ble ikke funnet eller lastet ikke
+        score = 15
+
+    antall = lead.get("antall_ansatte", 0)
+    if 3 <= antall <= 15:
+        score += 25
+    elif passer_ansatt_filter(antall):
+        score += 15
+
+    if not er_kjede(lead.get("firmanavn", ""), lead.get("nettside", "")):
+        score += 15
+
+    # En navngitt kontaktperson med e-post gjør leadet direkte handlingsbart
+    if lead.get("kontakt_epost"):
+        score += 10
+    if lead.get("kontakt_kilde", "").startswith("nettside"):
+        score += 5
+
+    # Boligmegling er den klart beste bruken for en publikumsrettet bot
+    if segment(lead.get("firmanavn", "")) != "Bolig":
+        score -= 10
+
+    return max(0, min(score, 100))
 
 
 def prioritet(score: int) -> str:

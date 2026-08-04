@@ -1,278 +1,255 @@
-prioritet,score,firmanavn,ansattgruppe,antall_ansatte,daglig_leder,dl_telefon,telefon,epost,by,nettside,har_chatbot,chatbot_navn,orgnr,kilde
-HØY,100,EXBO SØRLANDET AS,30-50,34,Heidi Camilla Gabrielsen,98280339,982 80 339,,Mandal,www.exbo.no,False,,986857044,brreg
-HØY,100,ROMERIKE EIENDOMSMEGLING AS,30-50,34,Lars Olav Venger-Pedersen,93400124,,,Kløfta,,False,,926743023,brreg
-HØY,100,FANA SPAREBANK EIENDOM AS,30-50,32,Per Christian Lønning,98459801,55 91 99 60,gl@fsb.no,Nesttun,www.fsbe.no,False,,958499558,brreg
-HØY,100,P33 EIENDOMSMEGLING AS,30-50,31,Cecilie Rosenquist,,22 12 90 00,,Oslo,,False,,915491065,brreg
-HØY,100,PARK EIENDOMSMEGLING AS,30-50,31,Christian Falkenberg,,,,Oslo,,False,,934662938,brreg
-HØY,100,DYVE & PARTNERE EIENDOMSMEGLING AS,15-30,30,Fredrik Dyve,92211465,,,Oslo,,False,,912302180,brreg
-HØY,100,NORION NÆRINGSMEGLING AS,15-30,28,Jørgen Rostad,92806483,,,Trondheim,,False,,918842667,brreg
-HØY,100,TINHOLT EIENDOMSMEGLING BYGDØY ALLÈ AS,15-30,28,Sara Jacobsen,,,,Oslo,,False,,835797422,brreg
-HØY,100,FJELLMEGLEREN AS,15-30,27,Christel Alsaker-Nøstdahl,97676504,32 08 73 60,,Hemsedal,,False,,982082161,brreg
-HØY,100,EIE ØKONOMI AS,15-30,26,Sverre Skjelle,,22 52 01 11,okonomi@eie.no,Oslo,www.eie.no,False,,990025983,brreg
-HØY,100,SANDVIKA EIENDOMSMEGLING AS,15-30,26,Kjetil Erland Borgersrud,,,,Sandvika,,False,,997288998,brreg
-HØY,100,BYGDØY ALLE EIENDOM AS,15-30,25,Camilla Lindstad,90915649,22 12 90 00,,Oslo,,False,,914457750,brreg
-HØY,100,PARTNERS EIENDOMSMEGLING AS,15-30,25,Jøran Martinsen,,61 18 13 00,gobb@gobb.no,Gjøvik,www.partnerseiendomsmegling.no,False,,912021327,brreg
-HØY,100,DNB NÆRINGSMEGLING AS,15-30,24,Jens-Petter Guthus,,48 03 01 11,,Oslo,,False,,975265145,brreg
-HØY,100,MEKLERIET FROGNER AS,15-30,24,Carl Fredrik Sønsteby,,,,Oslo,,False,,924606134,brreg
-HØY,100,LILLESTRØM EIENDOMSMEGLING AS,15-30,23,Jonas Andre Winje,97599571,,,Lillestrøm,,False,,921678592,brreg
-HØY,100,PARKEN EIENDOMSMEGLING AS,15-30,23,Morten Hannestad,92633165,,,Oslo,,False,,913250575,brreg
-HØY,100,REALKAPITAL EIENDOM AS,15-30,23,Petter Wøien-Christensen,98886811,23 11 68 68,,Oslo,,False,,882067092,brreg
-HØY,100,SNE EIENDOMSMEGLING AS,15-30,23,Jonas Bergersen,97739732,,,Tromsø,,False,,921542194,brreg
-HØY,100,EIENDOMSMEGLERNE AS,15-30,22,Morten Marthinsen,40062656,,,Oslo,,False,,932862484,brreg
-HØY,100,MAJORSTUEN EIENDOMSMEGLING AS,15-30,22,Christer Gabrielsen,95041364,22 12 90 00,,Oslo,,False,,914449936,brreg
-HØY,100,HEGDEHAUGEN EIENDOMSMEGLING AS,15-30,21,Christopher Jørgensen,45020571,909 60 836,cj@eie.no,Oslo,,False,,931569082,brreg
-HØY,100,L12 EIENDOMSMEGLING AS,15-30,21,Jan-Petter Hansen,48172717,,,Bekkestua,,False,,919159863,brreg
-HØY,100,ALLÉ EIENDOMSMEGLING AS,15-30,20,Lillian Charlotte Nerlinger,90569431,22 44 00 22,,Oslo,,False,,914594863,brreg
-HØY,100,BERGEN EIENDOMSMEGLING AS,15-30,20,Daniel Grønås,90999786,,,Bergen,,False,,936304206,brreg
-HØY,100,IN-VEST EIENDOMSMEGLING AS,15-30,20,Fredrik Meldahl,98807456,22 51 11 11,,Oslo,,False,,945064358,brreg
-HØY,100,STENDER OPPGJØR AS,15-30,20,Marius Andre Vågenes,,55 50 85 90,,Godvik,,False,,983570658,brreg
-HØY,100,ACHIEVE EIENDOMSMEGLING AS,15-30,19,Hanne Havsgård,90199979,,,Bergen,,False,,924413956,brreg
-HØY,100,LANDKREDITT EIENDOM AS,15-30,19,Ole-Anders Midtskog,93260665,,,Oslo,,False,,912641066,brreg
-HØY,100,MALLING & CO LEIETAKERRÅDGIVNING AS,15-30,19,Oluf Magnus Geheb,,24 02 80 00,post@mallingco.no,Oslo,www.mallingco.no,False,,992731621,brreg
-HØY,100,NORDRE AKER EIENDOMSMEGLING AS,15-30,19,Stian Larsen,90704083,,,Oslo,,False,,916491034,brreg
-HØY,100,PACTA EIENDOM AS,15-30,19,Tore Resell,97059222,73 99 22 55,trondheim@proaktiv.no,Trondheim,www.proaktiv.no,False,,983374654,brreg
-HØY,100,PRIMERA EIENDOMSMEGLING AS,15-30,19,Ingrid Gunvor Eriksson,45395088,948 48 484,,Oslo,,False,,921581661,brreg
-HØY,100,BISLETT EIENDOMSMEGLING AS,15-30,18,Magnus Moestue,93876619,,,Oslo,,False,,918146326,brreg
-HØY,100,GRÜNERLØKKA EIENDOMSMEGLING AS,15-30,18,Linus Juell-Florival,98647721,22 04 08 40,bt@schalapartners.no,Oslo,schalapartners.no,False,,987648287,brreg
-HØY,100,MEKLERIET AS,15-30,18,Morten Framnes,98624829,53 51 98 80,mif@eie.no,Bergen,eie.no,False,,917989338,brreg
-HØY,100,PREMIÈRE EIENDOMSMEGLING AS,15-30,18,Petter Løsåmoen,,948 48 484,,Oslo,,False,,921581718,brreg
-HØY,100,SEM & JOHNSEN OPPGJØR OG ADMINISTRASJON AS,15-30,18,Christian Sunde,,22 83 22 00,oppgjor@sem-johnsen.no,Oslo,www.sem-johnsen.no,False,,999638996,brreg
-HØY,100,SYD EIENDOMSMEGLING AS,15-30,18,Roar Nylund,,55 00 30 00,roar.nylund@privatmegleren.no,Nesttun,,False,,913019695,brreg
-HØY,100,ULLEVÅL & SAGENE EIENDOMSMEGLING AS,15-30,18,Gard Peder Kopstad,40441007,22 02 11 60,,Oslo,,False,,989734598,brreg
-HØY,100,BERGEN VEST EIENDOMSMEGLING AS,15-30,17,Susanne Pettersen,46849375,,,Loddefjord,,False,,829235722,brreg
-HØY,100,REDE EIENDOMSMEGLING AS,15-30,17,Mona Kristiansen,,75 14 30 00,post@rede-eiendom.no,Mo I Rana,www.rede-eiendom.no,False,,979158580,brreg
-HØY,100,TELEMARK EIENDOMSMEGLING AS,15-30,17,Kurt Thingstad,90782737,,,Skien,,False,,925590711,brreg
-HØY,100,TRONDHEIM EIENDOMSMEGLING AS,15-30,17,Odin Sundland,92444082,,,Trondheim,,False,,995311720,brreg
-HØY,100,FREM EIENDOMSMEGLING AS,15-30,16,Fred Ivar Myrseth,,32 79 28 80,,Sætre,www.fremeiendomsmegling.no,False,,979915772,brreg
-HØY,100,GABRIELSEN & PARTNERS LØKKA AS,15-30,16,Klaus Petter Westersund,92610585,,,Oslo,,False,,922593221,brreg
-HØY,100,MEGLERGAARDEN AS,15-30,16,Tommy Skovly,99400600,69 20 25 50,post@meglergaarden.no,Moss,www.meglergaarden.no,False,,987708204,brreg
-HØY,100,PULS EIENDOMSMEGLING AS,15-30,16,Jens Myhrstad,,,,Oslo,,False,,819884382,brreg
-HØY,100,SØRLANDSMEGLEREN SÆDBERG OG LIAN AS,15-30,16,Svein Lian,91149879,,,Kristiansand S,,False,,994698559,brreg
-HØY,100,BENUM & JOHANSEN AS,3-15,15,Stig Johansen,90953249,,,Trondheim,,False,,912587762,brreg
-HØY,100,EMERA NO2 AS,3-15,15,Milad Alexander Sabori,92302030,,,Oslo,,False,,934963407,brreg
-HØY,100,ENSJØ EIENDOMSMEGLING AS,3-15,15,Kristian Birkan,,,,Oslo,,False,,921542690,brreg
-HØY,100,FRONTLINE GRÜNERLØKKA EIENDOMSMEGLING AS,3-15,15,Amit Sharma,91666471,,,Oslo,,False,,916335466,brreg
-HØY,100,LØRENSKOGMEGLEREN AS,3-15,15,Christer Langstrand,90786188,,,Lørenskog,,False,,929031334,brreg
-HØY,100,NORDVIK BOLIG AS,3-15,15,Martin Kiligitto,95260263,,,Oslo,,False,,928879216,brreg
-HØY,100,RØISLAND & CO EIENDOMSMEGLING AS,3-15,15,Martine Helen Røisland-Leween,,21 04 32 32,post@roislandco.no,Oslo,www.roislandco.no,False,,994194410,brreg
-HØY,100,ØVRE ROMERIKE EIENDOMSMEGLING AS,3-15,15,Henrik Drabløs,92443502,,,Jessheim,,False,,826962992,brreg
-HØY,100,ASK BERGEN AS,3-15,14,Charlotte Kleven,55215125,,,Bergen,,False,,932177331,brreg
-HØY,100,ASK EIENDOMSMEGLING SARPSBORG AS,3-15,14,Heine Kristoffer Aas,95129058,,,Sarpsborg,,False,,926501097,brreg
-HØY,100,BERGBY EIENDOMSMEGLING AS,3-15,14,Fabian Haukedal,90635728,466 36 255,,Bergen,,False,,935096219,brreg
-HØY,100,BVB EIENDOMSMEGLING AS,3-15,14,Bendik Hall Blumenthal,97766133,,,Oslo,,False,,917427925,brreg
-HØY,100,GABRIELSEN & PARTNERS FROGNER AS,3-15,14,Martin Helman Ommundsen,,,,Oslo,,False,,912814017,brreg
-HØY,100,MALLING & CO NÆRINGSMEGLING AS,3-15,14,Lars Simen Paulgaard,47473655,24 02 80 00,post@mallingco.no,Oslo,www.mallingco.no,False,,979216041,brreg
-HØY,100,MEGLERHUSET RELE HAUGESUND AS,3-15,14,Marius Kallevik,90776949,52 73 15 00,post@meglerhuset-rele.no,Haugesund,www.meglerhuset-rele.no,False,,997175565,brreg
-HØY,100,MEGLEROPPGJØRET AS,3-15,14,Elisabeth Valvatne,46969209,33 33 20 00,post@megleroppgjoret.no,Tønsberg,www.megleroppgjoret.no,False,,992767022,brreg
-HØY,100,MEKLERIET SØR AS,3-15,14,Kim Rene Henne,92435746,,,Nesttun,,False,,828154842,brreg
-HØY,100,NOROPPGJØR AS,3-15,14,Ngoc Mai Phan,,22 70 15 80,,Oslo,www.noroppgjor.no,False,,986956204,brreg
-HØY,100,NOVUM EIENDOMSMEGLING AS,3-15,14,Petter Haavi,,22 30 18 00,maria@homeeiendom.no,Oslo,homeeiendom.no,False,,990224463,brreg
-HØY,100,REALIA AS,3-15,14,Eirik Arnø,95840210,23 08 46 00,,Oslo,realia.no,False,,977391067,brreg
-HØY,100,BG30 EIENDOMSMEGLING AS,3-15,13,Daniel Andersson,99581339,995 81 339,d.andersson@nordvikbolig.no,Fjellhamar,,False,,919945958,brreg
-HØY,100,DIALOG EIENDOMSMEGLING AS,3-15,13,Frode Nyhus,92264473,32 20 30 20,frode@dialogeiendom.no,Drammen,www.dialogeiendom.no,False,,937789416,brreg
-HØY,100,DRAMMEN EIENDOMSMEGLING AS,3-15,13,Christian Udgaard,93038405,,,Drammen,,False,,921442564,brreg
-HØY,100,FREMTIDEN EIENDOMSMEGLING AS,3-15,13,Tormod Samuelsen,91767406,23 08 07 00,,Oslo,www.aktiveiendom.no,False,,982253896,brreg
-HØY,100,HAFERKAMP & PARTNERE AS,3-15,13,Stine Haferkamp,,,,Stavanger,,False,,917705631,brreg
-HØY,100,LØREN OG ØKERN EIENDOMSMEGLING AS,3-15,13,Jon Solberg,99738636,,,Oslo,,False,,916510845,brreg
-HØY,100,MEGLERHUSET ROMERIKE AS,3-15,13,Torje Slettli,90808980,,,Kjeller,,False,,936357660,brreg
-HØY,100,METRA NÆRINGSMEGLING AS,3-15,13,Odd Oskar Groth,,69 27 89 00,post@metra.no,Moss,www.metra.no,False,,986357467,brreg
-HØY,100,Q4 NÆRINGSMEGLING AS,3-15,13,Ola Larsen,90926452,,,Tønsberg,,False,,916739125,brreg
-HØY,100,SOLLI & PARTNERE AS,3-15,13,Carl Fredrik Solli,91300093,91 30 00 93,cf.solli@privatmegleren.no,Asker,,False,,888622152,brreg
-HØY,100,SORIA MORIA EIENDOMSMEGLING AS,3-15,13,Erling Beck,92653000,22 15 14 10,,Oslo,,False,,896306782,brreg
-HØY,100,TJUVHOLMEN EIENDOMSMEGLING AS,3-15,13,Dag-Rune Kristiansen,91391300,,,Oslo,,False,,921176333,brreg
-HØY,100,UNION NORSK NÆRINGSMEGLING AS,3-15,13,Jacob Alexander L'orsa,90054647,23 11 69 00,post@uniongruppen.no,Oslo,www.uniongruppen.no,False,,983466176,brreg
-HØY,100,UTLEIEMEGLEREN LILLESTRØM AS,3-15,13,Tom Anders Andersen,91115302,64 84 70 50,romerike@utleiemegleren.no,Lillestrøm,www.utleiemegleren.no,False,,981930762,brreg
-HØY,100,ATRIUM EIENDOMSMEGLING AS,3-15,12,Erik Ilseng,47884004,,,Oslo,,False,,933326020,brreg
-HØY,100,AURE & VALSKAAR AS,3-15,12,Stig Valskaar,45007095,63 80 59 90,petter.aure@postbanken.no,Lillestrøm,,False,,980132455,brreg
-HØY,100,BAKKE SØRVIK & PARTNERS AS,3-15,12,Jens Roland Pettersen,90964885,,,Tønsberg,,False,,916959478,brreg
-HØY,100,BRUSTAD & PARTNERE AS,3-15,12,Kåre André Brustad,63976100,63 97 61 00,,Jessheim,,False,,996534235,brreg
-HØY,100,CHRISTIANIA EIENDOMSMEGLING AS,3-15,12,Sylvia Post,41478478,,,Oslo,,False,,924831332,brreg
-HØY,100,EIENDOMSMEGLER A AS,3-15,12,Hugo Wee,52804300,52 80 43 00,post@em-a.no,Haugesund,www.eiendomsmeglera.no,False,,893527702,brreg
-HØY,100,EIENDOMSMEGLER MOSS AS,3-15,12,Eirik Reinnel,93431900,69 70 01 00,,Moss,,False,,995730359,brreg
-HØY,100,EMERA NO1 AS,3-15,12,Joakim Francis Johansson-Merrick,,,,Oslo,,False,,934963385,brreg
-HØY,100,FJORDBYEN EIENDOMSMEGLING AS,3-15,12,Caroline Ephraim,,,,Oslo,,False,,930359815,brreg
-HØY,100,FRONTLINE FOLLO AS,3-15,12,Amit Sharma,64942010,,,Ås,,False,,921831382,brreg
-HØY,100,HAMAR EIENDOMSMEGLING AS,3-15,12,Inger Helene Simensen,92864300,,,Hamar,,False,,916933568,brreg
-HØY,100,MALLING & CO CORPORATE REAL ESTATE AS,3-15,12,Haakon Ødegaard,,24 02 80 00,post@mallingco.no,Oslo,www.mallingco.no,False,,986589066,brreg
-HØY,100,MEGLERHUSET LEINÆS AS,3-15,12,Thomas Andre Østmo,95994044,33 13 52 50,,Larvik,,False,,980407551,brreg
-HØY,100,NIDAROS - EIENDOMSMEGLING SENTRUM AS,3-15,12,Andreas Lund,94289522,,,Trondheim,,False,,831699132,brreg
-HØY,100,OSLOFJORDEN EIENDOMSMEGLING AS,3-15,12,Kornelia Krynicka,94859728,22 62 00 00,lillian.nerlinger@privatmegleren.no,Oslo,,False,,932083108,brreg
-HØY,100,ROGALAND EIENDOMSMEGLING AS,3-15,12,Michael Ruphus Myhre,91537554,51 90 57 00,mm@eie.no,Stavanger,www.eie.no/stavanger,False,,991089888,brreg
-HØY,100,SANDEFJORD & STOKKE EIENDOMSMEGLING AS,3-15,12,Didrik Emil Schou,91689268,,,Sandefjord,,False,,919667168,brreg
-HØY,100,SCHALA & PARTNERS AVD SAGENE AS,3-15,12,Erik Danielsen,40087800,90 02 93 57,bt@schalapartners.no,Oslo,,False,,914983401,brreg
-HØY,100,SØRVEST EIENDOMSMEGLING AS,3-15,12,Carl-Åge Herrem,91746616,,,Stavanger,,False,,933480879,brreg
-HØY,100,UTLEIEMEGLEREN ASKER OG BÆRUM AS,3-15,12,Mats Larsen,91546012,,,Lysaker,,False,,992876913,brreg
-HØY,100,UTLEIEMEGLEREN FROGNER AS,3-15,12,Anne Cecilie Isaksen,46637360,21 93 13 00,frogner@utleiemegleren.no,Oslo,,False,,982974852,brreg
-HØY,100,UTLEIEMEGLEREN STAVANGER AS,3-15,12,Magnus Fjell,95213815,51 50 11 20,stavanger@utleiemegleren.no,Stavanger,www.utleiemegleren.no,False,,988915076,brreg
-HØY,100,ØSTENSJØ EIENDOMSMEGLING AS,3-15,12,Don Tuan Tran,99381521,,,Oslo,,False,,924307803,brreg
-HØY,100,ASK OSLO EKEBERG AS,3-15,11,Thomas Wahl,40800444,,,Oslo,,False,,933918106,brreg
-HØY,100,BOLI EIENDOMSMEGLING AS,3-15,11,Øyvind Krogstad,93231100,,,Steinkjer,,False,,993609145,brreg
-HØY,100,BRAGERNES EIENDOMSMEGLING AS,3-15,11,Arian Tabaku,97784489,,,Drammen,,False,,932843765,brreg
-HØY,100,FJELL OG FJORD EIENDOMSMEGLING AS,3-15,11,Erlend Stokmo,,,,Bergen,,False,,935740274,brreg
-HØY,100,GABRIELSEN & PARTNERS AS,3-15,11,Stein Christian Dykesteen,,99 25 99 83,,Oslo,,False,,987883944,brreg
-HØY,100,KURSIV EIENDOMSMEGLING AS,3-15,11,Ole Christian Arntsen,,,,Grålum,,False,,914730112,brreg
-HØY,100,LIAVAAG EIENDOM AS,3-15,11,Morten Liavaag,95049850,,,Drammen,,False,,993479470,brreg
-HØY,100,LOKALMEGLEREN NT AS,3-15,11,Jan Martin Dahlen,95879686,93 43 63 00,levanger@partners.no,Levanger,www.lokalmeglerenpartners.no,False,,996956512,brreg
-HØY,100,MEGLERHUSET & PARTNERS DRAMMEN AS,3-15,11,Øystein Liverud,91884174,,,Drammen,,False,,914888026,brreg
-HØY,100,SINSEN OG ROSENHOFF EIENDOMSMEGLING AS,3-15,11,Kjersti Bråthen,98495918,,,Oslo,,False,,922183201,brreg
-HØY,100,TELEMARKSMEGLEREN AS,3-15,11,Ronny Jørstad,95232220,35 98 68 18,rj@terraeiendom.no,Kragerø,,False,,985420785,brreg
-HØY,100,UTLEIEMEGLEREN MAJORSTUEN AS,3-15,11,Tom Fjalestad,,22 93 29 00,chriss@utleiemegleren.no,Oslo,www.utleiemegleren.no,False,,975821846,brreg
-HØY,100,UTLEIEMEGLEREN SINSEN AS,3-15,11,Marianne Wallin,91603804,,,Oslo,,False,,992876999,brreg
-HØY,100,UTLEIEMEGLEREN TRONDHEIM SENTRUM AS,3-15,11,Solveig Moan,23216000,73 84 13 00,trondheim@utleiemegleren.no,Trondheim,www.utleiemegleren.no,False,,988861472,brreg
-HØY,100,ØSTBØ & KALDHEIM EIENDOMSMEGLING AS,3-15,11,Leiv Helge Kaldheim,,,,Haugesund,,False,,922936382,brreg
-HØY,100,ASKER EIENDOMSMEGLING AS,3-15,10,Alexander Fossum,93040668,,,Asker,,False,,930177849,brreg
-HØY,100,BERGEN SØR EIENDOMSMEGLING AS,3-15,10,Lene Hærum,92885407,,,Nesttun,,False,,936982581,brreg
-HØY,100,BOA EIENDOMSMEGLING NORDSTRAND AS,3-15,10,Tommy Stensrud,91143672,,stensrud@boaeiendom.no,Oslo,,False,,994524941,brreg
-HØY,100,BOLIGMEGLEREN STRAY AS,3-15,10,Leif Christian Stray,98015707,32 02 91 40,,Kristiansand S,,False,,984656610,brreg
-HØY,100,EIENDOMSMEGLER NORD AS,3-15,10,Tobias Janaka Bronder,95166805,,,Bodø,,False,,927102234,brreg
-HØY,100,HAGEBY EIENDOMSMEGLING AS,3-15,10,Kamilla Dagsland,90822326,,,Oslo,,False,,936721788,brreg
-HØY,100,INKOGNITO EIENDOMSMEGLING AS,3-15,10,John Theodorsen,47307049,,,Oslo,,False,,935826020,brreg
-HØY,100,MALLING & CO VÅGEN AS,3-15,10,Kenneth Habbestad,48003990,51 52 51 00,post@malling.no,Stavanger,www.malling.no,False,,914352657,brreg
-HØY,100,MEGLERHUSET BORG AS,3-15,10,Svein Andre Eng,90820235,69 12 60 60,svein.eng@proaktiv.no,Sarpsborg,www.proaktiv.no,False,,994976192,brreg
-HØY,100,NIDAROS - EIENDOMSMEGLING AS,3-15,10,Andreas Lund,91818246,,,Heimdal,,False,,930815551,brreg
-HØY,100,NÆRINGSMEGLEREN AS,3-15,10,Unni Mesel,95258037,38 10 44 44,post@naringsmegleren.no,Kristiansand S,www.naringsmegleren.no,False,,978647316,brreg
-HØY,100,STAVANGER EIENDOMSFORMIDLING AS,3-15,10,Svein Magnus Melgaard,40407662,51 84 98 00,,Stavanger,www.notar.no,False,,989418475,brreg
-HØY,100,TEGNEBY & GRØNNERØD LANDBRUKSMEGLING AS,3-15,10,Nils Henrik Tegneby,69101000,,,Sarpsborg,,False,,821221862,brreg
-HØY,100,UTLEIEMEGLEREN BERGEN SENTRUM AS,3-15,10,Eirik Hove,,55 21 21 10,bergen@utleiemegleren.no,Bergen,www.utleiemegleren.no,False,,988914983,brreg
-HØY,100,UTLEIEMEGLEREN GRØNLAND OG BJØRVIKA AS,3-15,10,Henrik Jansson,45220083,,,Oslo,,False,,992876883,brreg
-HØY,100,VALDRES EIENDOMSKONTOR AS,3-15,10,Linn Hamre-Hagen,99734264,61 36 66 33,,Fagernes,,False,,979870167,brreg
-HØY,100,VALKYRIEN EIENDOM AS,3-15,10,Ada Kjenner,,,,Oslo,,False,,930299308,brreg
-HØY,100,VIKEN EIENDOMSMEGLING AS,3-15,10,Torgrim Yli,91790370,97554900,kongsberg@aktiv. no,Kongsberg,,False,,987548177,brreg
-HØY,100,VINDEREN EIENDOMSMEGLING AS,3-15,10,Charlotte Engdal,95994303,22 13 55 00,,Oslo,,False,,889665742,brreg
-HØY,100,ASK OSLO VEST AS,3-15,9,Hans Petter Strømsaas,,22 93 08 30,,Oslo,,False,,993773980,brreg
-HØY,100,BEST EIENDOMSMEGLER AS,3-15,9,Bjørn Johnson,90959525,35 54 20 00,post@bestmegler.no,Skien,www.bestmegler.no,False,,912316831,brreg
-HØY,100,FOLLO EIENDOMSMEGLING AS,3-15,9,Anders Borgen,45222222,64 91 34 00,ab@attentuseiendom.no,Ski,www.attentuseiendom.no,False,,991083499,brreg
-HØY,100,FREDRIKSTAD EIENDOMSMEGLING AS,3-15,9,Line Pettersen,48271826,,,Fredrikstad,,False,,927652633,brreg
-HØY,100,JENSSEN & BOLLE EIENDOMSMEGLING AS,3-15,9,Johnny Bolle,90520440,76 96 79 50,jb@megler-forum.no,Narvik,,False,,984960379,brreg
-HØY,100,M3 UTLEIE AS,3-15,9,Morten Granhaug,99723719,,morten@m3utleie.no,Oslo,www.m3utleie.no,False,,914165024,brreg
-HØY,100,MIDTBYEN EIENDOMSMEGLING AS,3-15,9,Thomas Kvålsvoll,90656880,906 56 880,trondheim@nordvikbolig.no,Trondheim,www.nordvikbolig.no/kontorer/trondheim,False,,932871742,brreg
-HØY,100,NORDMØRE EIENDOMSMEGLING AS,3-15,9,Stig Flemmen,92806215,70 30 47 50,,Kristiansund N,,False,,983266584,brreg
-HØY,100,OSLO VEST EIENDOMSMEGLING AS,3-15,9,Vegard Andersen,45229142,,,Oslo,,False,,924873396,brreg
-HØY,100,PROAKTIV EIENDOMSMEGLING AS,3-15,9,Brynjulf Hardang,48081358,55 36 40 40,,Bergen,,False,,987281790,brreg
-HØY,100,REALNOR PROPERTY ADVISORS AS,3-15,9,Stine Isaksen,47337311,22 06 62 80,colliers@colliers.no,Oslo,,False,,967615013,brreg
-HØY,100,STRØMMEN EIENDOMSMEGLING AS,3-15,9,Thomas Madsen,98239652,63 81 70 00,romerike@notar.no,Strømmen,www.notar.no,False,,912307301,brreg
-HØY,100,SØRE SUNNMØRE EIENDOMSMEGLING AS,3-15,9,Kristin Husøy,48106722,71 40 00 00,,Ulsteinvik,www.notar.no,False,,984144938,brreg
-HØY,100,TRONDHEIM SYD EIENDOM AS,3-15,9,Arvid Johansen,47400077,72 59 92 40,ed@proa.no,Heimdal,proaktiv.no,False,,989716816,brreg
-HØY,100,TØNSBERG OG RE EIENDOMSMEGLING AS,3-15,9,Kaia Dahle,,,,Tønsberg,,False,,922237867,brreg
-HØY,100,UTLEIEMEGLEREN NYDALEN AS,3-15,9,Marianne Wallin,91603804,,,Oslo,,False,,925705519,brreg
-HØY,100,VESTFOLD EIENDOMSMEGLING AS,3-15,9,Matias Rostad,47387698,33 30 70 00,tonsberg@eie.no,Tønsberg,,False,,955607171,brreg
-HØY,100,WANGENSTEN & PARTNERS AS,3-15,9,Knut Walter Baldersheim,41510015,41 43 62 55,mw@privatmegleren.no,Fagernes,,False,,994303260,brreg
-HØY,100,Z MEGLEREN AS,3-15,9,Dag Jonny Johannessen,97051555,,,Bergen,,False,,921171846,brreg
-HØY,100,ARENDAL EIENDOMSMEGLING AS,3-15,8,Kristoffer Eastwood,48502050,,,Arendal,,False,,932433192,brreg
-HØY,100,DRIV EIENDOMSMEGLING AS,3-15,8,Christoffer Brekke-Hammersland,95185010,950 83 002,mick.rodsten@privatmegleren.no,Oslo,,False,,936324029,brreg
-HØY,100,GALLERI EIENDOMSMEGLING AS,3-15,8,Erlend Haglund,90696100,,,Stavanger,,False,,927103796,brreg
-HØY,100,GLT EIENDOMSMEGLING AS,3-15,8,Mats Johan Kolsrud,95874170,,,Gjøvik,,False,,927267500,brreg
-HØY,100,HALDEN BOLIGSENTER AS,3-15,8,Sabri Freddy Khattab,48063955,69 21 37 70,,Halden,,False,,990451613,brreg
-HØY,100,HARSTAD EIENDOMSMEGLING AS,3-15,8,Michael Knutsen,93010983,,,Harstad,,False,,931999249,brreg
-HØY,100,HJEM EIENDOMSMEGLING AS,3-15,8,Espen Arnljot Richardsen,,90 06 67 00,espen.richardsen@hjemeiendomsmegling.no,Tromsø,www.hjemeiendomsmegling.no,False,,990860467,brreg
-HØY,100,INFINITA EIENDOMSMEGLING AS,3-15,8,Bent Walther Johansen,90560483,,,Oslo,,False,,913151879,brreg
-HØY,100,JÆREN EIENDOMSMEGLING AS,3-15,8,Bjørn Rune Salte,41607781,,,Bryne,,False,,923888306,brreg
-HØY,100,KOBBL EIENDOM AS,3-15,8,Jo Heiki Støve,90750037,62 82 37 37,jhs@kobbl.no,Kongsvinger,www.kobbleiendom.no,False,,913136144,brreg
-HØY,100,LINK BOLIGUTLEIE STAVANGER AS,3-15,8,Anna Sæterdal,47283445,,,Stavanger,,False,,931222198,brreg
-HØY,100,MEGLERHUSET & PARTNERS AS,3-15,8,Glenn Johnny Olsen,90226901,37 00 26 30,post@arendalpartners.no,Arendal,www.arendalpartners.no,False,,980872424,brreg
-HØY,100,MEGLERHUSET NORDSTRAND AS,3-15,8,Philip Nicolai Magnussen,92423637,,,Oslo,,False,,833671642,brreg
-HØY,100,MOSS EIENDOMSMEGLING AS,3-15,8,Jeanette Hornsletten,91552939,915 52 939,j.hornsletten@nordvikbolig.no,Moss,www.nordvikbolig.no/kontorer/moss,False,,832574112,brreg
-HØY,100,NBBO EIENDOMSMEGLING AS,3-15,8,Fabian Paus,,32 21 15 10,eiendom@nbbo.no,Drammen,www.nbboeiendom.no,False,,971168447,brreg
-HØY,100,NORDLAND EIENDOMSMEGLING AS,3-15,8,Rune Emil Hanssen,48217288,,,Bodø,,False,,917842779,brreg
-HØY,100,OPPEGÅRD EIENDOMSMEGLING AS,3-15,8,Stig Ivar Reklev,95064140,67 20 47 50,stig@privatmegleren.no,Kolbotn,,False,,996459179,brreg
-HØY,100,OSLO EIENDOMSMEGLING AS,3-15,8,Susana Carolina Toro,,22 22 50 20,oslo@notar.no,Oslo,www.notar.no,False,,914361370,brreg
-HØY,100,PROAKTIV PROPERTIES AS,3-15,8,Caroline Ask,93411602,,,Oslo,,False,,917473714,brreg
-HØY,100,SEIL EIENDOMSMEGLING AS,3-15,8,Trond-Ivar Olsen,97540247,,,Asker,,False,,918809589,brreg
-HØY,100,SKI EIENDOMSMEGLING AS,3-15,8,Brynjar Netskar,,,,Ski,,False,,818809522,brreg
-HØY,100,STJØRDAL EIENDOMSMEGLING AS,3-15,8,Torstein Nordby,45211938,,,Stjørdal,,False,,921956797,brreg
-HØY,100,TRONDHEIM ØST EIENDOMSMEGLING AS,3-15,8,Steinar Skaanes,97059239,,,Trondheim,,False,,912437493,brreg
-HØY,100,TØNSBERG & FÆRDER EIENDOMSMEGLING AS,3-15,8,Kaja Tveiten,92055443,,,Tønsberg,,False,,925591270,brreg
-HØY,100,VEST EIENDOMSMEGLING AS,3-15,8,Anders Sagenes,92806496,,,Loddefjord,,False,,918053603,brreg
-HØY,100,VESTRE BÆRUM EIENDOMSMEGLING AS,3-15,8,Camilla Olsen,95107182,,,Sandvika,,False,,934231279,brreg
-HØY,100,VIKEBØ & JØRGENSEN ÅSANE AS,3-15,8,Sivert Erling Severinsen,,92 07 71 66,lars@privatmegleren.no,Nyborg,,False,,917831556,brreg
-HØY,100,W EIENDOMSMEGLING BERGEN SENTRUM AS,3-15,8,Markus Andre Håland,92456782,,,Bergen,,False,,925394904,brreg
-HØY,100,ÅLESUND EIENDOMSMEGLING AS,3-15,8,Audun Sjøholt,,71 40 00 00,,Ålesund,,False,,983196977,brreg
-HØY,100,ASK MØLLER EIENDOMSMEGLING AS,3-15,7,Dag Thomas Svendsen,90694161,69 36 70 70,dag.thomas@mollerpartners.no,Kråkerøy,www.partners.no,False,,993828645,brreg
-HØY,100,BOA EIENDOMSMEGLING OSLO VEST AS,3-15,7,Bulent Yildirim,41209991,,,Oslo,boaeiendom.no,False,,913439880,brreg
-HØY,100,DOBLAN EIENDOMSMEGLING AS,3-15,7,Teddy Tewodros Welde,45244033,,,Oslo,,False,,933156664,brreg
-HØY,100,"EDLAND, MANNES & REGE AS",3-15,7,Torbjørn Johansen,,51 66 88 00,sandnes@proaktiv.no,Sandnes,proaktiv.no,False,,920839878,brreg
-HØY,100,EIENDOMSMEGLEREN DIN TELEMARK AS,3-15,7,Berit Seltveit,90998702,35 95 41 11,,Bø I Telemark,,False,,990269637,brreg
-HØY,100,ENKLERE UTLEIE AS,3-15,7,Hans Lennart Johansson,,,,Oslo,,False,,916909896,brreg
-HØY,100,FOSS & CO EIENDOMSMEGLING AS,3-15,7,Christian Ludvig Foss,45280990,66806250,kolbn@fossco.no,Kolbotn,,False,,937205139,brreg
-HØY,100,LARVIK EIENDOMSMEGLING AS,3-15,7,,,,,Larvik,,False,,992829893,brreg
-HØY,100,MEGLERHUSET SØR AS,3-15,7,Andre Sandvik,,,,Kristiansand S,,False,,834475162,brreg
-HØY,100,MØYSALEN EIENDOMSMEGLING AS,3-15,7,Ole Torvald Albrigtsen,41020292,410 20 292,,Sortland,,False,,892280622,brreg
-HØY,100,PM KRAGERØ AS,3-15,7,Kent André Andersen,,,,Kragerø,,False,,932955067,brreg
-HØY,100,PROAKTIV SANDVIKEN AS,3-15,7,,,,,Bergen,,False,,999248284,brreg
-HØY,100,PROAKTIV VOSS EIENDOMSMEGLING AS,3-15,7,Rakel Søvik,41464523,56 52 19 50,voss@aktiveiendom.no,Voss,www.aktiveiendom.no,False,,993971804,brreg
-HØY,100,REAL NÆRINGSMEGLING AS,3-15,7,Eivind Aursøy,67917650,67 91 76 55,firmapost@real.no,Skjetten,www.real.no,False,,947872931,brreg
-HØY,100,SNE UTLEIE AS,3-15,7,Kenneth Hermann Alexandre,91335495,,,Tromsø,,False,,921542186,brreg
-HØY,100,STAVANGER REAL ESTATE AS,3-15,7,Janne-Mette Bergesen,,913 91 300,,Stavanger,,False,,932412756,brreg
-HØY,100,STAVLUND AS,3-15,7,Gunnar Olai Stavlund,91353125,69 30 24 50,fredrikstad@stavlund.no,Fredrikstad,www.stavlund.no,False,,983261523,brreg
-HØY,100,SUNNMØRE EIENDOMSMEGLING AS,3-15,7,Ole Christian Walderhaug,71400000,,,Ålesund,www.notar.no,False,,990199817,brreg
-HØY,100,SUNNMØRSMEGLEREN AS,3-15,7,Hanne Knotten,97474088,,,Ålesund,,False,,922415080,brreg
-HØY,100,SØR-VEST MEGLEREN AS,3-15,7,Marita Lervik,,,,Lyngdal,,False,,914747929,brreg
-HØY,100,TRYGT OPPGJØR AS,3-15,7,Kristine Platou,,22 08 08 01,post@trygtoppgjor.no,Oslo,www.trygtoppgjor.no,False,,914990483,brreg
-HØY,100,UTLEIEMEGLEREN PRO AS,3-15,7,Kjetil Jacobsen,41214594,,,Oslo,,False,,914748569,brreg
-HØY,100,UTLEIEMEGLEREN VESTFOLD AS,3-15,7,Karsten Olsen,91572638,004791572638,karsten.olsen@utleiemegleren.no,Sandefjord,www.utleiemegleren.no,False,,923855556,brreg
-HØY,100,VERDI EIENDOMSMEGLING SANDNES AS,3-15,7,Knut Richard Stjern,,51 60 82 00,,Sandnes,www.verdi-eiendom.no,False,,993473596,brreg
-HØY,100,ADVANTI & PARTNERS ALTA AS,3-15,6,Daniel Andre Adamsen,95026764,,,Alta,,False,,924546840,brreg
-HØY,100,AGDER EIENDOMSMEGLING AS,3-15,6,Mads Helgesen,,,,Arendal,,False,,920774954,brreg
-HØY,100,ASK TRONDHEIM AS,3-15,6,Ida Osen,91183189,,,Heimdal,,False,,933109259,brreg
-HØY,100,BOLIGMEGLEREN AS,3-15,6,Egil Emil Horgen,95301200,,,Kristiansand S,,False,,919916753,brreg
-HØY,100,BOLIGSPESIALISTEN STAVANGER AS,3-15,6,Aina Trovåg,,,,Stavanger,,False,,926647849,brreg
-HØY,100,BORGUND EIENDOMSMEGLING AS,3-15,6,Albert Øien,96921540,,,Ålesund,,False,,926128612,brreg
-HØY,100,BUSKERUD NÆRINGSMEGLING AS,3-15,6,Fredrik Andreas Haaning,91520905,32 25 40 50,post@bnm.no,Drammen,www.bnm.no,False,,980921611,brreg
-HØY,100,DRAMMEN OG LIER EIENDOMSMEGLING AS,3-15,6,Alexander Abelseth,97744247,,,Drammen,,False,,931803328,brreg
-HØY,100,EIENDOMSMEGLER LARVIK OG LARDAL AS,3-15,6,Lars Andreas Grønneberg,95135953,,,Larvik,,False,,916130163,brreg
-HØY,100,EMERA NORGE AS,3-15,6,Sveinung Solberg,90161078,,,Oslo,,False,,834963442,brreg
-HØY,100,ERA EIENDOMSMEGLING AS,3-15,6,Eskil Gøran Wahl,97054433,,,Flatåsen,,False,,936749259,brreg
-HØY,100,ESTATOR EIENDOMSMEGLING AS,3-15,6,Truls Langaard,90664424,64 91 18 50,truls.langaard@partners.no,Ski,partners.no/kontor/follo,False,,987954337,brreg
-HØY,100,FJORD EIENDOMSMEGLING AS,3-15,6,Hans Houeland,95979796,,,Oslo,,False,,931853988,brreg
-HØY,100,HARDANGER EIGEDOMSMEKLING AS,3-15,6,Sebastian Gjerde,,,,Norheimsund,,False,,927380307,brreg
-HØY,100,HAUGESILD EIENDOMSMEGLING AS,3-15,6,Lars Frøyland,90736858,,,Haugesund,,False,,927219875,brreg
-HØY,100,HORISONT EIENDOMSMEGLING AS,3-15,6,Espen Aas,95744521,,,Oslo,,False,,996324451,brreg
-HØY,100,INNLANDET EIENDOMSMEGLING AS,3-15,6,Arbresh Vitija,99252301,,,Hamar,,False,,931509268,brreg
-HØY,100,KRAGSET & PARTNERS AS,3-15,6,Jonny Dagfinn Kragset,97515940,,,Volda,,False,,931000403,brreg
-HØY,100,KVARTAL EIENDOMSMEGLING AS,3-15,6,Anna Maria Matilda Löfdahl,98444644,,,Oslo,,False,,917593760,brreg
-HØY,100,LEGAL EIGEDOMSMEKLING AS,3-15,6,Thomas Lundberg,93288109,,,Ørsta,,False,,927305593,brreg
-HØY,100,"MAMEN-LUND, ENGH, SALVESEN & PARTNERS AS",3-15,6,Petter Mamen-Lund,91614722,,,Asker,,False,,990997810,brreg
-HØY,100,MEGLERHUSET RELE KARMØY AS,3-15,6,Stein Gunnar Døsen,,,,Kopervik,,False,,924420065,brreg
-HØY,100,MEGLERHUSET SANDEFJORD AS,3-15,6,Simen Ringdal,92012680,,,Sandefjord,,False,,932434504,brreg
-HØY,100,MEKLARHUSET SOGN AS,3-15,6,Jan Rune Årøy,,,,Sogndal,,False,,924415606,brreg
-HØY,100,MOLDE EIENDOMSMEGLING AS,3-15,6,Anders Sæternes,93005812,,,Molde,,False,,935768640,brreg
-HØY,100,NAS NÆRINGSMEGLING AS,3-15,6,Rune Svindland,91113401,,,Stavanger,,False,,922183155,brreg
-HØY,100,NORDHORDLAND EIENDOMSMEGLING AS,3-15,6,Magnus André Nilsen,98239622,,,Isdalstø,,False,,926772694,brreg
-HØY,100,NORDMEGLER AS,3-15,6,Artur Johan Holand,92806272,92 80 62 72,,Bodø,,False,,999591450,brreg
-HØY,100,OPPGJØRSPARTNER AS,3-15,6,Siri Kristin Sandøy,98480800,,post@oppgjorspartner.no,Haugesund,www.oppgjorspartner.no,False,,996291413,brreg
-HØY,100,ORKLA EIENDOMSMEGLING AS,3-15,6,Vegar Sommerschild,47247947,,,Orkanger,,False,,913118219,brreg
-HØY,100,PM SANDNES AS,3-15,6,Thomas Heggen,97088003,,,Sandnes,,False,,931028219,brreg
-HØY,100,PROAKTIV GRUPPEN AS,3-15,6,Vibeke Stavenes,93002326,970 59 220,,Bergen,,False,,912404447,brreg
-HØY,100,SANDEFJORD OG ANDEBU EIENDOMSMEGLING AS,3-15,6,Kaia Dahle,,33 43 83 60,,Sandefjord,,False,,996525341,brreg
-HØY,100,SKJØREN & PARTNERS AS,3-15,6,Eivind Braastad,,22 76 28 50,,Oslo,,False,,980929884,brreg
-HØY,100,SMAALENENE EIENDOMSMEGLING AS,3-15,6,Martin Mjørud,92854948,,,Askim,,False,,930560855,brreg
-HØY,100,SPARESKILLINGSMEGLEREN AS,3-15,6,Alex Modahl,,,,Kristiansand S,,False,,934640861,brreg
-HØY,100,STORMFELT & CO AS,3-15,6,Kristoffer Stormfelt,97609113,,,Sandvika,,False,,936649734,brreg
-HØY,100,TROMSØ NÆRINGSMEGLING AS,3-15,6,Ingvild Rinaldo,97583559,77 66 59 40,tromso@tigereiendom.no,Tromsø,www.tigereiendom.no,False,,987665823,brreg
-HØY,100,UTLEIEMEGLEREN ØSTFOLD AS,3-15,6,Helge Hanch-Hansen,99512808,,,Moss,,False,,822070302,brreg
-HØY,100,VERDI EIENDOMSMEGLING STAVANGER AS,3-15,6,Rudi Aadland,95831660,51 51 03 00,rudi.aadland@verdi-eiendom.no,Stavanger,www.verdi-eiendom.no,False,,990691304,brreg
-HØY,100,VESTBO GARANTI SENTRUM AS,3-15,6,Børge Vadset,97090471,55 30 96 00,bergen.sentrum@garanti.no,Bergen,www.garanti.no,False,,999262392,brreg
-HØY,100,ÅLESUND BOLIG OG PROSJEKTMEGLING AS,3-15,6,Jon Kristian Røsok,,,,Ålesund,,False,,826455292,brreg
-HØY,100,ASK LABEL AS,3-15,5,Jonas Nikolai Grimsøen,41268891,,,Oslo,,False,,929239245,brreg
-HØY,100,BOMEGA AS,3-15,5,Veslemøy Fredriksen,97189444,,,Oslo,,False,,931500791,brreg
-HØY,100,DE PRESNO & PARTNERE AS,3-15,5,Leif Christian Presno,47201274,,,Arendal,,False,,991843566,brreg
-HØY,100,FRONTLINE VESTBY EIENDOMSMEGLING AS,3-15,5,Amit Sharma,90736619,,,Vestby,,False,,933479978,brreg
-HØY,100,HADRIAN EIENDOM AS,3-15,5,Atle Øistein Standnes,23177200,22 01 40 40,,Oslo,,False,,976145364,brreg
-HØY,100,HERLEIKSPLASS & PARTNERE AS,3-15,5,Jannike Herleiksplass,,,,Geilo,,False,,923722629,brreg
-HØY,100,HOLMSKAU & PARTNERS AS,3-15,5,Caroline Holmskau,92355340,,,Sarpsborg,,False,,930659096,brreg
-HØY,100,INNLANDET NÆRINGSMEGLING AS,3-15,5,Thomas Heimdal,47706259,,,Lillehammer,,False,,916717717,brreg
-HØY,100,KOLBOTN EIENDOMSMEGLING AS,3-15,5,Kjell Ove Loeshagen,,,,Kolbotn,,False,,819166102,brreg
-HØY,100,MALLING & CO DRAMMEN AS,3-15,5,Petter Berger,48232545,32 21 37 00,pwb@malling.no,Drammen,www.malling.no,False,,965788484,brreg
-HØY,100,MALLING & CO TRONDHEIM AS,3-15,5,Petter Efskin,98644543,,,Trondheim,,False,,935518105,brreg
-HØY,100,MEGLERHUSET SKI AS,3-15,5,Håkon Andresen,93202589,,,Ski,,False,,936229972,brreg
-HØY,100,NORD EIENDOMSMEGLING AS,3-15,5,Bent André Norderhaug,,+4791514822,bent@nord-em.no,Oppegård,www.nordeiendom.no,False,,929451422,brreg
-HØY,100,NORSK EIENDOMSOPPGJØR AS,3-15,5,Mone Knudtzon,93040513,,,Oslo,,False,,924642858,brreg
-HØY,100,NÆRINGSMEGLING VEST AS,3-15,5,Yngve Fløisand,90070500,,,Bergen,,False,,925893919,brreg
-HØY,100,OPPGJØR AS,3-15,5,Ingerid Agate Wiik,92858292,71 40 00 00,oppgjor@notar.no,Kristiansund N,www.notar.no,False,,998185661,brreg
-HØY,100,POLARSIRKELEN EIENDOMSMEGLING AS,3-15,5,Ole Morten Grotnes,95120650,,,Mo I Rana,,False,,931568787,brreg
-HØY,100,REALKAPITAL AS,3-15,5,Peer Christensen,95908552,,,Oslo,,False,,989284533,brreg
-HØY,100,ROMSDAL EIENDOMSMEGLING AS,3-15,5,Frank Anders Fylling,91149707,71 20 04 00,,Molde,www.notar.no,False,,811669202,brreg
-HØY,100,SKOG EIENDOMSMEGLING AS,3-15,5,Silje-Charina Skog,93813008,,,Finnsnes,,False,,926455877,brreg
-HØY,100,STAVANGER EIENDOMSMEGLING AS,3-15,5,Kay Stian Espeland,,,stavanger@proaktiveiendom.no,Stavanger,www.proaktiveiendom.no,False,,813285312,brreg
-HØY,100,UTLEIEMEGLEREN DRAMMEN AS,3-15,5,Mats Larsen,93600380,32 82 77 00,morten.christensen@utleiemegleren.no,Drammen,www.utleiemegleren.no,False,,994734709,brreg
-MIDDELS,60,AKERSHUS EIENDOM AS,30-50,31,Kari Due-Andresen,93001429,22 41 48 00,firmapost@akershus-eiendom.no,Oslo,www.akershus-eiendom.no,True,LiveChat,963877722,brreg
+prioritet,score,firmanavn,segment,antall_ansatte,ansattgruppe,by,nettside,chatbot_kategori,chatbot_navn,kontakt_navn,kontakt_tittel,kontakt_epost,kontakt_telefon,hvorfor_denne,daglig_leder,telefon,epost,orgnr,nettside_kilde,kontakt_kilde
+HØY,95,BENUM & JOHANSEN AS,Bolig,15,3-15 (kjerne),Trondheim,https://benum.no/,ingen,,Guri Istad,Markedsansvarlig,gi@benum.com,,Eier nettsiden og markedsføringen,Stig Johansen,,,912587762,gjettet,nettside
+HØY,95,PULS EIENDOMSMEGLING AS,Bolig,15,3-15 (kjerne),Oslo,https://www.pulseiendom.no/,ingen,,Martin Sellgren,Eier,martin@pulseiendom.no,,Medeier med beslutningsmyndighet,Jens Myhrstad,,,819884382,gjettet,nettside
+HØY,95,JENSSEN & BOLLE EIENDOMSMEGLING AS,Bolig,9,3-15 (kjerne),Narvik,https://www.jenssenogbolle.no/,ingen,,Johnny Bolle,Daglig Leder,jb@megler-forum.no,76 96 79 50,Beslutningstaker i et kontor av denne størrelsen,Johnny Bolle,76 96 79 50,jb@megler-forum.no,984960379,1881,nettside+brreg
+HØY,95,HJEM EIENDOMSMEGLING AS,Bolig,8,3-15 (kjerne),Tromsø,https://www.hjemeiendomsmegling.no/,ingen,,Espen Richardsen,Daglig Leder,espen.richardsen@hjemeiendomsmegling.no,90 06 67 00,Beslutningstaker i et kontor av denne størrelsen,Espen Arnljot Richardsen,90 06 67 00,espen.richardsen@hjemeiendomsmegling.no,990860467,brreg,nettside
+HØY,95,KOBBL EIENDOM AS,Bolig,8,3-15 (kjerne),Kongsvinger,https://www.kobbl.no/,ingen,,Jo Heiki Støve,Eier,jhs@kobbl.no,62 82 37 37,Medeier med beslutningsmyndighet,Jo Heiki Støve,62 82 37 37,jhs@kobbl.no,913136144,gjettet,nettside+brreg
+HØY,95,MOSS EIENDOMSMEGLING AS,Bolig,8,3-15 (kjerne),Moss,https://www.nordvikbolig.no/kontorer/moss,ingen,,Jeanette Hornsletten,Daglig Leder,j.hornsletten@nordvikbolig.no,915 52 939,Beslutningstaker i et kontor av denne størrelsen,Jeanette Hornsletten,915 52 939,j.hornsletten@nordvikbolig.no,832574112,brreg,nettside+brreg
+HØY,95,FOSS & CO EIENDOMSMEGLING AS,Bolig,7,3-15 (kjerne),Kolbotn,https://www.fossco.no/,ingen,,Anders Foss,Daglig Leder,anders.f@fossco.no,66806250,Beslutningstaker i et kontor av denne størrelsen,Christian Ludvig Foss,66806250,kolbn@fossco.no,937205139,gjettet,nettside
+HØY,95,MEKLARHUSET SOGN AS,Bolig,6,3-15 (kjerne),Sogndal,https://meklarhuset.no/,ingen,,Jan Rune,,jan.rune@meklarhuset.no,,,Jan Rune Årøy,,,924415606,gjettet,nettside+brreg
+HØY,95,FOSS & CO VESTBY SON EIENDOMSMEGLING AS,Bolig,5,3-15 (kjerne),Son,https://www.fossco.no/,ingen,,Anders Foss,Daglig Leder,anders.f@fossco.no,64 98 66 88,Beslutningstaker i et kontor av denne størrelsen,Martin Bauer,64 98 66 88,,985496242,brreg,nettside
+HØY,95,SIGNAFIDES EIENDOMSMEGLING AS,Bolig,5,3-15 (kjerne),Indre Arna,https://proaktiv.no/eiendomsmegler/bergen/proaktiv-arna-%C3%A5sane,ingen,,Marius Hagen,Daglig Leder,mh@proaktiv.no,99540596,Beslutningstaker i et kontor av denne størrelsen,Marius Hagen,47 50 69 11,,937230451,brreg,nettside+brreg
+HØY,90,FOLLO EIENDOMSMEGLING AS,Bolig,10,3-15 (kjerne),Ski,https://www.attentuseiendom.no/,ingen,,Anders Borgen,Daglig Leder,ab@attentuseiendom.no,64 91 34 00,Beslutningstaker i et kontor av denne størrelsen,Anders Borgen,64 91 34 00,ab@attentuseiendom.no,991083499,brreg,brreg
+HØY,90,MEGLERHUSET BORG AS,Bolig,10,3-15 (kjerne),Sarpsborg,https://proaktiv.no/,ingen,,Svein Andre Eng,Daglig Leder,svein.eng@proaktiv.no,69 12 60 60,Beslutningstaker i et kontor av denne størrelsen,Svein Andre Eng,69 12 60 60,svein.eng@proaktiv.no,994976192,brreg,brreg
+HØY,90,ASK MØLLER EIENDOMSMEGLING AS,Bolig,7,3-15 (kjerne),Kråkerøy,https://partners.no/,ingen,,Dag Thomas Svendsen,Daglig Leder,dag.thomas@mollerpartners.no,69 36 70 70,Beslutningstaker i et kontor av denne størrelsen,Dag Thomas Svendsen,69 36 70 70,dag.thomas@mollerpartners.no,993828645,brreg,brreg
+HØY,90,ESTATOR EIENDOMSMEGLING AS,Bolig,6,3-15 (kjerne),Ski,https://partners.no/kontor/follo,ingen,,Truls Langaard,Daglig Leder,truls.langaard@partners.no,64 91 18 50,Beslutningstaker i et kontor av denne størrelsen,Truls Langaard,64 91 18 50,truls.langaard@partners.no,987954337,brreg,brreg
+HØY,90,VERDI EIENDOMSMEGLING STAVANGER AS,Bolig,6,3-15 (kjerne),Stavanger,https://proaktiv.no/,ingen,,Rudi Aadland,Daglig Leder,rudi.aadland@verdi-eiendom.no,51 51 03 00,Beslutningstaker i et kontor av denne størrelsen,Rudi Aadland,51 51 03 00,rudi.aadland@verdi-eiendom.no,990691304,gjettet,brreg
+HØY,90,NORD EIENDOMSMEGLING AS,Bolig,5,3-15 (kjerne),Oppegård,https://www.nord.no/,ingen,,Bent André Norderhaug,Daglig Leder,bent@nord-em.no,+4791514822,Beslutningstaker i et kontor av denne størrelsen,Bent André Norderhaug,+4791514822,bent@nord-em.no,929451422,gjettet,brreg
+HØY,85,FREM EIENDOMSMEGLING AS,Bolig,16,16-20 (±5),Sætre,https://fremeiendomsmegling.no/,ingen,,Fred-Ivar Myrseth,Daglig Leder,fred-ivar@fremeiendomsmegling.no,43236326,Beslutningstaker i et kontor av denne størrelsen,Fred Ivar Myrseth,32 79 28 80,,979915772,brreg,nettside
+HØY,85,RØISLAND & CO EIENDOMSMEGLING AS,Bolig,15,3-15 (kjerne),Oslo,https://roislandco.no/,ingen,,Ingrid-Portrett,Markedsansvarlig,,47286042,Eier nettsiden og markedsføringen,Martine Helen Røisland-Leween,21 04 32 32,post@roislandco.no,994194410,brreg,nettside
+HØY,85,MEGLERHUSET RELE HAUGESUND AS,Bolig,14,3-15 (kjerne),Haugesund,https://meglerhuset-rele.no/,ingen,,Marius Kallevik,Daglig Leder,,90222291,Beslutningstaker i et kontor av denne størrelsen,Marius Kallevik,52 73 15 00,post@meglerhuset-rele.no,997175565,brreg,nettside+brreg
+HØY,85,MEKLERIET SØR AS,Bolig,14,3-15 (kjerne),Nesttun,https://www.mekleriet.no/,ingen,,Mekleriet Bergen,Markedssjef,,90749288,Eier nettsiden og markedsføringen,Kim Rene Henne,,,828154842,gjettet,nettside
+HØY,85,REALIA AS,Bolig,14,3-15 (kjerne),Oslo,https://www.firstmovergroup.no/realia,ingen,,Eirik Arnø,Daglig Leder,,23 08 46 00,Beslutningstaker i et kontor av denne størrelsen,Eirik Arnø,23 08 46 00,,977391067,brreg,nettside+brreg
+HØY,85,UNION NORSK NÆRINGSMEGLING AS,Næring,13,3-15 (kjerne),Oslo,https://unioneiendom.no/,ingen,,Torleif Bohmer,Adm.Dir,torleif.bohmer@unioneiendom.no,23 11 69 00,Beslutningstaker i et kontor av denne størrelsen,Jacob Alexander L'orsa,23 11 69 00,post@uniongruppen.no,983466176,gjettet,nettside
+HØY,85,DIALOG EIENDOMSMEGLING AS,Bolig,13,3-15 (kjerne),Drammen,https://www.dialogeiendom.no/,ingen,,Helene Hoven,Daglig Leder,,32203020,Beslutningstaker i et kontor av denne størrelsen,Frode Nyhus,32 20 30 20,frode@dialogeiendom.no,937789416,brreg,nettside
+HØY,85,ROGALAND EIENDOMSMEGLING AS,Bolig,13,3-15 (kjerne),Stavanger,https://eie.no/eiendom/kontorer/eie-stavanger,ingen,,Oddmund Kalleberg,Daglig Leder,,51 90 57 00,Beslutningstaker i et kontor av denne størrelsen,Michael Ruphus Myhre,51 90 57 00,mm@eie.no,991089888,brreg,nettside
+HØY,85,SOLLI & PARTNERE AS,Bolig,13,3-15 (kjerne),Asker,https://www.solli.no/,ingen,,Helse Bergen,Eier,,91 30 00 93,Medeier med beslutningsmyndighet,Carl Fredrik Solli,91 30 00 93,cf.solli@privatmegleren.no,888622152,gjettet,nettside
+HØY,85,NÆRINGSMEGLEREN AS,Næring,12,3-15 (kjerne),Kristiansand S,https://naringsmegleren.no/,ingen,,Unni Mesel,Daglig Leder,unni@naringsmegleren.no,95258037,Beslutningstaker i et kontor av denne størrelsen,Unni Mesel,38 10 44 44,post@naringsmegleren.no,978647316,brreg,nettside+brreg
+HØY,85,MALLING & CO CORPORATE REAL ESTATE AS,Bolig,12,3-15 (kjerne),Oslo,https://malling.no/,ingen,,Helsfyr Panorama,Eier,,24 02 80 00,Medeier med beslutningsmyndighet,Haakon Ødegaard,24 02 80 00,post@mallingco.no,986589066,gjettet,nettside
+HØY,85,SORIA MORIA EIENDOMSMEGLING AS,Bolig,12,3-15 (kjerne),Oslo,https://www.soriamoria.no/,ingen,,Christian Lund Holm,Gründer,,22 15 14 10,Medeier med beslutningsmyndighet,Erling Beck,22 15 14 10,,896306782,gjettet,nettside
+HØY,85,TEGNEBY & GRØNNERØD LANDBRUKSMEGLING AS,Landbruk,11,3-15 (kjerne),Sarpsborg,https://landbruksmegling.no/,ingen,,Henrik Tegneby,Daglig Leder,henrik@landbruksmegling.no,,Beslutningstaker i et kontor av denne størrelsen,Nils Henrik Tegneby,,,821221862,gjettet,nettside+brreg
+HØY,85,VIKEN EIENDOMSMEGLING AS,Bolig,11,3-15 (kjerne),Kongsberg,https://www.vikeneiendom.no/,ingen,,Filip Rasmussen,Markedsfører,,97554900,Eier nettsiden og markedsføringen,Torgrim Yli,97554900,kongsberg@aktiv. no,987548177,gjettet,nettside
+HØY,85,ØSTBØ & KALDHEIM EIENDOMSMEGLING AS,Bolig,11,3-15 (kjerne),Haugesund,https://ostbo.no/,ingen,,Digital Markedsfører,Markedsfører,,,Eier nettsiden og markedsføringen,Leiv Helge Kaldheim,,,922936382,gjettet,nettside
+HØY,85,MALLING & CO VÅGEN AS,Bolig,10,3-15 (kjerne),Stavanger,https://malling.no/,ingen,,Helsfyr Panorama,Eier,,51 52 51 00,Medeier med beslutningsmyndighet,Kenneth Habbestad,51 52 51 00,post@malling.no,914352657,brreg,nettside
+HØY,85,VINDEREN EIENDOMSMEGLING AS,Bolig,10,3-15 (kjerne),Oslo,https://www.vinderenbolig.no/,ingen,,Einar Parnemann,Daglig Leder,,22 13 55 00,Beslutningstaker i et kontor av denne størrelsen,Charlotte Engdal,22 13 55 00,,889665742,gjettet,nettside
+HØY,85,BEST EIENDOMSMEGLER AS,Bolig,9,3-15 (kjerne),Skien,https://bestmegler.no/,ingen,,Bjørn Johnson,Daglig Leder,,35 54 20 00,Beslutningstaker i et kontor av denne størrelsen,Bjørn Johnson,35 54 20 00,post@bestmegler.no,912316831,brreg,nettside+brreg
+HØY,85,MIDTBYEN EIENDOMSMEGLING AS,Bolig,9,3-15 (kjerne),Trondheim,https://www.nordvikbolig.no/kontorer/trondheim,ingen,,Thomas Kvålsvoll,Daglig Leder,,906 56 880,Beslutningstaker i et kontor av denne størrelsen,Thomas Kvålsvoll,906 56 880,trondheim@nordvikbolig.no,932871742,brreg,nettside+brreg
+HØY,85,Z MEGLEREN AS,Bolig,8,3-15 (kjerne),Bergen,https://zmegleren.no/,ingen,,Dag Jonny Johannessen,Partner,,,Medeier med beslutningsmyndighet,Dag Jonny Johannessen,,,921171846,gjettet,nettside+brreg
+HØY,85,ENKLERE UTLEIE AS,Utleie,7,3-15 (kjerne),Oslo,https://enklereutleie.no/,ingen,,Hans Johansson,Daglig Leder,hans@enklereutleie.no,,Beslutningstaker i et kontor av denne størrelsen,Hans Lennart Johansson,,,916909896,gjettet,nettside
+HØY,85,BUSKERUD NÆRINGSMEGLING AS,Næring,6,3-15 (kjerne),Drammen,https://www.bnm.no/,ingen,,Fredrik Smedaas,Partner,fs@bnm.no,32 25 40 50,Medeier med beslutningsmyndighet,Fredrik Andreas Haaning,32 25 40 50,post@bnm.no,980921611,brreg,nettside
+HØY,85,TROMSØ NÆRINGSMEGLING AS,Næring,6,3-15 (kjerne),Tromsø,https://www.tigereiendom.no/,ingen,,Ingvild Rinaldo,Daglig Leder,ir@tigereiendom.no,77665940,Beslutningstaker i et kontor av denne størrelsen,Ingvild Rinaldo,77 66 59 40,tromso@tigereiendom.no,987665823,brreg,nettside+brreg
+HØY,85,ADVANTI & PARTNERS ALTA AS,Bolig,6,3-15 (kjerne),Alta,https://www.advanti.no/,Live-chat (menneske),Crisp,Daniel Andre Adamsen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Daniel Andre Adamsen,,,924546840,gjettet,brreg
+HØY,85,KRAGSET & PARTNERS AS,Bolig,6,3-15 (kjerne),Volda,https://partners.no/kontor/volda?tab=information,ingen,,Søre Sunnmøre,Partner,,,Medeier med beslutningsmyndighet,Jonny Dagfinn Kragset,,,931000403,gjettet,nettside
+HØY,85,LEGAL EIGEDOMSMEKLING AS,Bolig,6,3-15 (kjerne),Ørsta,https://legaleigedom.no/,ingen,,Thomas Lundberg,Partner,,,Medeier med beslutningsmyndighet,Thomas Lundberg,,,927305593,1881,nettside+brreg
+HØY,85,MEGLERHUSET RELE KARMØY AS,Bolig,6,3-15 (kjerne),Kopervik,https://meglerhuset-rele.no/,ingen,,Stein Gunnar Døsen,Daglig Leder,,20230605,Beslutningstaker i et kontor av denne størrelsen,Stein Gunnar Døsen,,,924420065,gjettet,nettside+brreg
+HØY,85,NORDMEGLER AS,Bolig,6,3-15 (kjerne),Bodø,https://nordmegler.no/,ingen,,Daglig Leder,Daglig Leder,,92 80 62 72,Beslutningstaker i et kontor av denne størrelsen,Artur Johan Holand,92 80 62 72,,999591450,gjettet,nettside
+HØY,85,VESTBO GARANTI SENTRUM AS,Bolig,6,3-15 (kjerne),Bergen,https://garanti.no/,ingen,,Øystein Johannesen,Markedssjef,,55 30 96 00,Eier nettsiden og markedsføringen,Børge Vadset,55 30 96 00,bergen.sentrum@garanti.no,999262392,brreg,nettside
+HØY,85,INNLANDET NÆRINGSMEGLING AS,Næring,5,3-15 (kjerne),Lillehammer,https://innlandetnm.no/,ingen,,Thomas Heimdal,Daglig Leder,thomas@innlandetnm.no,,Beslutningstaker i et kontor av denne størrelsen,Thomas Heimdal,,,916717717,1881,nettside+brreg
+HØY,85,HOLMSKAU & PARTNERS AS,Bolig,5,3-15 (kjerne),Sarpsborg,https://www.holmskau.no/,ingen,,Theodor Zakariassen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Caroline Holmskau,,,930659096,gjettet,nettside
+HØY,85,MALLING & CO TRONDHEIM AS,Bolig,5,3-15 (kjerne),Trondheim,https://malling.no/,ingen,,Helsfyr Panorama,Eier,,,Medeier med beslutningsmyndighet,Petter Efskin,,,935518105,gjettet,nettside
+HØY,80,EMERA NO1 AS,Bolig,13,3-15 (kjerne),Oslo,https://emeraeiendomsmegling.no/,ingen,,Joakim Francis Johansson-Merrick,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Joakim Francis Johansson-Merrick,,,934963385,gjettet,brreg
+HØY,80,AURE & VALSKAAR AS,Bolig,12,3-15 (kjerne),Lillestrøm,https://www.aure.kommune.no/,ingen,,Stig Valskaar,Daglig Leder,,63 80 59 90,Beslutningstaker i et kontor av denne størrelsen,Stig Valskaar,63 80 59 90,petter.aure@postbanken.no,980132455,gjettet,brreg
+HØY,80,BAKKE SØRVIK & PARTNERS AS,Bolig,12,3-15 (kjerne),Tønsberg,https://partners.no/kontor/tonsberg,ingen,,Jens Roland Pettersen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Jens Roland Pettersen,,,916959478,1881,brreg
+HØY,80,SCHALA & PARTNERS AVD SAGENE AS,Bolig,12,3-15 (kjerne),Oslo,https://partners.no/partner/schala,ingen,,Erik Danielsen,Daglig Leder,,90 02 93 57,Beslutningstaker i et kontor av denne størrelsen,Erik Danielsen,90 02 93 57,bt@schalapartners.no,914983401,gjettet,brreg
+HØY,80,BOLIGMEGLEREN STRAY AS,Bolig,11,3-15 (kjerne),Kristiansand S,https://boligmegleren.no/,ingen,,Leif Christian Stray,Daglig Leder,,32 02 91 40,Beslutningstaker i et kontor av denne størrelsen,Leif Christian Stray,32 02 91 40,,984656610,1881,brreg
+HØY,80,LOKALMEGLEREN NT AS,Bolig,11,3-15 (kjerne),Levanger,https://partners.no/partner/lokalmegleren,ingen,,Jan Martin Dahlen,Daglig Leder,,93 43 63 00,Beslutningstaker i et kontor av denne størrelsen,Jan Martin Dahlen,93 43 63 00,levanger@partners.no,996956512,brreg,brreg
+HØY,80,MEGLERHUSET & PARTNERS DRAMMEN AS,Bolig,11,3-15 (kjerne),Drammen,https://partners.no/,ingen,,Øystein Liverud,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Øystein Liverud,,,914888026,1881,brreg
+HØY,80,BERGEN SØR EIENDOMSMEGLING AS,Bolig,10,3-15 (kjerne),Nesttun,https://www.bergeneiendom.no/,ingen,,Lene Hærum,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Lene Hærum,,,936982581,gjettet,brreg
+HØY,80,EIENDOMSMEGLER NORD AS,Bolig,10,3-15 (kjerne),Bodø,https://www.nord.no/,ingen,,Tobias Janaka Bronder,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Tobias Janaka Bronder,,,927102234,gjettet,brreg
+HØY,80,NIDAROS - EIENDOMSMEGLING AS,Bolig,10,3-15 (kjerne),Heimdal,https://www.nidaros.no/,ingen,,Andreas Lund,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Andreas Lund,,,930815551,gjettet,brreg
+HØY,80,NIDAROS - EIENDOMSMEGLING SENTRUM AS,Bolig,10,3-15 (kjerne),Trondheim,https://www.nidaros.no/,ingen,,Andreas Lund,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Andreas Lund,,,831699132,gjettet,brreg
+HØY,80,PROAKTIV EIENDOMSMEGLING AS,Bolig,10,3-15 (kjerne),Bergen,https://proaktiv.no/,ingen,,Brynjulf Hardang,Daglig Leder,,55 36 40 40,Beslutningstaker i et kontor av denne størrelsen,Brynjulf Hardang,55 36 40 40,,987281790,gjettet,brreg
+HØY,80,PROAKTIV PROPERTIES AS,Bolig,9,3-15 (kjerne),Oslo,https://proaktiv.no/,ingen,,Caroline Ask,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Caroline Ask,,,917473714,gjettet,brreg
+HØY,80,STAVANGER EIENDOMSFORMIDLING AS,Bolig,9,3-15 (kjerne),Stavanger,https://notar.no/,ingen,,Svein Magnus Melgaard,Daglig Leder,,51 84 98 00,Beslutningstaker i et kontor av denne størrelsen,Svein Magnus Melgaard,51 84 98 00,,989418475,brreg,brreg
+HØY,80,STRØMMEN EIENDOMSMEGLING AS,Bolig,9,3-15 (kjerne),Strømmen,https://notar.no/,ingen,,Thomas Madsen,Daglig Leder,,63 81 70 00,Beslutningstaker i et kontor av denne størrelsen,Thomas Madsen,63 81 70 00,romerike@notar.no,912307301,brreg,brreg
+HØY,80,SØRE SUNNMØRE EIENDOMSMEGLING AS,Bolig,9,3-15 (kjerne),Ulsteinvik,https://notar.no/,ingen,,Kristin Husøy,Daglig Leder,,71 40 00 00,Beslutningstaker i et kontor av denne størrelsen,Kristin Husøy,71 40 00 00,,984144938,brreg,brreg
+HØY,80,TRONDHEIM SYD EIENDOM AS,Bolig,9,3-15 (kjerne),Heimdal,https://proaktiv.no/,ingen,,Arvid Johansen,Daglig Leder,,72 59 92 40,Beslutningstaker i et kontor av denne størrelsen,Arvid Johansen,72 59 92 40,ed@proa.no,989716816,brreg,brreg
+HØY,80,MEGLERHUSET & PARTNERS AS,Bolig,8,3-15 (kjerne),Arendal,https://partners.no/kontor/arendal,ingen,,Glenn Johnny Olsen,Daglig Leder,,37 00 26 30,Beslutningstaker i et kontor av denne størrelsen,Glenn Johnny Olsen,37 00 26 30,post@arendalpartners.no,980872424,1881,brreg
+HØY,80,OSLO EIENDOMSMEGLING AS,Bolig,8,3-15 (kjerne),Oslo,https://notar.no/,ingen,,,,,22 22 50 20,,,22 22 50 20,oslo@notar.no,914361370,brreg,
+HØY,80,BOA EIENDOMSMEGLING OSLO VEST AS,Bolig,7,3-15 (kjerne),Oslo,https://www.boaeiendom.no/,ingen,,Bulent Yildirim,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Bulent Yildirim,,,913439880,brreg,brreg
+HØY,80,BOLIGMEGLEREN AS,Bolig,7,3-15 (kjerne),Kristiansand S,https://boligmegleren.no/,ingen,,Egil Emil Horgen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Egil Emil Horgen,,,919916753,gjettet,brreg
+HØY,80,"EDLAND, MANNES & REGE AS",Bolig,7,3-15 (kjerne),Sandnes,https://proaktiv.no/,ingen,,Torbjørn Johansen,Daglig Leder,,51 66 88 00,Beslutningstaker i et kontor av denne størrelsen,Torbjørn Johansen,51 66 88 00,sandnes@proaktiv.no,920839878,brreg,brreg
+HØY,80,PROAKTIV VOSS EIENDOMSMEGLING AS,Bolig,7,3-15 (kjerne),Voss,https://proaktiv.no/,ingen,,Rakel Søvik,Daglig Leder,,56 52 19 50,Beslutningstaker i et kontor av denne størrelsen,Rakel Søvik,56 52 19 50,voss@aktiveiendom.no,993971804,gjettet,brreg
+HØY,80,STAVLUND AS,Bolig,7,3-15 (kjerne),Fredrikstad,https://stavlund.no/,ingen,,Gunnar Olai Stavlund,Daglig Leder,,69 30 24 50,Beslutningstaker i et kontor av denne størrelsen,Gunnar Olai Stavlund,69 30 24 50,fredrikstad@stavlund.no,983261523,brreg,brreg
+HØY,80,SUNNMØRE EIENDOMSMEGLING AS,Bolig,7,3-15 (kjerne),Ålesund,https://notar.no/,ingen,,Ole Christian Walderhaug,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Ole Christian Walderhaug,,,990199817,brreg,brreg
+HØY,80,VERDI EIENDOMSMEGLING SANDNES AS,Bolig,7,3-15 (kjerne),Sandnes,https://proaktiv.no/,ingen,,Knut Richard Stjern,Daglig Leder,,51 60 82 00,Beslutningstaker i et kontor av denne størrelsen,Knut Richard Stjern,51 60 82 00,,993473596,gjettet,brreg
+HØY,80,EMERA NORGE AS,Bolig,6,3-15 (kjerne),Oslo,https://emeraeiendomsmegling.no/,ingen,,Sveinung Solberg,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Sveinung Solberg,,,834963442,gjettet,brreg
+HØY,80,PROAKTIV GRUPPEN AS,Bolig,6,3-15 (kjerne),Bergen,https://proaktiv.no/,ingen,,Vibeke Stavenes,Daglig Leder,,970 59 220,Beslutningstaker i et kontor av denne størrelsen,Vibeke Stavenes,970 59 220,,912404447,gjettet,brreg
+HØY,80,ROMSDAL EIENDOMSMEGLING AS,Bolig,6,3-15 (kjerne),Molde,https://notar.no/,ingen,,Frank Anders Fylling,Daglig Leder,,71 20 04 00,Beslutningstaker i et kontor av denne størrelsen,Frank Anders Fylling,71 20 04 00,,811669202,brreg,brreg
+HØY,80,SMAALENENE EIENDOMSMEGLING AS,Bolig,6,3-15 (kjerne),Askim,https://www.smaalenene.no/,ingen,,Martin Mjørud,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Martin Mjørud,,,930560855,gjettet,brreg
+HØY,80,SPARESKILLINGSMEGLEREN AS,Bolig,6,3-15 (kjerne),Kristiansand S,https://www.spareskillingsmegleren.no/,ingen,,Alex Modahl,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Alex Modahl,,,934640861,gjettet,brreg
+HØY,80,LØRENSKOG EIENDOMSMEGLING AS,Bolig,5,3-15 (kjerne),Lørenskog,https://proaktiv.no/,ingen,,Truls Erik Hauge,Daglig Leder,,67 90 40 10,Beslutningstaker i et kontor av denne størrelsen,Truls Erik Hauge,67 90 40 10,th@proaktiv.no,984607865,brreg,brreg
+HØY,80,PARTNERS EIENDOMSMEGLING STORFJORD AS,Bolig,5,3-15 (kjerne),Sykkylven,https://partners.no/,ingen,,Espen Garli,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Espen Garli,,,916746210,gjettet,brreg
+HØY,80,REALKAPITAL AS,Bolig,5,3-15 (kjerne),Oslo,https://www.realkapital.no/,ingen,,Peer Christensen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Peer Christensen,,,989284533,gjettet,brreg
+HØY,80,STAVANGER EIENDOMSMEGLING AS,Bolig,5,3-15 (kjerne),Stavanger,https://proaktiv.no/,ingen,,Kay Stian Espeland,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Kay Stian Espeland,,stavanger@proaktiveiendom.no,813285312,brreg,brreg
+MIDDELS,75,LANDKREDITT EIENDOM AS,Bolig,19,16-20 (±5),Oslo,https://www.landkreditt.no/,ingen,,Landkreditt Høyrente,Eier,,,Medeier med beslutningsmyndighet,Ole-Anders Midtskog,,,912641066,gjettet,nettside
+MIDDELS,75,MALLING & CO LEIETAKERRÅDGIVNING AS,Bolig,19,16-20 (±5),Oslo,https://malling.no/,ingen,,Helsfyr Panorama,Eier,,24 02 80 00,Medeier med beslutningsmyndighet,Oluf Magnus Geheb,24 02 80 00,post@mallingco.no,992731621,gjettet,nettside
+MIDDELS,75,MEGLERGAARDEN AS,Bolig,16,16-20 (±5),Moss,https://askeiendomsmegling.no/meglergaarden/,ingen,,Tommy Skovly,Daglig Leder,,69 20 25 50,Beslutningstaker i et kontor av denne størrelsen,Tommy Skovly,69 20 25 50,post@meglergaarden.no,987708204,gjettet,nettside+brreg
+MIDDELS,75,MALLING & CO NÆRINGSMEGLING AS,Næring,14,3-15 (kjerne),Oslo,https://malling.no/,ingen,,Helsfyr Panorama,Eier,,24 02 80 00,Medeier med beslutningsmyndighet,Lars Simen Paulgaard,24 02 80 00,post@mallingco.no,979216041,gjettet,nettside
+MIDDELS,75,MEGLEROPPGJØRET AS,Oppgjør,14,3-15 (kjerne),Tønsberg,https://megleroppgjoret.no/,ingen,,Siri Graf Stenberg,Daglig Leder,,33 33 20 00,Beslutningstaker i et kontor av denne størrelsen,Elisabeth Valvatne,33 33 20 00,post@megleroppgjoret.no,992767022,brreg,nettside
+MIDDELS,75,METRA NÆRINGSMEGLING AS,Næring,13,3-15 (kjerne),Moss,https://www.metra.no/,ingen,,Odd Groth,Daglig Leder,,69 27 89 00,Beslutningstaker i et kontor av denne størrelsen,Odd Oskar Groth,69 27 89 00,post@metra.no,986357467,brreg,nettside
+MIDDELS,75,UTLEIEMEGLEREN LILLESTRØM AS,Utleie,13,3-15 (kjerne),Lillestrøm,https://www.utleiemegleren.no/,ingen,,Kristina Diserud,Markedsansvarlig,,64 84 70 50,Eier nettsiden og markedsføringen,Tom Anders Andersen,64 84 70 50,romerike@utleiemegleren.no,981930762,brreg,nettside
+MIDDELS,75,UTLEIEMEGLEREN FROGNER AS,Utleie,12,3-15 (kjerne),Oslo,https://www.utleiemegleren.no/,ingen,,Kristina Diserud,Markedsansvarlig,,21 93 13 00,Eier nettsiden og markedsføringen,Anne Cecilie Isaksen,21 93 13 00,frogner@utleiemegleren.no,982974852,gjettet,nettside
+MIDDELS,75,UTLEIEMEGLEREN STAVANGER AS,Utleie,12,3-15 (kjerne),Stavanger,https://www.utleiemegleren.no/,ingen,,Kristina Diserud,Markedsansvarlig,,51 50 11 20,Eier nettsiden og markedsføringen,Magnus Fjell,51 50 11 20,stavanger@utleiemegleren.no,988915076,brreg,nettside
+MIDDELS,75,UTLEIEMEGLEREN ASKER OG BÆRUM AS,Utleie,11,3-15 (kjerne),Lysaker,https://www.utleiemegleren.no/,ingen,,Kristina Diserud,Markedsansvarlig,,,Eier nettsiden og markedsføringen,Mats Larsen,,,992876913,gjettet,nettside
+MIDDELS,75,UTLEIEMEGLEREN MAJORSTUEN AS,Utleie,11,3-15 (kjerne),Oslo,https://www.utleiemegleren.no/,ingen,,Kristina Diserud,Markedsansvarlig,,22 93 29 00,Eier nettsiden og markedsføringen,Tom Fjalestad,22 93 29 00,chriss@utleiemegleren.no,975821846,brreg,nettside
+MIDDELS,75,UTLEIEMEGLEREN SINSEN AS,Utleie,11,3-15 (kjerne),Oslo,https://www.utleiemegleren.no/,ingen,,Kristina Diserud,Markedsansvarlig,,,Eier nettsiden og markedsføringen,Marianne Wallin,,,992876999,gjettet,nettside
+MIDDELS,75,UTLEIEMEGLEREN TRONDHEIM SENTRUM AS,Utleie,11,3-15 (kjerne),Trondheim,https://www.utleiemegleren.no/,ingen,,Kristina Diserud,Markedsansvarlig,,73 84 13 00,Eier nettsiden og markedsføringen,Solveig Moan,73 84 13 00,trondheim@utleiemegleren.no,988861472,brreg,nettside
+MIDDELS,75,UTLEIEMEGLEREN BERGEN SENTRUM AS,Utleie,10,3-15 (kjerne),Bergen,https://www.utleiemegleren.no/,ingen,,Kristina Diserud,Markedsansvarlig,,55 21 21 10,Eier nettsiden og markedsføringen,Eirik Hove,55 21 21 10,bergen@utleiemegleren.no,988914983,brreg,nettside
+MIDDELS,75,UTLEIEMEGLEREN GRØNLAND OG BJØRVIKA AS,Utleie,10,3-15 (kjerne),Oslo,https://www.utleiemegleren.no/,ingen,,Kristina Diserud,Markedsansvarlig,,,Eier nettsiden og markedsføringen,Henrik Jansson,,,992876883,gjettet,nettside
+MIDDELS,75,M3 UTLEIE AS,Utleie,9,3-15 (kjerne),Oslo,https://www.m3utleie.no/,ingen,,Philip Granhaug,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Morten Granhaug,,morten@m3utleie.no,914165024,brreg,nettside
+MIDDELS,75,UTLEIEMEGLEREN NYDALEN AS,Utleie,9,3-15 (kjerne),Oslo,https://www.utleiemegleren.no/,ingen,,Kristina Diserud,Markedsansvarlig,,,Eier nettsiden og markedsføringen,Marianne Wallin,,,925705519,gjettet,nettside
+MIDDELS,75,TRYGT OPPGJØR AS,Oppgjør,8,3-15 (kjerne),Oslo,https://trygtoppgjor.no/,ingen,,John Herman,Eiendomsmegler,,22 08 08 01,Megler,Kristine Platou,22 08 08 01,post@trygtoppgjor.no,914990483,brreg,nettside
+MIDDELS,75,LINK BOLIGUTLEIE STAVANGER AS,Utleie,7,3-15 (kjerne),Stavanger,https://linkutleie.no/,ingen,,Anna Sæterdal,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Anna Sæterdal,,,931222198,gjettet,nettside+brreg
+MIDDELS,75,SNE UTLEIE AS,Utleie,7,3-15 (kjerne),Tromsø,https://sneutleie.no/,ingen,,Kenneth Hermann Alexandre,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Kenneth Hermann Alexandre,,,921542186,gjettet,nettside+brreg
+MIDDELS,75,UTLEIEMEGLEREN PRO AS,Utleie,6,3-15 (kjerne),Oslo,https://www.utleiemegleren.no/,ingen,,Kristina Diserud,Markedsansvarlig,,,Eier nettsiden og markedsføringen,Kjetil Jacobsen,,,914748569,gjettet,nettside
+MIDDELS,75,UTLEIEMEGLEREN VESTFOLD AS,Utleie,6,3-15 (kjerne),Sandefjord,https://www.utleiemegleren.no/,ingen,,Kristina Diserud,Markedsansvarlig,,004791572638,Eier nettsiden og markedsføringen,Kaia Annabeth Østberg,004791572638,karsten.olsen@utleiemegleren.no,923855556,brreg,nettside
+MIDDELS,75,UTLEIEMEGLEREN ØSTFOLD AS,Utleie,6,3-15 (kjerne),Moss,https://www.utleiemegleren.no/,ingen,,Kristina Diserud,Markedsansvarlig,,,Eier nettsiden og markedsføringen,Helge Hanch-Hansen,,,822070302,gjettet,nettside
+MIDDELS,75,UTLEIEMEGLEREN DRAMMEN AS,Utleie,5,3-15 (kjerne),Drammen,https://www.utleiemegleren.no/,ingen,,Kristina Diserud,Markedsansvarlig,,32 82 77 00,Eier nettsiden og markedsføringen,Mats Larsen,32 82 77 00,morten.christensen@utleiemegleren.no,994734709,brreg,nettside
+MIDDELS,70,MEKLERIET AS,Bolig,19,16-20 (±5),Bergen,https://eie.no/,ingen,,Morten Framnes,Daglig Leder,,53 51 98 80,Beslutningstaker i et kontor av denne størrelsen,Morten Framnes,53 51 98 80,mif@eie.no,917989338,brreg,brreg
+MIDDELS,70,BERGEN VEST EIENDOMSMEGLING AS,Bolig,18,16-20 (±5),Loddefjord,https://www.bergeneiendom.no/,ingen,,Susanne Pettersen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Susanne Pettersen,,,829235722,gjettet,brreg
+MIDDELS,70,PACTA EIENDOM AS,Bolig,18,16-20 (±5),Trondheim,https://proaktiv.no/,ingen,,Tore Resell,Daglig Leder,,73 99 22 55,Beslutningstaker i et kontor av denne størrelsen,Tore Resell,73 99 22 55,trondheim@proaktiv.no,983374654,brreg,brreg
+MIDDELS,70,GRÜNERLØKKA EIENDOMSMEGLING AS,Bolig,17,16-20 (±5),Oslo,https://partners.no/partner/schala,ingen,,Linus Juell-Florival,Daglig Leder,,22 04 08 40,Beslutningstaker i et kontor av denne størrelsen,Linus Juell-Florival,22 04 08 40,bt@schalapartners.no,987648287,brreg,brreg
+MIDDELS,70,EMERA NO2 AS,Bolig,16,16-20 (±5),Oslo,https://emeraeiendomsmegling.no/,ingen,,Milad Alexander Sabori,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Milad Alexander Sabori,,,934963407,gjettet,brreg
+MIDDELS,70,NORDVIK BOLIG AS,Bolig,16,16-20 (±5),Oslo,https://www.nordvikbolig.no/,ingen,,Martin Kiligitto,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Martin Kiligitto,,,928879216,gjettet,brreg
+MIDDELS,70,NOROPPGJØR AS,Oppgjør,14,3-15 (kjerne),Oslo,https://noroppgjor.no/,ingen,,Ngoc Mai Phan,Daglig Leder,,22 70 15 80,Beslutningstaker i et kontor av denne størrelsen,Ngoc Mai Phan,22 70 15 80,,986956204,brreg,brreg
+MIDDELS,70,OPPGJØRSPARTNER AS,Oppgjør,7,3-15 (kjerne),Haugesund,https://www.oppgjorspartner.no/,ingen,,Siri Kristin Sandøy,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Siri Kristin Sandøy,,post@oppgjorspartner.no,996291413,brreg,brreg
+MIDDELS,70,REAL NÆRINGSMEGLING AS,Næring,7,3-15 (kjerne),Skjetten,https://real.no/,ingen,,Eivind Aursøy,Daglig Leder,,67 91 76 55,Beslutningstaker i et kontor av denne størrelsen,Eivind Aursøy,67 91 76 55,firmapost@real.no,947872931,brreg,brreg
+MIDDELS,70,OPPGJØR AS,Oppgjør,5,3-15 (kjerne),Kristiansund N,https://notar.no/,ingen,,Ingerid Agate Wiik,Daglig Leder,,71 40 00 00,Beslutningstaker i et kontor av denne størrelsen,Ingerid Agate Wiik,71 40 00 00,oppgjor@notar.no,998185661,brreg,brreg
+MIDDELS,65,SEM & JOHNSEN OPPGJØR OG ADMINISTRASJON AS,Oppgjør,18,16-20 (±5),Oslo,https://www.sem-johnsen.no/,ingen,,Pareto Bank,Partner,,22 83 22 00,Medeier med beslutningsmyndighet,Christian Sunde,22 83 22 00,oppgjor@sem-johnsen.no,999638996,brreg,nettside
+MIDDELS,65,TELEMARKSMEGLEREN AS,Bolig,11,3-15 (kjerne),Kragerø,,ukjent (fant ikke nettside),,Ronny Jørstad,Daglig Leder,rj@terraeiendom.no,35 98 68 18,Beslutningstaker i et kontor av denne størrelsen,Ronny Jørstad,35 98 68 18,rj@terraeiendom.no,985420785,,brreg
+MIDDELS,65,BG30 EIENDOMSMEGLING AS,Bolig,10,3-15 (kjerne),Fjellhamar,,ukjent (fant ikke nettside),,Daniel Andersson,Daglig Leder,d.andersson@nordvikbolig.no,995 81 339,Beslutningstaker i et kontor av denne størrelsen,Daniel Andersson,995 81 339,d.andersson@nordvikbolig.no,919945958,,brreg
+MIDDELS,65,BOA EIENDOMSMEGLING NORDSTRAND AS,Bolig,10,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Tommy Stensrud,Daglig Leder,stensrud@boaeiendom.no,,Beslutningstaker i et kontor av denne størrelsen,Tommy Stensrud,,stensrud@boaeiendom.no,994524941,,brreg
+MIDDELS,65,OPPEGÅRD EIENDOMSMEGLING AS,Bolig,8,3-15 (kjerne),Kolbotn,,ukjent (fant ikke nettside),,Stig Ivar Reklev,Daglig Leder,stig@privatmegleren.no,67 20 47 50,Beslutningstaker i et kontor av denne størrelsen,Stig Ivar Reklev,67 20 47 50,stig@privatmegleren.no,996459179,,brreg
+MIDDELS,55,SYD EIENDOMSMEGLING AS,Bolig,17,16-20 (±5),Nesttun,,ukjent (fant ikke nettside),,Roar Nylund,Daglig Leder,roar.nylund@privatmegleren.no,55 00 30 00,Beslutningstaker i et kontor av denne størrelsen,Roar Nylund,55 00 30 00,roar.nylund@privatmegleren.no,913019695,,brreg
+MIDDELS,55,FRONTLINE GRÜNERLØKKA EIENDOMSMEGLING AS,Bolig,15,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Amit Sharma,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Amit Sharma,,,916335466,,brreg
+MIDDELS,55,LØRENSKOGMEGLEREN AS,Bolig,15,3-15 (kjerne),Lørenskog,,ukjent (fant ikke nettside),,Christer Langstrand,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Christer Langstrand,,,929031334,,brreg
+MIDDELS,55,SØRLANDSMEGLEREN SÆDBERG OG LIAN AS,Bolig,15,3-15 (kjerne),Kristiansand S,,ukjent (fant ikke nettside),,Svein Lian,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Svein Lian,,,994698559,,brreg
+MIDDELS,55,ØVRE ROMERIKE EIENDOMSMEGLING AS,Bolig,15,3-15 (kjerne),Jessheim,,ukjent (fant ikke nettside),,Henrik Drabløs,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Henrik Drabløs,,,826962992,,brreg
+MIDDELS,55,ASK BERGEN AS,Bolig,14,3-15 (kjerne),Bergen,,ukjent (fant ikke nettside),,Charlotte Kleven,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Charlotte Kleven,,,932177331,,brreg
+MIDDELS,55,ASK EIENDOMSMEGLING SARPSBORG AS,Bolig,14,3-15 (kjerne),Sarpsborg,,ukjent (fant ikke nettside),,Heine Kristoffer Aas,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Heine Kristoffer Aas,,,926501097,,brreg
+MIDDELS,55,BERGBY EIENDOMSMEGLING AS,Bolig,14,3-15 (kjerne),Bergen,,ukjent (fant ikke nettside),,Fabian Haukedal,Daglig Leder,,466 36 255,Beslutningstaker i et kontor av denne størrelsen,Fabian Haukedal,466 36 255,,935096219,,brreg
+MIDDELS,55,BVB EIENDOMSMEGLING AS,Bolig,14,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Bendik Hall Blumenthal,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Bendik Hall Blumenthal,,,917427925,,brreg
+MIDDELS,55,GABRIELSEN & PARTNERS FROGNER AS,Bolig,14,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Martin Helman Ommundsen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Martin Helman Ommundsen,,,912814017,,brreg
+MIDDELS,55,NOVUM EIENDOMSMEGLING AS,Bolig,14,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Petter Haavi,Daglig Leder,,22 30 18 00,Beslutningstaker i et kontor av denne størrelsen,Petter Haavi,22 30 18 00,maria@homeeiendom.no,990224463,,brreg
+MIDDELS,55,SØRVEST EIENDOMSMEGLING AS,Bolig,14,3-15 (kjerne),Stavanger,,ukjent (fant ikke nettside),,Carl-Åge Herrem,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Carl-Åge Herrem,,,933480879,,brreg
+MIDDELS,55,CHRISTIANIA EIENDOMSMEGLING AS,Bolig,13,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Sylvia Post,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Sylvia Post,,,924831332,,brreg
+MIDDELS,55,DRAMMEN EIENDOMSMEGLING AS,Bolig,13,3-15 (kjerne),Drammen,,ukjent (fant ikke nettside),,Christian Udgaard,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Christian Udgaard,,,921442564,,brreg
+MIDDELS,55,FREMTIDEN EIENDOMSMEGLING AS,Bolig,13,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Tormod Samuelsen,Daglig Leder,,23 08 07 00,Beslutningstaker i et kontor av denne størrelsen,Tormod Samuelsen,23 08 07 00,,982253896,,brreg
+MIDDELS,55,HAFERKAMP & PARTNERE AS,Bolig,13,3-15 (kjerne),Stavanger,,ukjent (fant ikke nettside),,Stine Haferkamp,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Stine Haferkamp,,,917705631,,brreg
+MIDDELS,55,LØREN OG ØKERN EIENDOMSMEGLING AS,Bolig,13,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Jon Solberg,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Jon Solberg,,,916510845,,brreg
+MIDDELS,55,MEGLERHUSET ROMERIKE AS,Bolig,13,3-15 (kjerne),Kjeller,,ukjent (fant ikke nettside),,Torje Slettli,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Torje Slettli,,,936357660,,brreg
+MIDDELS,55,TJUVHOLMEN EIENDOMSMEGLING AS,Bolig,13,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Dag-Rune Kristiansen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Dag-Rune Kristiansen,,,921176333,,brreg
+MIDDELS,55,ATRIUM EIENDOMSMEGLING AS,Bolig,12,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Erik Ilseng,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Erik Ilseng,,,933326020,,brreg
+MIDDELS,55,BRUSTAD & PARTNERE AS,Bolig,12,3-15 (kjerne),Jessheim,,ukjent (fant ikke nettside),,Kåre André Brustad,Daglig Leder,,63 97 61 00,Beslutningstaker i et kontor av denne størrelsen,Kåre André Brustad,63 97 61 00,,996534235,,brreg
+MIDDELS,55,EIENDOMSMEGLER MOSS AS,Bolig,12,3-15 (kjerne),Moss,,ukjent (fant ikke nettside),,Eirik Reinnel,Daglig Leder,,69 70 01 00,Beslutningstaker i et kontor av denne størrelsen,Eirik Reinnel,69 70 01 00,,995730359,,brreg
+MIDDELS,55,FRONTLINE FOLLO AS,Bolig,12,3-15 (kjerne),Ås,,ukjent (fant ikke nettside),,Amit Sharma,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Amit Sharma,,,921831382,,brreg
+MIDDELS,55,HAMAR EIENDOMSMEGLING AS,Bolig,12,3-15 (kjerne),Hamar,,ukjent (fant ikke nettside),,Inger Helene Simensen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Inger Helene Simensen,,,916933568,,brreg
+MIDDELS,55,MEGLERHUSET LEINÆS AS,Bolig,12,3-15 (kjerne),Larvik,,ukjent (fant ikke nettside),,Thomas Andre Østmo,Daglig Leder,,33 13 52 50,Beslutningstaker i et kontor av denne størrelsen,Thomas Andre Østmo,33 13 52 50,,980407551,,brreg
+MIDDELS,55,SANDEFJORD & STOKKE EIENDOMSMEGLING AS,Bolig,12,3-15 (kjerne),Sandefjord,,ukjent (fant ikke nettside),,Didrik Emil Schou,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Didrik Emil Schou,,,919667168,,brreg
+MIDDELS,55,ØSTENSJØ EIENDOMSMEGLING AS,Bolig,12,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Don Tuan Tran,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Don Tuan Tran,,,924307803,,brreg
+MIDDELS,55,ASK OSLO EKEBERG AS,Bolig,11,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Thomas Wahl,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Thomas Wahl,,,933918106,,brreg
+MIDDELS,55,BOLI EIENDOMSMEGLING AS,Bolig,11,3-15 (kjerne),Steinkjer,,ukjent (fant ikke nettside),,Øyvind Krogstad,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Øyvind Krogstad,,,993609145,,brreg
+MIDDELS,55,BRAGERNES EIENDOMSMEGLING AS,Bolig,11,3-15 (kjerne),Drammen,,ukjent (fant ikke nettside),,Arian Tabaku,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Arian Tabaku,,,932843765,,brreg
+MIDDELS,55,EIENDOMSMEGLER A AS,Bolig,11,3-15 (kjerne),Haugesund,,ukjent (fant ikke nettside),,Hugo Wee,Daglig Leder,,52 80 43 00,Beslutningstaker i et kontor av denne størrelsen,Hugo Wee,52 80 43 00,post@em-a.no,893527702,,brreg
+MIDDELS,55,FJELL OG FJORD EIENDOMSMEGLING AS,Bolig,11,3-15 (kjerne),Bergen,,ukjent (fant ikke nettside),,Erlend Stokmo,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Erlend Stokmo,,,935740274,,brreg
+MIDDELS,55,FJORDBYEN EIENDOMSMEGLING AS,Bolig,11,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Caroline Ephraim,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Caroline Ephraim,,,930359815,,brreg
+MIDDELS,55,GABRIELSEN & PARTNERS AS,Bolig,11,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Stein Christian Dykesteen,Daglig Leder,,99 25 99 83,Beslutningstaker i et kontor av denne størrelsen,Stein Christian Dykesteen,99 25 99 83,,987883944,,brreg
+MIDDELS,55,KURSIV EIENDOMSMEGLING AS,Bolig,11,3-15 (kjerne),Grålum,,ukjent (fant ikke nettside),,Ole Christian Arntsen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Ole Christian Arntsen,,,914730112,,brreg
+MIDDELS,55,LIAVAAG EIENDOM AS,Bolig,11,3-15 (kjerne),Drammen,,ukjent (fant ikke nettside),,Morten Liavaag,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Morten Liavaag,,,993479470,,brreg
+MIDDELS,55,SINSEN OG ROSENHOFF EIENDOMSMEGLING AS,Bolig,11,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Kjersti Bråthen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Kjersti Bråthen,,,922183201,,brreg
+MIDDELS,55,ASKER EIENDOMSMEGLING AS,Bolig,10,3-15 (kjerne),Asker,,ukjent (fant ikke nettside),,Alexander Fossum,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Alexander Fossum,,,930177849,,brreg
+MIDDELS,55,HAGEBY EIENDOMSMEGLING AS,Bolig,10,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Kamilla Dagsland,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Kamilla Dagsland,,,936721788,,brreg
+MIDDELS,55,INKOGNITO EIENDOMSMEGLING AS,Bolig,10,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,John Theodorsen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,John Theodorsen,,,935826020,,brreg
+MIDDELS,55,OSLOFJORDEN EIENDOMSMEGLING AS,Bolig,10,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Kornelia Krynicka,Daglig Leder,,22 62 00 00,Beslutningstaker i et kontor av denne størrelsen,Kornelia Krynicka,22 62 00 00,lillian.nerlinger@privatmegleren.no,932083108,,brreg
+MIDDELS,55,VALDRES EIENDOMSKONTOR AS,Bolig,10,3-15 (kjerne),Fagernes,,ukjent (fant ikke nettside),,Linn Hamre-Hagen,Daglig Leder,,61 36 66 33,Beslutningstaker i et kontor av denne størrelsen,Linn Hamre-Hagen,61 36 66 33,,979870167,,brreg
+MIDDELS,55,VALKYRIEN EIENDOM AS,Bolig,10,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Ada Kjenner,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Ada Kjenner,,,930299308,,brreg
+MIDDELS,55,VESTFOLD EIENDOMSMEGLING AS,Bolig,10,3-15 (kjerne),Tønsberg,,ukjent (fant ikke nettside),,Matias Rostad,Daglig Leder,,33 30 70 00,Beslutningstaker i et kontor av denne størrelsen,Matias Rostad,33 30 70 00,tonsberg@eie.no,955607171,,brreg
+MIDDELS,55,ASK OSLO VEST AS,Bolig,9,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Hans Petter Strømsaas,Daglig Leder,,22 93 08 30,Beslutningstaker i et kontor av denne størrelsen,Hans Petter Strømsaas,22 93 08 30,,993773980,,brreg
+MIDDELS,55,FREDRIKSTAD EIENDOMSMEGLING AS,Bolig,9,3-15 (kjerne),Fredrikstad,,ukjent (fant ikke nettside),,Line Pettersen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Line Pettersen,,,927652633,,brreg
+MIDDELS,55,GALLERI EIENDOMSMEGLING AS,Bolig,9,3-15 (kjerne),Stavanger,,ukjent (fant ikke nettside),,Erlend Haglund,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Erlend Haglund,,,927103796,,brreg
+MIDDELS,55,NORDMØRE EIENDOMSMEGLING AS,Bolig,9,3-15 (kjerne),Kristiansund N,,ukjent (fant ikke nettside),,Stig Flemmen,Daglig Leder,,70 30 47 50,Beslutningstaker i et kontor av denne størrelsen,Stig Flemmen,70 30 47 50,,983266584,,brreg
+MIDDELS,55,OSLO VEST EIENDOMSMEGLING AS,Bolig,9,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Vegard Andersen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Vegard Andersen,,,924873396,,brreg
+MIDDELS,55,PM KRAGERØ AS,Bolig,9,3-15 (kjerne),Kragerø,,ukjent (fant ikke nettside),,Kent André Andersen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Kent André Andersen,,,932955067,,brreg
+MIDDELS,55,REALNOR PROPERTY ADVISORS AS,Bolig,9,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Stine Isaksen,Daglig Leder,,22 06 62 80,Beslutningstaker i et kontor av denne størrelsen,Stine Isaksen,22 06 62 80,colliers@colliers.no,967615013,,brreg
+MIDDELS,55,WANGENSTEN & PARTNERS AS,Bolig,9,3-15 (kjerne),Fagernes,,ukjent (fant ikke nettside),,Knut Walter Baldersheim,Daglig Leder,,41 43 62 55,Beslutningstaker i et kontor av denne størrelsen,Knut Walter Baldersheim,41 43 62 55,mw@privatmegleren.no,994303260,,brreg
+MIDDELS,55,ARENDAL EIENDOMSMEGLING AS,Bolig,8,3-15 (kjerne),Arendal,,ukjent (fant ikke nettside),,Kristoffer Eastwood,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Kristoffer Eastwood,,,932433192,,brreg
+MIDDELS,55,ERA EIENDOMSMEGLING AS,Bolig,8,3-15 (kjerne),Flatåsen,,ukjent (fant ikke nettside),,Eskil Gøran Wahl,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Eskil Gøran Wahl,,,936749259,,brreg
+MIDDELS,55,GLT EIENDOMSMEGLING AS,Bolig,8,3-15 (kjerne),Gjøvik,,ukjent (fant ikke nettside),,Mats Johan Kolsrud,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Mats Johan Kolsrud,,,927267500,,brreg
+MIDDELS,55,HARSTAD EIENDOMSMEGLING AS,Bolig,8,3-15 (kjerne),Harstad,,ukjent (fant ikke nettside),,Michael Knutsen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Michael Knutsen,,,931999249,,brreg
+MIDDELS,55,INFINITA EIENDOMSMEGLING AS,Bolig,8,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Bent Walther Johansen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Bent Walther Johansen,,,913151879,,brreg
+MIDDELS,55,JÆREN EIENDOMSMEGLING AS,Bolig,8,3-15 (kjerne),Bryne,,ukjent (fant ikke nettside),,Bjørn Rune Salte,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Bjørn Rune Salte,,,923888306,,brreg
+MIDDELS,55,NORDLAND EIENDOMSMEGLING AS,Bolig,8,3-15 (kjerne),Bodø,,ukjent (fant ikke nettside),,Rune Emil Hanssen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Rune Emil Hanssen,,,917842779,,brreg
+MIDDELS,55,SEIL EIENDOMSMEGLING AS,Bolig,8,3-15 (kjerne),Asker,,ukjent (fant ikke nettside),,Trond-Ivar Olsen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Trond-Ivar Olsen,,,918809589,,brreg
+MIDDELS,55,SKI EIENDOMSMEGLING AS,Bolig,8,3-15 (kjerne),Ski,,ukjent (fant ikke nettside),,Brynjar Netskar,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Brynjar Netskar,,,818809522,,brreg
+MIDDELS,55,STJØRDAL EIENDOMSMEGLING AS,Bolig,8,3-15 (kjerne),Stjørdal,,ukjent (fant ikke nettside),,Torstein Nordby,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Torstein Nordby,,,921956797,,brreg
+MIDDELS,55,TRONDHEIM ØST EIENDOMSMEGLING AS,Bolig,8,3-15 (kjerne),Trondheim,,ukjent (fant ikke nettside),,Steinar Skaanes,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Steinar Skaanes,,,912437493,,brreg
+MIDDELS,55,TØNSBERG & FÆRDER EIENDOMSMEGLING AS,Bolig,8,3-15 (kjerne),Tønsberg,,ukjent (fant ikke nettside),,Kaja Tveiten,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Kaja Tveiten,,,925591270,,brreg
+MIDDELS,55,TØNSBERG OG RE EIENDOMSMEGLING AS,Bolig,8,3-15 (kjerne),Tønsberg,,ukjent (fant ikke nettside),,Kaia Dahle,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Kaia Dahle,,,922237867,,brreg
+MIDDELS,55,VEST EIENDOMSMEGLING AS,Bolig,8,3-15 (kjerne),Loddefjord,,ukjent (fant ikke nettside),,Anders Sagenes,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Anders Sagenes,,,918053603,,brreg
+MIDDELS,55,VESTRE BÆRUM EIENDOMSMEGLING AS,Bolig,8,3-15 (kjerne),Sandvika,,ukjent (fant ikke nettside),,Camilla Olsen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Camilla Olsen,,,934231279,,brreg
+MIDDELS,55,W EIENDOMSMEGLING BERGEN SENTRUM AS,Bolig,8,3-15 (kjerne),Bergen,,ukjent (fant ikke nettside),,Markus Andre Håland,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Markus Andre Håland,,,925394904,,brreg
+MIDDELS,55,ÅLESUND EIENDOMSMEGLING AS,Bolig,8,3-15 (kjerne),Ålesund,,ukjent (fant ikke nettside),,Audun Sjøholt,Daglig Leder,,71 40 00 00,Beslutningstaker i et kontor av denne størrelsen,Audun Sjøholt,71 40 00 00,,983196977,,brreg
+MIDDELS,55,AGDER EIENDOMSMEGLING AS,Bolig,7,3-15 (kjerne),Arendal,,ukjent (fant ikke nettside),,Mads Helgesen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Mads Helgesen,,,920774954,,brreg
+MIDDELS,55,DRIV EIENDOMSMEGLING AS,Bolig,7,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Christoffer Brekke-Hammersland,Daglig Leder,,950 83 002,Beslutningstaker i et kontor av denne størrelsen,Christoffer Brekke-Hammersland,950 83 002,mick.rodsten@privatmegleren.no,936324029,,brreg
+MIDDELS,55,EIENDOMSMEGLEREN DIN TELEMARK AS,Bolig,7,3-15 (kjerne),Bø I Telemark,,ukjent (fant ikke nettside),,Berit Seltveit,Daglig Leder,,35 95 41 11,Beslutningstaker i et kontor av denne størrelsen,Berit Seltveit,35 95 41 11,,990269637,,brreg
+MIDDELS,55,HOUELAND EIENDOMSMEGLING AS,Bolig,7,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Hans Houeland,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Hans Houeland,,,931853988,,brreg
+MIDDELS,55,LARVIK EIENDOMSMEGLING AS,Bolig,7,3-15 (kjerne),Larvik,,ukjent (fant ikke nettside),,,,,,,,,,992829893,,
+MIDDELS,55,MEGLERHUSET NORDSTRAND AS,Bolig,7,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Philip Nicolai Magnussen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Philip Nicolai Magnussen,,,833671642,,brreg
+MIDDELS,55,MØYSALEN EIENDOMSMEGLING AS,Bolig,7,3-15 (kjerne),Sortland,,ukjent (fant ikke nettside),,Ole Torvald Albrigtsen,Daglig Leder,,410 20 292,Beslutningstaker i et kontor av denne størrelsen,Ole Torvald Albrigtsen,410 20 292,,892280622,,brreg
+MIDDELS,55,NBBO EIENDOMSMEGLING AS,Bolig,7,3-15 (kjerne),Drammen,,ukjent (fant ikke nettside),,Fabian Paus,Daglig Leder,,32 21 15 10,Beslutningstaker i et kontor av denne størrelsen,Fabian Paus,32 21 15 10,eiendom@nbbo.no,971168447,,brreg
+MIDDELS,55,STAVANGER REAL ESTATE AS,Bolig,7,3-15 (kjerne),Stavanger,,ukjent (fant ikke nettside),,Janne-Mette Bergesen,Daglig Leder,,913 91 300,Beslutningstaker i et kontor av denne størrelsen,Janne-Mette Bergesen,913 91 300,,932412756,,brreg
+MIDDELS,55,SUNNMØRSMEGLEREN AS,Bolig,7,3-15 (kjerne),Ålesund,,ukjent (fant ikke nettside),,Hanne Knotten,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Hanne Knotten,,,922415080,,brreg
+MIDDELS,55,ASK TRONDHEIM AS,Bolig,6,3-15 (kjerne),Heimdal,,ukjent (fant ikke nettside),,Ida Osen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Ida Osen,,,933109259,,brreg
+MIDDELS,55,BOLIGSPESIALISTEN STAVANGER AS,Bolig,6,3-15 (kjerne),Stavanger,,ukjent (fant ikke nettside),,Aina Trovåg,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Aina Trovåg,,,926647849,,brreg
+MIDDELS,55,BORGUND EIENDOMSMEGLING AS,Bolig,6,3-15 (kjerne),Ålesund,,ukjent (fant ikke nettside),,Albert Øien,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Albert Øien,,,926128612,,brreg
+MIDDELS,55,DOBLAN EIENDOMSMEGLING AS,Bolig,6,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Teddy Tewodros Welde,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Teddy Tewodros Welde,,,933156664,,brreg
+MIDDELS,55,DRAMMEN OG LIER EIENDOMSMEGLING AS,Bolig,6,3-15 (kjerne),Drammen,,ukjent (fant ikke nettside),,Alexander Abelseth,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Alexander Abelseth,,,931803328,,brreg
+MIDDELS,55,EIENDOMSMEGLER LARVIK OG LARDAL AS,Bolig,6,3-15 (kjerne),Larvik,,ukjent (fant ikke nettside),,Lars Andreas Grønneberg,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Lars Andreas Grønneberg,,,916130163,,brreg
+MIDDELS,55,HALDEN BOLIGSENTER AS,Bolig,6,3-15 (kjerne),Halden,,ukjent (fant ikke nettside),,Sabri Freddy Khattab,Daglig Leder,,69 21 37 70,Beslutningstaker i et kontor av denne størrelsen,Sabri Freddy Khattab,69 21 37 70,,990451613,,brreg
+MIDDELS,55,HARDANGER EIGEDOMSMEKLING AS,Bolig,6,3-15 (kjerne),Norheimsund,,ukjent (fant ikke nettside),,Sebastian Gjerde,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Sebastian Gjerde,,,927380307,,brreg
+MIDDELS,55,HAUGESILD EIENDOMSMEGLING AS,Bolig,6,3-15 (kjerne),Haugesund,,ukjent (fant ikke nettside),,Lars Frøyland,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Lars Frøyland,,,927219875,,brreg
+MIDDELS,55,HORISONT EIENDOMSMEGLING AS,Bolig,6,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Espen Aas,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Espen Aas,,,996324451,,brreg
+MIDDELS,55,INNLANDET EIENDOMSMEGLING AS,Bolig,6,3-15 (kjerne),Hamar,,ukjent (fant ikke nettside),,Arbresh Vitija,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Arbresh Vitija,,,931509268,,brreg
+MIDDELS,55,KVARTAL EIENDOMSMEGLING AS,Bolig,6,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Anna Maria Matilda Löfdahl,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Anna Maria Matilda Löfdahl,,,917593760,,brreg
+MIDDELS,55,"MAMEN-LUND, ENGH, SALVESEN & PARTNERS AS",Bolig,6,3-15 (kjerne),Asker,,ukjent (fant ikke nettside),,Petter Mamen-Lund,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Petter Mamen-Lund,,,990997810,,brreg
+MIDDELS,55,MEGLERHUSET SANDEFJORD AS,Bolig,6,3-15 (kjerne),Sandefjord,,ukjent (fant ikke nettside),,Simen Ringdal,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Simen Ringdal,,,932434504,,brreg
+MIDDELS,55,MEGLERHUSET SKI AS,Bolig,6,3-15 (kjerne),Ski,,ukjent (fant ikke nettside),,Håkon Andresen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Håkon Andresen,,,936229972,,brreg
+MIDDELS,55,MEGLERHUSET SØR AS,Bolig,6,3-15 (kjerne),Kristiansand S,,ukjent (fant ikke nettside),,Andre Sandvik,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Andre Sandvik,,,834475162,,brreg
+MIDDELS,55,MOLDE EIENDOMSMEGLING AS,Bolig,6,3-15 (kjerne),Molde,,ukjent (fant ikke nettside),,Anders Sæternes,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Anders Sæternes,,,935768640,,brreg
+MIDDELS,55,NORDHORDLAND EIENDOMSMEGLING AS,Bolig,6,3-15 (kjerne),Isdalstø,,ukjent (fant ikke nettside),,Magnus André Nilsen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Magnus André Nilsen,,,926772694,,brreg
+MIDDELS,55,ORKLA EIENDOMSMEGLING AS,Bolig,6,3-15 (kjerne),Orkanger,,ukjent (fant ikke nettside),,Vegar Sommerschild,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Vegar Sommerschild,,,913118219,,brreg
+MIDDELS,55,PM SANDNES AS,Bolig,6,3-15 (kjerne),Sandnes,,ukjent (fant ikke nettside),,Thomas Heggen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Thomas Heggen,,,931028219,,brreg
+MIDDELS,55,SANDEFJORD OG ANDEBU EIENDOMSMEGLING AS,Bolig,6,3-15 (kjerne),Sandefjord,,ukjent (fant ikke nettside),,Kaia Dahle,Daglig Leder,,33 43 83 60,Beslutningstaker i et kontor av denne størrelsen,Kaia Dahle,33 43 83 60,,996525341,,brreg
+MIDDELS,55,SKJØREN & PARTNERS AS,Bolig,6,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Eivind Braastad,Daglig Leder,,22 76 28 50,Beslutningstaker i et kontor av denne størrelsen,Eivind Braastad,22 76 28 50,,980929884,,brreg
+MIDDELS,55,STORMFELT & CO AS,Bolig,6,3-15 (kjerne),Sandvika,,ukjent (fant ikke nettside),,Kristoffer Stormfelt,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Kristoffer Stormfelt,,,936649734,,brreg
+MIDDELS,55,VIKEBØ & JØRGENSEN ÅSANE AS,Bolig,6,3-15 (kjerne),Nyborg,,ukjent (fant ikke nettside),,Sivert Erling Severinsen,Daglig Leder,,92 07 71 66,Beslutningstaker i et kontor av denne størrelsen,Sivert Erling Severinsen,92 07 71 66,lars@privatmegleren.no,917831556,,brreg
+MIDDELS,55,ASK LABEL AS,Bolig,5,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Jonas Nikolai Grimsøen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Jonas Nikolai Grimsøen,,,929239245,,brreg
+MIDDELS,55,BOMEGA AS,Bolig,5,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Veslemøy Fredriksen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Veslemøy Fredriksen,,,931500791,,brreg
+MIDDELS,55,DE PRESNO & PARTNERE AS,Bolig,5,3-15 (kjerne),Arendal,,ukjent (fant ikke nettside),,Leif Christian Presno,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Leif Christian Presno,,,991843566,,brreg
+MIDDELS,55,ET ROMERIKE EIENDOM AS,Bolig,5,3-15 (kjerne),Jessheim,,ukjent (fant ikke nettside),,Eskil Tyskeberget,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Eskil Tyskeberget,,,936877141,,brreg
+MIDDELS,55,FRONTLINE VESTBY EIENDOMSMEGLING AS,Bolig,5,3-15 (kjerne),Vestby,,ukjent (fant ikke nettside),,Amit Sharma,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Amit Sharma,,,933479978,,brreg
+MIDDELS,55,HEIMDAHL & PARTNERE AS,Bolig,5,3-15 (kjerne),Gjøvik,,ukjent (fant ikke nettside),,Geir Arild Heimdahl,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Geir Arild Heimdahl,,,920146406,,brreg
+MIDDELS,55,HERLEIKSPLASS & PARTNERE AS,Bolig,5,3-15 (kjerne),Geilo,,ukjent (fant ikke nettside),,Jannike Herleiksplass,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Jannike Herleiksplass,,,923722629,,brreg
+MIDDELS,55,KOLBOTN EIENDOMSMEGLING AS,Bolig,5,3-15 (kjerne),Kolbotn,,ukjent (fant ikke nettside),,Kjell Ove Loeshagen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Kjell Ove Loeshagen,,,819166102,,brreg
+MIDDELS,55,SKOG EIENDOMSMEGLING AS,Bolig,5,3-15 (kjerne),Finnsnes,,ukjent (fant ikke nettside),,Silje-Charina Skog,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Silje-Charina Skog,,,926455877,,brreg
+LAV,45,BERGEN EIENDOMSMEGLING AS,Bolig,20,16-20 (±5),Bergen,,ukjent (fant ikke nettside),,Daniel Grønås,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Daniel Grønås,,,936304206,,brreg
+LAV,45,PRIMERA EIENDOMSMEGLING AS,Bolig,20,16-20 (±5),Oslo,,ukjent (fant ikke nettside),,Ingrid Gunvor Eriksson,Daglig Leder,,948 48 484,Beslutningstaker i et kontor av denne størrelsen,Ingrid Gunvor Eriksson,948 48 484,,921581661,,brreg
+LAV,45,ACHIEVE EIENDOMSMEGLING AS,Bolig,19,16-20 (±5),Bergen,,ukjent (fant ikke nettside),,Hanne Havsgård,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Hanne Havsgård,,,924413956,,brreg
+LAV,45,IN-VEST EIENDOMSMEGLING AS,Bolig,19,16-20 (±5),Oslo,,ukjent (fant ikke nettside),,Fredrik Meldahl,Daglig Leder,,22 51 11 11,Beslutningstaker i et kontor av denne størrelsen,Fredrik Meldahl,22 51 11 11,,945064358,,brreg
+LAV,45,NORDRE AKER EIENDOMSMEGLING AS,Bolig,18,16-20 (±5),Oslo,,ukjent (fant ikke nettside),,Stian Larsen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Stian Larsen,,,916491034,,brreg
+LAV,45,PREMIÈRE EIENDOMSMEGLING AS,Bolig,18,16-20 (±5),Oslo,,ukjent (fant ikke nettside),,Petter Løsåmoen,Daglig Leder,,948 48 484,Beslutningstaker i et kontor av denne størrelsen,Petter Løsåmoen,948 48 484,,921581718,,brreg
+LAV,45,ALLÉ EIENDOMSMEGLING AS,Bolig,17,16-20 (±5),Oslo,,ukjent (fant ikke nettside),,Lillian Charlotte Nerlinger,Daglig Leder,,22 44 00 22,Beslutningstaker i et kontor av denne størrelsen,Lillian Charlotte Nerlinger,22 44 00 22,,914594863,,brreg
+LAV,45,BISLETT EIENDOMSMEGLING AS,Bolig,17,16-20 (±5),Oslo,,ukjent (fant ikke nettside),,Magnus Moestue,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Magnus Moestue,,,918146326,,brreg
+LAV,45,REDE EIENDOMSMEGLING AS,Bolig,17,16-20 (±5),Mo I Rana,,ukjent (fant ikke nettside),,Mona Kristiansen,Daglig Leder,,75 14 30 00,Beslutningstaker i et kontor av denne størrelsen,Mona Kristiansen,75 14 30 00,post@rede-eiendom.no,979158580,,brreg
+LAV,45,TELEMARK EIENDOMSMEGLING AS,Bolig,17,16-20 (±5),Skien,,ukjent (fant ikke nettside),,Kurt Thingstad,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Kurt Thingstad,,,925590711,,brreg
+LAV,45,TRONDHEIM EIENDOMSMEGLING AS,Bolig,17,16-20 (±5),Trondheim,,ukjent (fant ikke nettside),,Odin Sundland,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Odin Sundland,,,995311720,,brreg
+LAV,45,ULLEVÅL & SAGENE EIENDOMSMEGLING AS,Bolig,17,16-20 (±5),Oslo,,ukjent (fant ikke nettside),,Gard Peder Kopstad,Daglig Leder,,22 02 11 60,Beslutningstaker i et kontor av denne størrelsen,Gard Peder Kopstad,22 02 11 60,,989734598,,brreg
+LAV,45,ENSJØ EIENDOMSMEGLING AS,Bolig,16,16-20 (±5),Oslo,,ukjent (fant ikke nettside),,Kristian Birkan,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Kristian Birkan,,,921542690,,brreg
+LAV,45,GABRIELSEN & PARTNERS LØKKA AS,Bolig,16,16-20 (±5),Oslo,,ukjent (fant ikke nettside),,Klaus Petter Westersund,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Klaus Petter Westersund,,,922593221,,brreg
+LAV,45,Q4 NÆRINGSMEGLING AS,Næring,13,3-15 (kjerne),Tønsberg,,ukjent (fant ikke nettside),,Ola Larsen,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Ola Larsen,,,916739125,,brreg
+LAV,45,NAS NÆRINGSMEGLING AS,Næring,6,3-15 (kjerne),Stavanger,,ukjent (fant ikke nettside),,Rune Svindland,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Rune Svindland,,,922183155,,brreg
+LAV,45,ÅLESUND BOLIG OG PROSJEKTMEGLING AS,Prosjekt,6,3-15 (kjerne),Ålesund,,ukjent (fant ikke nettside),,Jon Kristian Røsok,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Jon Kristian Røsok,,,826455292,,brreg
+LAV,45,NORSK EIENDOMSOPPGJØR AS,Oppgjør,5,3-15 (kjerne),Oslo,,ukjent (fant ikke nettside),,Mone Knudtzon,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Mone Knudtzon,,,924642858,,brreg
+LAV,45,NÆRINGSMEGLING VEST AS,Næring,5,3-15 (kjerne),Bergen,,ukjent (fant ikke nettside),,Yngve Fløisand,Daglig Leder,,,Beslutningstaker i et kontor av denne størrelsen,Yngve Fløisand,,,925893919,,brreg
+LAV,35,DNB NÆRINGSMEGLING AS,Næring,16,16-20 (±5),Oslo,,ukjent (fant ikke nettside),,Jens-Petter Guthus,Daglig Leder,,48 03 01 11,Beslutningstaker i et kontor av denne størrelsen,Jens-Petter Guthus,48 03 01 11,,975265145,,brreg

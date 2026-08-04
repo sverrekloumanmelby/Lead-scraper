@@ -7,3 +7,4 @@ venv/
 leads.csv
 *.log
 .playwright/
+mellomlager.json
