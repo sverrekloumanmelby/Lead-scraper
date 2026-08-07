@@ -1,15 +1,13 @@
 # 20 ferdige e-poster — varmeste leads
 
-**Slik bruker du den (≈1 min per lead):**
-1. Gjør dette **én gang**: søk-og-erstatt `[telefon]` og `[firma]` i hele dokumentet med dine egne verdier. (Signaturen er lik i alle 20.) Er ikke navnet ditt Sverre Klouman Melby, bytt det også.
-2. Per lead: kopier **Til**, **Emne** og **Tekst** rett inn i e-posten. Ferdig.
+**Slik bruker du den (≈1 min per lead):** kopier **Til**, **Emne** og **Tekst** rett inn i e-posten. Signaturen er ferdig utfylt i alle 20. Send fra **hei@krevla.com**.
 
 **Signatur (lik i alle):**
 ```
 Med vennlig hilsen
 Sverre Klouman Melby
-[firma]
-[telefon] · sverrekloumanmelby@gmail.com
+Krevla
+459 18 301 · hei@krevla.com
 ```
 
 **Før du sender — tre ting å vite:**
@@ -33,8 +31,8 @@ Har du 15 minutter en dag neste uke? Da setter jeg opp en kjapp demo mot advanti
 
 Med vennlig hilsen
 Sverre Klouman Melby
-[firma]
-[telefon] · sverrekloumanmelby@gmail.com
+Krevla
+459 18 301 · hei@krevla.com
 
 ---
 
@@ -52,8 +50,8 @@ Har du 15 minutter neste uke? Jeg viser deg en demo satt opp mot benum.no — da
 
 Med vennlig hilsen
 Sverre Klouman Melby
-[firma]
-[telefon] · sverrekloumanmelby@gmail.com
+Krevla
+459 18 301 · hei@krevla.com
 
 ---
 
@@ -71,8 +69,8 @@ Som eier ser du raskt regnestykket: hvor mange henvendelser glipper i dag fordi 
 
 Med vennlig hilsen
 Sverre Klouman Melby
-[firma]
-[telefon] · sverrekloumanmelby@gmail.com
+Krevla
+459 18 301 · hei@krevla.com
 
 ---
 
@@ -90,8 +88,8 @@ Har du 15 minutter en dag neste uke? Jeg viser deg en demo satt opp mot deres eg
 
 Med vennlig hilsen
 Sverre Klouman Melby
-[firma]
-[telefon] · sverrekloumanmelby@gmail.com
+Krevla
+459 18 301 · hei@krevla.com
 
 ---
 
@@ -109,8 +107,8 @@ Har du 15 minutter neste uke? Da viser jeg deg en demo satt opp mot deres egen s
 
 Med vennlig hilsen
 Sverre Klouman Melby
-[firma]
-[telefon] · sverrekloumanmelby@gmail.com
+Krevla
+459 18 301 · hei@krevla.com
 
 ---
 
@@ -128,8 +126,8 @@ Som eier ser du raskt verdien: hvor mange henvendelser glipper i dag fordi ingen
 
 Med vennlig hilsen
 Sverre Klouman Melby
-[firma]
-[telefon] · sverrekloumanmelby@gmail.com
+Krevla
+459 18 301 · hei@krevla.com
 
 ---
 
@@ -148,8 +146,8 @@ Har du 15 minutter neste uke? Jeg viser deg gjerne en kort demo, så ser du med 
 
 Med vennlig hilsen
 Sverre Klouman Melby
-[firma]
-[telefon] · sverrekloumanmelby@gmail.com
+Krevla
+459 18 301 · hei@krevla.com
 
 ---
 
@@ -167,8 +165,8 @@ Har du 15 minutter neste uke? Jeg viser deg en demo satt opp mot fossco.no, så 
 
 Med vennlig hilsen
 Sverre Klouman Melby
-[firma]
-[telefon] · sverrekloumanmelby@gmail.com
+Krevla
+459 18 301 · hei@krevla.com
 
 ---
 
@@ -186,8 +184,8 @@ Har du 15 minutt neste veke? Då viser eg deg ein kort demo mot meklarhuset.no, 
 
 Med vennlig hilsen
 Sverre Klouman Melby
-[firma]
-[telefon] · sverrekloumanmelby@gmail.com
+Krevla
+459 18 301 · hei@krevla.com
 
 ---
 
@@ -206,8 +204,8 @@ Har du 15 minutter neste uke? Jeg viser deg gjerne en kort demo, så ser du rask
 
 Med vennlig hilsen
 Sverre Klouman Melby
-[firma]
-[telefon] · sverrekloumanmelby@gmail.com
+Krevla
+459 18 301 · hei@krevla.com
 
 ---
 
@@ -225,8 +223,8 @@ Har du 15 minutter neste uke? Da viser jeg deg en demo satt opp mot deres egen s
 
 Med vennlig hilsen
 Sverre Klouman Melby
-[firma]
-[telefon] · sverrekloumanmelby@gmail.com
+Krevla
+459 18 301 · hei@krevla.com
 
 ---
 
@@ -245,8 +243,8 @@ Har du 15 minutter neste uke? Jeg viser deg gjerne en kort demo, så ser du rask
 
 Med vennlig hilsen
 Sverre Klouman Melby
-[firma]
-[telefon] · sverrekloumanmelby@gmail.com
+Krevla
+459 18 301 · hei@krevla.com
 
 ---
 
@@ -265,8 +263,8 @@ Har du 15 minutter neste uke? Jeg viser deg gjerne en kort demo, så ser du med 
 
 Med vennlig hilsen
 Sverre Klouman Melby
-[firma]
-[telefon] · sverrekloumanmelby@gmail.com
+Krevla
+459 18 301 · hei@krevla.com
 
 ---
 
@@ -285,8 +283,8 @@ Har du 15 minutter neste uke? Jeg viser deg en demo satt opp mot verdi-eiendom.n
 
 Med vennlig hilsen
 Sverre Klouman Melby
-[firma]
-[telefon] · sverrekloumanmelby@gmail.com
+Krevla
+459 18 301 · hei@krevla.com
 
 ---
 
@@ -304,8 +302,8 @@ Har du 15 minutter neste uke? Da viser jeg deg en demo satt opp mot deres egen s
 
 Med vennlig hilsen
 Sverre Klouman Melby
-[firma]
-[telefon] · sverrekloumanmelby@gmail.com
+Krevla
+459 18 301 · hei@krevla.com
 
 ---
 
@@ -323,8 +321,8 @@ Har du 15 minutter neste uke? Jeg viser deg en demo satt opp mot fremeiendomsmeg
 
 Med vennlig hilsen
 Sverre Klouman Melby
-[firma]
-[telefon] · sverrekloumanmelby@gmail.com
+Krevla
+459 18 301 · hei@krevla.com
 
 ---
 
@@ -342,8 +340,8 @@ Har du 15 minutter neste uke? Jeg viser deg en demo satt opp mot deres egen side
 
 Med vennlig hilsen
 Sverre Klouman Melby
-[firma]
-[telefon] · sverrekloumanmelby@gmail.com
+Krevla
+459 18 301 · hei@krevla.com
 
 ---
 
@@ -361,8 +359,8 @@ Har du 15 minutter neste uke? Da viser jeg deg en demo satt opp mot deres egen s
 
 Med vennlig hilsen
 Sverre Klouman Melby
-[firma]
-[telefon] · sverrekloumanmelby@gmail.com
+Krevla
+459 18 301 · hei@krevla.com
 
 ---
 
@@ -380,8 +378,8 @@ Har du 15 minutter neste uke? Jeg viser deg en demo satt opp mot dialogeiendom.n
 
 Med vennlig hilsen
 Sverre Klouman Melby
-[firma]
-[telefon] · sverrekloumanmelby@gmail.com
+Krevla
+459 18 301 · hei@krevla.com
 
 ---
 
@@ -400,5 +398,5 @@ Har du 15 minutter neste uke? Jeg viser deg gjerne en kort demo, så ser du rask
 
 Med vennlig hilsen
 Sverre Klouman Melby
-[firma]
-[telefon] · sverrekloumanmelby@gmail.com
+Krevla
+459 18 301 · hei@krevla.com
