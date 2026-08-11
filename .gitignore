@@ -7,3 +7,5 @@ venv/
 leads.csv
 *.log
 .playwright/
+scratch_*.json
+scratch_*
