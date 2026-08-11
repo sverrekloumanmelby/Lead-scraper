@@ -1,0 +1,3 @@
+# Avhengigheter for investeringsassistenten (uavhengig av leadmaskinen).
+requests>=2.31
+jinja2>=3.1

@@ -1,0 +1,81 @@
+{# Ukentlig e-post: porteføljen samlet + nye kjøpskandidater. #}
+{% extends "_base.html.j2" %}
+{% import "_makroer.html.j2" as m %}
+
+{% block innhold %}
+
+{{ m.seksjonstittel('Porteføljen din') }}
+<table style="width:100%;border-collapse:collapse;">
+  <tr style="font-size:11px;color:#9099a5;text-align:left;">
+    <th style="padding-bottom:5px;font-weight:500;">Selskap</th>
+    <th style="padding-bottom:5px;font-weight:500;text-align:right;">Kurs</th>
+    <th style="padding-bottom:5px;font-weight:500;text-align:right;">I dag</th>
+    <th style="padding-bottom:5px;font-weight:500;text-align:right;">Hittil i år</th>
+  </tr>
+  {% for post in selskaper %}
+    {{ m.kursrad(post) }}
+  {% endfor %}
+</table>
+
+{% if sammendrag.har_verdier %}
+<div style="margin-top:12px;font-size:13px;color:#4b5563;">
+  Samlet verdi {{ sammendrag.verdi | kr }} ·
+  urealisert {{ m.fargetekst(sammendrag.gevinst, (sammendrag.gevinst | kr) + ' (' + (sammendrag.gevinst_pst | pst) + ')') }}
+</div>
+{% endif %}
+
+{# --- Hendelser gjennom uken --- #}
+{{ m.seksjonstittel('Dette har skjedd') }}
+{% if totalt_hendelser == 0 %}
+  <div style="font-size:14px;color:#6b7280;">
+    Ingen vesentlige hendelser i porteføljen denne uken.
+  </div>
+{% else %}
+  {% for post in selskaper %}
+    {% if post.hendelser %}
+    <div style="margin-bottom:18px;">
+      <div style="font-size:14px;font-weight:700;">
+        {{ post.status.navn }}
+        {% if post.endring_siden_forrige is not none %}
+        <span style="font-size:12px;font-weight:400;color:#6b7280;">
+          — {{ m.fargetekst(post.endring_siden_forrige, post.endring_siden_forrige | pst) }}
+          siden forrige rapport
+        </span>
+        {% endif %}
+      </div>
+      {% for h in post.hendelser %}
+        {{ m.hendelse_rad(h) }}
+      {% endfor %}
+    </div>
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{# --- Kandidater --- #}
+{{ m.seksjonstittel('Mulige nye investeringer') }}
+{% if kandidater %}
+  <div style="font-size:12px;color:#6b7280;margin-bottom:12px;">
+    {{ kandidater | length }} selskap{{ 'er' if kandidater | length != 1 }} som består
+    alle kvalitetskravene (etablert, lønnsomt over tid, ingen penny stocks) og
+    scorer minst {{ score_terskel }}/100.
+  </div>
+  {% for kand in kandidater %}
+    {{ m.kandidat_kort(kand, kand.ticker in nye_kandidater) }}
+  {% endfor %}
+{% elif screener_kjort %}
+  <div style="background:#f7f8fa;border-radius:8px;padding:16px 18px;font-size:14px;color:#4b5563;">
+    <strong style="color:#1a1d21;">Ingen kandidater denne uken.</strong>
+    Ingen av selskapene som ble gjennomgått holdt målestokken — verken på
+    kvalitetskravene eller på score. Listen fylles bevisst ikke opp med svakere
+    forslag.
+    {% if screener_statistikk.vurdert %}
+    <div style="font-size:12px;color:#6b7280;margin-top:8px;">
+      {{ screener_statistikk.vurdert }} selskaper vurdert.
+    </div>
+    {% endif %}
+  </div>
+{% else %}
+  <div style="font-size:14px;color:#6b7280;">Screeneren ble ikke kjørt.</div>
+{% endif %}
+
+{% endblock %}

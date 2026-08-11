@@ -1,0 +1,65 @@
+{{ tittel | upper }} — {{ dato_tekst }}
+{{ '=' * 60 }}
+
+PORTEFØLJEN DIN
+{{ '-' * 60 }}
+{% for post in selskaper %}
+{% set k = post.status.kurs %}
+{{ '%-26s'|format(post.status.navn[:26]) }} {{ '%12s'|format((k.pris | kr(k.valuta)) if k and k.pris else '–') }}  {{ '%8s'|format((k.endring_1d if k else none) | pst) }}  {{ '%8s'|format((k.endring_ytd if k else none) | pst) }}
+{% endfor %}
+{% if sammendrag.har_verdier %}
+
+Samlet verdi {{ sammendrag.verdi | kr }} · urealisert {{ sammendrag.gevinst | kr }} ({{ sammendrag.gevinst_pst | pst }})
+{% endif %}
+
+DETTE HAR SKJEDD
+{{ '-' * 60 }}
+{% if totalt_hendelser == 0 %}
+Ingen vesentlige hendelser i porteføljen denne uken.
+{% else %}
+{% for post in selskaper %}
+{% if post.hendelser %}
+{{ post.status.navn }}{% if post.endring_siden_forrige is not none %} ({{ post.endring_siden_forrige | pst }} siden forrige rapport){% endif %}
+
+{% for h in post.hendelser %}
+  * {{ h.tittel }}{% if h.detalj %}
+    {{ h.detalj }}{% endif %}
+
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+MULIGE NYE INVESTERINGER
+{{ '-' * 60 }}
+{% if kandidater %}
+{{ kandidater | length }} selskap som består alle kvalitetskravene (etablert,
+lønnsomt over tid, ingen penny stocks) og scorer minst {{ score_terskel }}/100.
+
+{% for kand in kandidater %}
+{{ kand.navn }} ({{ kand.ticker }}) — score {{ kand.score }}/100, {{ kand.prioritet }}{% if kand.ticker in nye_kandidater %} [NY]{% endif %}
+
+{% if kand.fundamentals.bors %}  {{ kand.fundamentals.bors }}{% if kand.fundamentals.sektor %} · {{ kand.fundamentals.sektor }}{% endif %}{% if kand.fundamentals.borsverdi %} · {{ kand.fundamentals.borsverdi | stort_tall(kand.fundamentals.valuta) }}{% endif %}
+
+{% endif %}
+  Kan være et godt kjøp fordi:
+{% for grunn in kand.grunner %}
+   - {{ grunn }}
+{% endfor %}
+
+{% endfor %}
+{% elif screener_kjort %}
+INGEN KANDIDATER DENNE UKEN.
+Ingen av selskapene som ble gjennomgått holdt målestokken — verken på
+kvalitetskravene eller på score. Listen fylles bevisst ikke opp med
+svakere forslag.
+{% if screener_statistikk.vurdert %}
+({{ screener_statistikk.vurdert }} selskaper vurdert.)
+{% endif %}
+{% else %}
+Screeneren ble ikke kjørt.
+{% endif %}
+
+{{ '-' * 60 }}
+Automatisk generert. Ikke investeringsrådgivning — kontroller mot
+selskapets egen rapportering før du handler.

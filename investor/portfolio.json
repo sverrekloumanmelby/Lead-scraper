@@ -1,0 +1,41 @@
+{
+  "_kommentar": [
+    "Beholdninger som overvåkes. 'ticker' må matche symbolet hos datakilden:",
+    "amerikanske aksjer bruker rent symbol (MSFT), Oslo Børs bruker .OL (MOWI.OL),",
+    "øvrige europeiske børser har egne suffiks (f.eks. .DE, .PA, .L).",
+    "'antall' og 'kostpris' er valgfrie — fyll dem inn for å få urealisert",
+    "gevinst/tap regnet ut i rapportene. Uten dem vises kun kursutvikling.",
+    "Legg selskaper du vurderer, men ikke eier, under 'watchlist'."
+  ],
+  "beholdninger": [
+    {
+      "ticker": "MSFT",
+      "navn": "Microsoft",
+      "antall": null,
+      "kostpris": null,
+      "notat": ""
+    },
+    {
+      "ticker": "VRT",
+      "navn": "Vertiv Holdings",
+      "antall": null,
+      "kostpris": null,
+      "notat": ""
+    },
+    {
+      "ticker": "MOWI.OL",
+      "navn": "Mowi ASA",
+      "antall": null,
+      "kostpris": null,
+      "notat": ""
+    },
+    {
+      "ticker": "BYTT_MEG",
+      "navn": "Medisinsk holdingselskap",
+      "antall": null,
+      "kostpris": null,
+      "notat": "TODO: bytt ticker til det faktiske selskapet. Fjern denne oppføringen hvis du heller vil legge den inn senere."
+    }
+  ],
+  "watchlist": []
+}

@@ -1,0 +1,79 @@
+MÅNEDSRAPPORT — {{ maned_tekst | upper }}
+{{ '=' * 60 }}
+
+MÅNEDEN KORT OPPSUMMERT
+{{ '-' * 60 }}
+{% for post in selskaper %}
+{% set k = post.status.kurs %}
+{{ '%-26s'|format(post.status.navn[:26]) }} {{ '%12s'|format((k.pris | kr(k.valuta)) if k and k.pris else '–') }}  1md {{ '%8s'|format((k.endring_1m if k else none) | pst) }}  ÅTD {{ '%8s'|format((k.endring_ytd if k else none) | pst) }}
+{% endfor %}
+{% if sammendrag.har_verdier %}
+
+Samlet verdi {{ sammendrag.verdi | kr }} · urealisert {{ sammendrag.gevinst | kr }} ({{ sammendrag.gevinst_pst | pst }})
+{% endif %}
+
+SELSKAPENE DINE I DYBDEN
+{{ '-' * 60 }}
+{% for post in selskaper %}
+{{ post.status.navn }} ({{ post.status.ticker }})
+{% if post.status.resultat and post.status.resultat.omsetning %}
+{% set r = post.status.resultat %}
+  Siste kvartal ({{ r.periode }}): omsetning {{ r.omsetning | stort_tall(r.valuta) }}{% if r.omsetningsvekst is not none %} ({{ r.omsetningsvekst | pst }} mot i fjor){% endif %}{% if r.driftsmargin is not none %}, driftsmargin {{ r.driftsmargin | andel }}{% endif %}
+
+{% endif %}
+{% if post.maal %}
+  Å følge framover:
+{% for punkt in post.maal %}
+   - {{ punkt }}
+{% endfor %}
+{% endif %}
+{% if post.hendelser %}
+  Hendelser:
+{% for h in post.hendelser[:6] %}
+   * {{ h.tittel }}
+{% endfor %}
+{% endif %}
+
+{% endfor %}
+{% if laering %}
+
+MÅNEDENS GJENNOMGANG: {{ laering.tema | upper }}
+{{ '-' * 60 }}
+{{ laering.innledning }}
+
+{% for nt in laering.nokkeltall %}
+{{ nt.navn }}: {{ nt.verdi }}
+  {{ nt.forklaring }}
+{% if nt.tolkning %}
+  > {{ nt.tolkning }}
+{% endif %}
+
+{% endfor %}
+HUSKEREGEL: {{ laering.huskeregel }}
+{% if laering.neste_steg %}
+
+TIL NESTE GANG: {{ laering.neste_steg }}
+{% endif %}
+{% endif %}
+
+NYE INVESTERINGSMULIGHETER
+{{ '-' * 60 }}
+{% if kandidater %}
+{% for kand in kandidater %}
+{{ kand.navn }} ({{ kand.ticker }}) — score {{ kand.score }}/100, {{ kand.prioritet }}{% if kand.ticker in nye_kandidater %} [NY]{% endif %}
+
+  Kan være et godt kjøp fordi:
+{% for grunn in kand.grunner %}
+   - {{ grunn }}
+{% endfor %}
+
+{% endfor %}
+{% elif screener_kjort %}
+INGEN KANDIDATER DENNE MÅNEDEN.
+Ingen av selskapene som ble gjennomgått holdt målestokken. Det er et
+resultat i seg selv — det betyr ikke at systemet ikke virker.
+{% endif %}
+
+{{ '-' * 60 }}
+Automatisk generert. Ikke investeringsrådgivning — kontroller mot
+selskapets egen rapportering før du handler.

@@ -1,0 +1,70 @@
+ticker,navn,bors
+ASML.AS,ASML Holding,AMSTERDAM
+MC.PA,LVMH,PARIS
+SAP.DE,SAP,XETRA
+SIE.DE,Siemens,XETRA
+TTE.PA,TotalEnergies,PARIS
+OR.PA,L'Oreal,PARIS
+SAN.PA,Sanofi,PARIS
+AIR.PA,Airbus,PARIS
+ALV.DE,Allianz,XETRA
+SU.PA,Schneider Electric,PARIS
+AI.PA,Air Liquide,PARIS
+EL.PA,EssilorLuxottica,PARIS
+DTE.DE,Deutsche Telekom,XETRA
+BAS.DE,BASF,XETRA
+BMW.DE,BMW,XETRA
+MBG.DE,Mercedes-Benz Group,XETRA
+VOW3.DE,Volkswagen,XETRA
+MUV2.DE,Munich Re,XETRA
+IFX.DE,Infineon,XETRA
+ADS.DE,Adidas,XETRA
+DHL.DE,DHL Group,XETRA
+RWE.DE,RWE,XETRA
+BAYN.DE,Bayer,XETRA
+HEN3.DE,Henkel,XETRA
+CS.PA,AXA,PARIS
+BNP.PA,BNP Paribas,PARIS
+DG.PA,Vinci,PARIS
+SGO.PA,Saint-Gobain,PARIS
+RI.PA,Pernod Ricard,PARIS
+KER.PA,Kering,PARIS
+CAP.PA,Capgemini,PARIS
+LR.PA,Legrand,PARIS
+INGA.AS,ING Groep,AMSTERDAM
+AD.AS,Ahold Delhaize,AMSTERDAM
+PHIA.AS,Philips,AMSTERDAM
+WKL.AS,Wolters Kluwer,AMSTERDAM
+HEIA.AS,Heineken,AMSTERDAM
+DSFIR.AS,DSM-Firmenich,AMSTERDAM
+NESN.SW,Nestle,SIX
+ROG.SW,Roche,SIX
+NOVN.SW,Novartis,SIX
+ZURN.SW,Zurich Insurance,SIX
+ABBN.SW,ABB,SIX
+UHR.SW,Swatch Group,SIX
+GIVN.SW,Givaudan,SIX
+SREN.SW,Swiss Re,SIX
+SHEL.L,Shell,LSE
+AZN.L,AstraZeneca,LSE
+HSBA.L,HSBC,LSE
+ULVR.L,Unilever,LSE
+BP.L,BP,LSE
+GSK.L,GSK,LSE
+DGE.L,Diageo,LSE
+RIO.L,Rio Tinto,LSE
+REL.L,RELX,LSE
+NG.L,National Grid,LSE
+LSEG.L,London Stock Exchange Group,LSE
+BATS.L,British American Tobacco,LSE
+CPG.L,Compass Group,LSE
+EXPN.L,Experian,LSE
+ISP.MI,Intesa Sanpaolo,MILAN
+ENI.MI,Eni,MILAN
+ENEL.MI,Enel,MILAN
+RACE.MI,Ferrari,MILAN
+G.MI,Generali,MILAN
+ITX.MC,Inditex,MADRID
+SAN.MC,Banco Santander,MADRID
+IBE.MC,Iberdrola,MADRID
+BBVA.MC,BBVA,MADRID

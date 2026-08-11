@@ -1,0 +1,145 @@
+{# Månedlig e-post: dybde. Måneden samlet, mål framover, kandidater og
+   en lærende gjennomgang av ett selskaps kvartalstall. #}
+{% extends "_base.html.j2" %}
+{% import "_makroer.html.j2" as m %}
+
+{% block overskrift %}Månedsrapport — {{ maned_tekst }}{% endblock %}
+
+{% block innhold %}
+
+{{ m.seksjonstittel('Måneden kort oppsummert') }}
+<table style="width:100%;border-collapse:collapse;">
+  <tr style="font-size:11px;color:#9099a5;text-align:left;">
+    <th style="padding-bottom:5px;font-weight:500;">Selskap</th>
+    <th style="padding-bottom:5px;font-weight:500;text-align:right;">Kurs</th>
+    <th style="padding-bottom:5px;font-weight:500;text-align:right;">1 md</th>
+    <th style="padding-bottom:5px;font-weight:500;text-align:right;">Hittil i år</th>
+  </tr>
+  {% for post in selskaper %}
+  {% set k = post.status.kurs %}
+  <tr>
+    <td style="padding:9px 8px 9px 0;border-bottom:1px solid #f0f1f3;">
+      <div style="font-weight:600;font-size:14px;">{{ post.status.navn }}</div>
+      <div style="font-size:11px;color:#9099a5;">{{ post.status.ticker }}</div>
+    </td>
+    <td style="padding:9px 8px;border-bottom:1px solid #f0f1f3;text-align:right;font-size:14px;">
+      {% if k and k.pris %}{{ k.pris | kr(k.valuta) }}{% else %}–{% endif %}
+    </td>
+    <td style="padding:9px 8px;border-bottom:1px solid #f0f1f3;text-align:right;font-size:13px;">
+      {{ m.fargetekst(k.endring_1m if k else none, (k.endring_1m if k else none) | pst) }}
+    </td>
+    <td style="padding:9px 0 9px 8px;border-bottom:1px solid #f0f1f3;text-align:right;font-size:13px;">
+      {{ m.fargetekst(k.endring_ytd if k else none, (k.endring_ytd if k else none) | pst) }}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% if sammendrag.har_verdier %}
+<div style="margin-top:12px;font-size:13px;color:#4b5563;">
+  Samlet verdi {{ sammendrag.verdi | kr }} ·
+  urealisert {{ m.fargetekst(sammendrag.gevinst, (sammendrag.gevinst | kr) + ' (' + (sammendrag.gevinst_pst | pst) + ')') }}
+</div>
+{% endif %}
+
+{# --- Selskap for selskap --- #}
+{{ m.seksjonstittel('Selskapene dine i dybden') }}
+{% for post in selskaper %}
+<div style="border:1px solid #e3e6ea;border-radius:8px;padding:16px 18px;margin-bottom:14px;">
+  <div style="font-size:16px;font-weight:700;">{{ post.status.navn }}</div>
+  <div style="font-size:12px;color:#6b7280;margin-bottom:10px;">
+    {{ post.status.ticker }}
+    {% if post.status.kurs and post.status.kurs.pris %}
+      · {{ post.status.kurs.pris | kr(post.status.kurs.valuta) }}
+      · 1 md {{ m.fargetekst(post.status.kurs.endring_1m, post.status.kurs.endring_1m | pst) }}
+      · 1 år {{ m.fargetekst(post.status.kurs.endring_1aar, post.status.kurs.endring_1aar | pst) }}
+    {% endif %}
+  </div>
+
+  {% if post.status.resultat and post.status.resultat.omsetning %}
+  {% set r = post.status.resultat %}
+  <div style="background:#f7f8fa;border-radius:6px;padding:11px 13px;margin-bottom:11px;font-size:13px;">
+    <strong>Siste kvartalstall ({{ r.periode }}):</strong>
+    omsetning {{ r.omsetning | stort_tall(r.valuta) }}
+    {% if r.omsetningsvekst is not none %}
+      ({{ m.fargetekst(r.omsetningsvekst, r.omsetningsvekst | pst) }} mot i fjor)
+    {% endif %}
+    {% if r.driftsmargin is not none %}
+      · driftsmargin {{ r.driftsmargin | andel }}
+    {% endif %}
+    {% if r.eps is not none %}
+      · resultat per aksje {{ r.eps | kr(r.valuta) }}
+    {% endif %}
+  </div>
+  {% endif %}
+
+  {% if post.maal %}
+  <div style="font-size:13px;font-weight:600;margin-bottom:4px;">Å følge framover</div>
+  <ul style="margin:0 0 10px;padding-left:18px;font-size:13px;color:#33383f;">
+    {% for punkt in post.maal %}<li style="margin-bottom:3px;">{{ punkt }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if post.hendelser %}
+  <div style="font-size:13px;font-weight:600;margin-bottom:2px;">Hendelser i måneden</div>
+  {% for h in post.hendelser[:6] %}{{ m.hendelse_rad(h) }}{% endfor %}
+  {% endif %}
+</div>
+{% endfor %}
+
+{# --- Læring --- #}
+{% if laering %}
+{{ m.seksjonstittel('Månedens gjennomgang: ' ~ laering.tema) }}
+<div style="border:1px solid #d9e2ef;border-radius:8px;padding:18px 20px;background:#fbfcfe;">
+  <div style="font-size:14px;margin-bottom:14px;color:#33383f;">
+    {{ laering.innledning }}
+  </div>
+
+  {% for nt in laering.nokkeltall %}
+  <div style="margin-bottom:15px;padding-bottom:13px;
+              border-bottom:1px solid #eceff3;">
+    <div style="font-size:14px;font-weight:700;">
+      {{ nt.navn }}
+      <span style="float:right;font-weight:700;color:#1d4ed8;">{{ nt.verdi }}</span>
+    </div>
+    <div style="font-size:13px;color:#4b5563;margin-top:5px;">{{ nt.forklaring }}</div>
+    {% if nt.tolkning %}
+    <div style="font-size:13px;color:#33383f;margin-top:6px;
+                border-left:3px solid #c7d7ee;padding-left:10px;">
+      {{ nt.tolkning }}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+
+  <div style="background:#eef3fa;border-radius:6px;padding:12px 14px;font-size:13px;">
+    <strong>Huskeregel:</strong> {{ laering.huskeregel }}
+  </div>
+  {% if laering.neste_steg %}
+  <div style="font-size:13px;color:#4b5563;margin-top:10px;">
+    <strong>Til neste gang:</strong> {{ laering.neste_steg }}
+  </div>
+  {% endif %}
+</div>
+{% endif %}
+
+{# --- Kandidater --- #}
+{{ m.seksjonstittel('Nye investeringsmuligheter') }}
+{% if kandidater %}
+  <div style="font-size:12px;color:#6b7280;margin-bottom:12px;">
+    {{ kandidater | length }} selskap{{ 'er' if kandidater | length != 1 }} som består
+    alle kvalitetskravene og scorer minst {{ score_terskel }}/100. Hver enkelt er
+    begrunnet med minst {{ min_grunner }} konkrete tall.
+  </div>
+  {% for kand in kandidater %}
+    {{ m.kandidat_kort(kand, kand.ticker in nye_kandidater) }}
+  {% endfor %}
+{% elif screener_kjort %}
+  <div style="background:#f7f8fa;border-radius:8px;padding:16px 18px;font-size:14px;color:#4b5563;">
+    <strong style="color:#1a1d21;">Ingen kandidater denne måneden.</strong>
+    Ingen av selskapene som ble gjennomgått holdt målestokken. Det er et
+    resultat i seg selv — det betyr ikke at systemet ikke virker.
+  </div>
+{% endif %}
+
+{% endblock %}

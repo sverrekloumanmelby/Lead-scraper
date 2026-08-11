@@ -1,0 +1,99 @@
+ticker,navn,bors
+AAPL,Apple,NASDAQ
+MSFT,Microsoft,NASDAQ
+GOOGL,Alphabet,NASDAQ
+AMZN,Amazon,NASDAQ
+NVDA,NVIDIA,NASDAQ
+META,Meta Platforms,NASDAQ
+BRK-B,Berkshire Hathaway,NYSE
+JPM,JPMorgan Chase,NYSE
+V,Visa,NYSE
+MA,Mastercard,NYSE
+UNH,UnitedHealth,NYSE
+JNJ,Johnson & Johnson,NYSE
+XOM,Exxon Mobil,NYSE
+PG,Procter & Gamble,NYSE
+HD,Home Depot,NYSE
+CVX,Chevron,NYSE
+ABBV,AbbVie,NYSE
+MRK,Merck,NYSE
+LLY,Eli Lilly,NYSE
+PEP,PepsiCo,NASDAQ
+KO,Coca-Cola,NYSE
+COST,Costco,NASDAQ
+WMT,Walmart,NYSE
+CSCO,Cisco,NASDAQ
+ACN,Accenture,NYSE
+MCD,McDonald's,NYSE
+ADBE,Adobe,NASDAQ
+TMO,Thermo Fisher,NYSE
+ABT,Abbott Laboratories,NYSE
+CRM,Salesforce,NYSE
+LIN,Linde,NASDAQ
+TXN,Texas Instruments,NASDAQ
+DHR,Danaher,NYSE
+VZ,Verizon,NYSE
+NEE,NextEra Energy,NYSE
+PM,Philip Morris,NYSE
+INTU,Intuit,NASDAQ
+CAT,Caterpillar,NYSE
+AMD,Advanced Micro Devices,NASDAQ
+IBM,IBM,NYSE
+GE,General Electric,NYSE
+QCOM,Qualcomm,NASDAQ
+HON,Honeywell,NASDAQ
+UNP,Union Pacific,NYSE
+LOW,Lowe's,NYSE
+AMGN,Amgen,NASDAQ
+SPGI,S&P Global,NYSE
+BKNG,Booking Holdings,NASDAQ
+ISRG,Intuitive Surgical,NASDAQ
+ADP,Automatic Data Processing,NASDAQ
+DE,Deere,NYSE
+GS,Goldman Sachs,NYSE
+BLK,BlackRock,NYSE
+ELV,Elevance Health,NYSE
+SYK,Stryker,NYSE
+MDT,Medtronic,NYSE
+LMT,Lockheed Martin,NYSE
+ADI,Analog Devices,NASDAQ
+TJX,TJX Companies,NYSE
+VRTX,Vertex Pharmaceuticals,NASDAQ
+REGN,Regeneron,NASDAQ
+CB,Chubb,NYSE
+MMC,Marsh & McLennan,NYSE
+PGR,Progressive,NYSE
+ETN,Eaton,NYSE
+BSX,Boston Scientific,NYSE
+CI,Cigna,NYSE
+ZTS,Zoetis,NYSE
+MO,Altria,NYSE
+DUK,Duke Energy,NYSE
+SO,Southern Company,NYSE
+ITW,Illinois Tool Works,NYSE
+NOC,Northrop Grumman,NYSE
+WM,Waste Management,NYSE
+CL,Colgate-Palmolive,NYSE
+EOG,EOG Resources,NYSE
+SLB,Schlumberger,NYSE
+APD,Air Products,NYSE
+EMR,Emerson Electric,NYSE
+GD,General Dynamics,NYSE
+FDX,FedEx,NYSE
+NSC,Norfolk Southern,NYSE
+MCK,McKesson,NYSE
+ORLY,O'Reilly Automotive,NASDAQ
+PH,Parker-Hannifin,NYSE
+MSI,Motorola Solutions,NYSE
+ROP,Roper Technologies,NASDAQ
+AJG,Arthur J. Gallagher,NYSE
+TT,Trane Technologies,NYSE
+CMI,Cummins,NYSE
+VRT,Vertiv Holdings,NYSE
+AME,Ametek,NYSE
+ROK,Rockwell Automation,NYSE
+DOV,Dover,NYSE
+XYL,Xylem,NYSE
+IR,Ingersoll Rand,NYSE
+FTV,Fortive,NYSE
+HUBB,Hubbell,NYSE

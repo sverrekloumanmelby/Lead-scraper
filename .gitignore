@@ -7,3 +7,9 @@ venv/
 leads.csv
 *.log
 .playwright/
+
+# Investeringsassistenten: tørrkjørte rapporter er lokale arbeidsfiler.
+# Merk at investor/data/state.json IKKE ignoreres — den er historikken
+# GitHub Actions committer tilbake mellom kjøringene.
+investor/out/
+
