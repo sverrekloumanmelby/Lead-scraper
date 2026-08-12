@@ -1,5 +1,5 @@
-til_epost,til_navn,firma,poststed,prioritet,emne,melding,merknad
-bent@nord-em.no,Bent André Norderhaug,NORD EIENDOMSMEGLING AS,Oppegård,HØY (3-15),Flere av nettbesøkene deres blir til verdivurderinger,"Hei Bent,
+til_epost,til_navn,firma,type,poststed,emne,melding
+bent@nord-em.no,Bent André Norderhaug,NORD EIENDOMSMEGLING AS,uavhengig,Oppegård,Flere av nettbesøkene deres blir til verdivurderinger,"Hei Bent,
 
 Jeg tar kontakt fordi Nord Eiendomsmegling AS er et selvstendig meglerkontor – nettopp de vi jobber best med i Krevla.
 
@@ -10,8 +10,8 @@ Har du 15 minutter til en uforpliktende prat om hvordan dette kan se ut for Nord
 Mvh
 [DITT NAVN]
 Krevla
-[TELEFON / NETTSIDE]",E-post matcher daglig leder
-rudi.aadland@verdi-eiendom.no,Rudi Aadland,VERDI EIENDOMSMEGLING STAVANGER AS,Stavanger,HØY (3-15),Flere av nettbesøkene deres blir til verdivurderinger,"Hei Rudi,
+[TELEFON / NETTSIDE]"
+rudi.aadland@verdi-eiendom.no,Rudi Aadland,VERDI EIENDOMSMEGLING STAVANGER AS,uavhengig,Stavanger,Flere av nettbesøkene deres blir til verdivurderinger,"Hei Rudi,
 
 Jeg tar kontakt fordi Verdi Eiendomsmegling Stavanger AS er et selvstendig meglerkontor – nettopp de vi jobber best med i Krevla.
 
@@ -22,20 +22,8 @@ Har du 15 minutter til en uforpliktende prat om hvordan dette kan se ut for Verd
 Mvh
 [DITT NAVN]
 Krevla
-[TELEFON / NETTSIDE]",E-post matcher daglig leder
-kolbn@fossco.no,Christian Ludvig Ringstad Foss,FOSS & CO EIENDOMSMEGLING AS,Kolbotn,HØY (3-15),Flere av nettbesøkene deres blir til verdivurderinger,"Hei Christian,
-
-Jeg tar kontakt fordi Foss & Co Eiendomsmegling AS er et selvstendig meglerkontor – nettopp de vi jobber best med i Krevla.
-
-Vi leverer en AI-drevet kundedialog (chat) som ligger på nettsiden deres og svarer boligkjøpere og potensielle oppdragsgivere døgnet rundt. Den fanger opp besøkende som ellers hadde klikket videre, kvalifiserer dem og booker verdivurderinger rett inn – så flere av nettbesøkene blir til reelle oppdrag, uten at dere må bemanne en chat selv.
-
-Har du 15 minutter til en uforpliktende prat om hvordan dette kan se ut for Foss & Co Eiendomsmegling AS?
-
-Mvh
-[DITT NAVN]
-Krevla
-[TELEFON / NETTSIDE]",Brreg-e-post ser ut som skrivefeil (kolbn -> kolbotn?) OG Foss & Co er et regionalt kjedekontor - dobbeltsjekk
-eiendom@nbbo.no,Fabian Nordahl Paus,NBBO EIENDOMSMEGLING AS,Drammen,HØY (3-15),Flere av nettbesøkene deres blir til verdivurderinger,"Hei Fabian,
+[TELEFON / NETTSIDE]"
+eiendom@nbbo.no,Fabian Nordahl Paus,NBBO EIENDOMSMEGLING AS,uavhengig,Drammen,Flere av nettbesøkene deres blir til verdivurderinger,"Hei Fabian,
 
 Jeg tar kontakt fordi Nbbo Eiendomsmegling AS er et selvstendig meglerkontor – nettopp de vi jobber best med i Krevla.
 
@@ -46,8 +34,8 @@ Har du 15 minutter til en uforpliktende prat om hvordan dette kan se ut for Nbbo
 Mvh
 [DITT NAVN]
 Krevla
-[TELEFON / NETTSIDE]",Generell kontoradresse - merk mailen til daglig leder
-fredrikstad@stavlund.no,Gunnar Olai Stavlund,STAVLUND AS,Fredrikstad,HØY (3-15),Flere av nettbesøkene deres blir til verdivurderinger,"Hei Gunnar,
+[TELEFON / NETTSIDE]"
+fredrikstad@stavlund.no,Gunnar Olai Stavlund,STAVLUND AS,uavhengig,Fredrikstad,Flere av nettbesøkene deres blir til verdivurderinger,"Hei Gunnar,
 
 Jeg tar kontakt fordi Stavlund AS er et selvstendig meglerkontor – nettopp de vi jobber best med i Krevla.
 
@@ -58,8 +46,8 @@ Har du 15 minutter til en uforpliktende prat om hvordan dette kan se ut for Stav
 Mvh
 [DITT NAVN]
 Krevla
-[TELEFON / NETTSIDE]",E-post ser ut til å gå til en annen enn daglig leder - sjekk
-espen.richardsen@hjemeiendomsmegling.no,Espen Arnljot Richardsen,HJEM EIENDOMSMEGLING AS,Tromsø,HØY (3-15),Flere av nettbesøkene deres blir til verdivurderinger,"Hei Espen,
+[TELEFON / NETTSIDE]"
+espen.richardsen@hjemeiendomsmegling.no,Espen Arnljot Richardsen,HJEM EIENDOMSMEGLING AS,uavhengig,Tromsø,Flere av nettbesøkene deres blir til verdivurderinger,"Hei Espen,
 
 Jeg tar kontakt fordi Hjem Eiendomsmegling AS er et selvstendig meglerkontor – nettopp de vi jobber best med i Krevla.
 
@@ -70,8 +58,8 @@ Har du 15 minutter til en uforpliktende prat om hvordan dette kan se ut for Hjem
 Mvh
 [DITT NAVN]
 Krevla
-[TELEFON / NETTSIDE]",E-post matcher daglig leder
-jhs@kobbl.no,Jo Heiki Støve,KOBBL EIENDOM AS,Kongsvinger,HØY (3-15),Flere av nettbesøkene deres blir til verdivurderinger,"Hei Jo,
+[TELEFON / NETTSIDE]"
+jhs@kobbl.no,Jo Heiki Støve,KOBBL EIENDOM AS,uavhengig,Kongsvinger,Flere av nettbesøkene deres blir til verdivurderinger,"Hei Jo,
 
 Jeg tar kontakt fordi Kobbl Eiendom AS er et selvstendig meglerkontor – nettopp de vi jobber best med i Krevla.
 
@@ -82,8 +70,8 @@ Har du 15 minutter til en uforpliktende prat om hvordan dette kan se ut for Kobb
 Mvh
 [DITT NAVN]
 Krevla
-[TELEFON / NETTSIDE]",Generell kontoradresse - merk mailen til daglig leder
-post@bestmegler.no,Bjørn Johnson,BEST EIENDOMSMEGLER AS,Skien,HØY (3-15),Flere av nettbesøkene deres blir til verdivurderinger,"Hei Bjørn,
+[TELEFON / NETTSIDE]"
+post@bestmegler.no,Bjørn Johnson,BEST EIENDOMSMEGLER AS,uavhengig,Skien,Flere av nettbesøkene deres blir til verdivurderinger,"Hei Bjørn,
 
 Jeg tar kontakt fordi Best Eiendomsmegler AS er et selvstendig meglerkontor – nettopp de vi jobber best med i Krevla.
 
@@ -94,8 +82,8 @@ Har du 15 minutter til en uforpliktende prat om hvordan dette kan se ut for Best
 Mvh
 [DITT NAVN]
 Krevla
-[TELEFON / NETTSIDE]",Generell kontoradresse - merk mailen til daglig leder
-stensrud@boaeiendom.no,Tommy Stensrud,BOA EIENDOMSMEGLING NORDSTRAND AS,Oslo,HØY (3-15),Flere av nettbesøkene deres blir til verdivurderinger,"Hei Tommy,
+[TELEFON / NETTSIDE]"
+stensrud@boaeiendom.no,Tommy Stensrud,BOA EIENDOMSMEGLING NORDSTRAND AS,uavhengig,Oslo,Flere av nettbesøkene deres blir til verdivurderinger,"Hei Tommy,
 
 Jeg tar kontakt fordi Boa Eiendomsmegling Nordstrand AS er et selvstendig meglerkontor – nettopp de vi jobber best med i Krevla.
 
@@ -106,8 +94,20 @@ Har du 15 minutter til en uforpliktende prat om hvordan dette kan se ut for Boa 
 Mvh
 [DITT NAVN]
 Krevla
-[TELEFON / NETTSIDE]",E-post matcher daglig leder
-post@em-a.no,Hugo Wee,EIENDOMSMEGLER A AS,Haugesund,HØY (3-15),Flere av nettbesøkene deres blir til verdivurderinger,"Hei Hugo,
+[TELEFON / NETTSIDE]"
+stray@boligmegleren.no,Leif Christian Stray,BOLIGMEGLEREN STRAY AS,uavhengig,Kristiansand S,Flere av nettbesøkene deres blir til verdivurderinger,"Hei Leif,
+
+Jeg tar kontakt fordi Boligmegleren Stray AS er et selvstendig meglerkontor – nettopp de vi jobber best med i Krevla.
+
+Vi leverer en AI-drevet kundedialog (chat) som ligger på nettsiden deres og svarer boligkjøpere og potensielle oppdragsgivere døgnet rundt. Den fanger opp besøkende som ellers hadde klikket videre, kvalifiserer dem og booker verdivurderinger rett inn – så flere av nettbesøkene blir til reelle oppdrag, uten at dere må bemanne en chat selv.
+
+Har du 15 minutter til en uforpliktende prat om hvordan dette kan se ut for Boligmegleren Stray AS?
+
+Mvh
+[DITT NAVN]
+Krevla
+[TELEFON / NETTSIDE]"
+post@em-a.no,Hugo Wee,EIENDOMSMEGLER A AS,uavhengig,Haugesund,Flere av nettbesøkene deres blir til verdivurderinger,"Hei Hugo,
 
 Jeg tar kontakt fordi Eiendomsmegler A AS er et selvstendig meglerkontor – nettopp de vi jobber best med i Krevla.
 
@@ -118,8 +118,8 @@ Har du 15 minutter til en uforpliktende prat om hvordan dette kan se ut for Eien
 Mvh
 [DITT NAVN]
 Krevla
-[TELEFON / NETTSIDE]",Generell kontoradresse - merk mailen til daglig leder
-frode@dialogeiendom.no,Frode Løvmoen Nyhus,DIALOG EIENDOMSMEGLING AS,Drammen,HØY (3-15),Flere av nettbesøkene deres blir til verdivurderinger,"Hei Frode,
+[TELEFON / NETTSIDE]"
+frode@dialogeiendom.no,Frode Løvmoen Nyhus,DIALOG EIENDOMSMEGLING AS,uavhengig,Drammen,Flere av nettbesøkene deres blir til verdivurderinger,"Hei Frode,
 
 Jeg tar kontakt fordi Dialog Eiendomsmegling AS er et selvstendig meglerkontor – nettopp de vi jobber best med i Krevla.
 
@@ -130,8 +130,8 @@ Har du 15 minutter til en uforpliktende prat om hvordan dette kan se ut for Dial
 Mvh
 [DITT NAVN]
 Krevla
-[TELEFON / NETTSIDE]",E-post matcher daglig leder
-post@meglerhuset-rele.no,Marius Kallevik,MEGLERHUSET RELE HAUGESUND AS,Haugesund,HØY (3-15),Flere av nettbesøkene deres blir til verdivurderinger,"Hei Marius,
+[TELEFON / NETTSIDE]"
+post@meglerhuset-rele.no,Marius Kallevik,MEGLERHUSET RELE HAUGESUND AS,uavhengig,Haugesund,Flere av nettbesøkene deres blir til verdivurderinger,"Hei Marius,
 
 Jeg tar kontakt fordi Meglerhuset Rele Haugesund AS er et selvstendig meglerkontor – nettopp de vi jobber best med i Krevla.
 
@@ -142,8 +142,8 @@ Har du 15 minutter til en uforpliktende prat om hvordan dette kan se ut for Megl
 Mvh
 [DITT NAVN]
 Krevla
-[TELEFON / NETTSIDE]",Generell kontoradresse - merk mailen til daglig leder
-post@roislandco.no,Martine Helen Røisland-Leween,RØISLAND & CO EIENDOMSMEGLING AS,Oslo,HØY (3-15),Flere av nettbesøkene deres blir til verdivurderinger,"Hei Martine,
+[TELEFON / NETTSIDE]"
+post@roislandco.no,Martine Helen Røisland-Leween,RØISLAND & CO EIENDOMSMEGLING AS,uavhengig,Oslo,Flere av nettbesøkene deres blir til verdivurderinger,"Hei Martine,
 
 Jeg tar kontakt fordi Røisland & Co Eiendomsmegling AS er et selvstendig meglerkontor – nettopp de vi jobber best med i Krevla.
 
@@ -154,8 +154,8 @@ Har du 15 minutter til en uforpliktende prat om hvordan dette kan se ut for Røi
 Mvh
 [DITT NAVN]
 Krevla
-[TELEFON / NETTSIDE]",Generell kontoradresse - merk mailen til daglig leder
-post@meglergaarden.no,Tommy Skovly,MEGLERGAARDEN AS,Moss,MIDDELS (16-50),Flere av nettbesøkene deres blir til verdivurderinger,"Hei Tommy,
+[TELEFON / NETTSIDE]"
+post@meglergaarden.no,Tommy Skovly,MEGLERGAARDEN AS,uavhengig,Moss,Flere av nettbesøkene deres blir til verdivurderinger,"Hei Tommy,
 
 Jeg tar kontakt fordi Meglergaarden AS er et selvstendig meglerkontor – nettopp de vi jobber best med i Krevla.
 
@@ -166,8 +166,8 @@ Har du 15 minutter til en uforpliktende prat om hvordan dette kan se ut for Megl
 Mvh
 [DITT NAVN]
 Krevla
-[TELEFON / NETTSIDE]",Generell kontoradresse - merk mailen til daglig leder
-post@rede-eiendom.no,Mona Kristiansen,REDE EIENDOMSMEGLING AS,Mo I Rana,MIDDELS (16-50),Flere av nettbesøkene deres blir til verdivurderinger,"Hei Mona,
+[TELEFON / NETTSIDE]"
+post@rede-eiendom.no,Mona Kristiansen,REDE EIENDOMSMEGLING AS,uavhengig,Mo I Rana,Flere av nettbesøkene deres blir til verdivurderinger,"Hei Mona,
 
 Jeg tar kontakt fordi Rede Eiendomsmegling AS er et selvstendig meglerkontor – nettopp de vi jobber best med i Krevla.
 
@@ -178,8 +178,8 @@ Har du 15 minutter til en uforpliktende prat om hvordan dette kan se ut for Rede
 Mvh
 [DITT NAVN]
 Krevla
-[TELEFON / NETTSIDE]",Generell kontoradresse - merk mailen til daglig leder
-gl@fsb.no,Per Christian Lønning,FANA SPAREBANK EIENDOM AS,Nesttun,MIDDELS (16-50),Flere av nettbesøkene deres blir til verdivurderinger,"Hei Per,
+[TELEFON / NETTSIDE]"
+gl@fsb.no,Per Christian Lønning,FANA SPAREBANK EIENDOM AS,uavhengig,Nesttun,Flere av nettbesøkene deres blir til verdivurderinger,"Hei Per,
 
 Jeg tar kontakt fordi Fana Sparebank Eiendom AS er et selvstendig meglerkontor – nettopp de vi jobber best med i Krevla.
 
@@ -190,4 +190,4 @@ Har du 15 minutter til en uforpliktende prat om hvordan dette kan se ut for Fana
 Mvh
 [DITT NAVN]
 Krevla
-[TELEFON / NETTSIDE]",Generell kontoradresse - merk mailen til daglig leder
+[TELEFON / NETTSIDE]"

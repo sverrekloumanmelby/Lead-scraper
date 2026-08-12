@@ -21,18 +21,25 @@ KJEDE_DOMENER = [
     "krogsveen.no", "nordvikbolig.no", "nordvik.no", "notar.no",
     "sormegleren.no", "eie.no", "garanti.no", "proaktiv.no",
     "proaktiveiendom.no", "partners.no", "mollerpartners.no", "exbo.no",
-    "moremegling.no", "utleiemegleren.no",
+    "moremegling.no", "utleiemegleren.no", "terraeiendom.no", "colliers.no",
+    "schalapartners.no", "gobb.no", "attentuseiendom.no", "homeeiendom.no",
+    "postbanken.no", "megler-forum.no", "fossco.no", "tigereiendom.no",
 ]
 KJEDE_NAVN = re.compile(
     r"\bdnb\b|eiendomsmegler\s*1|\bem1\b|^aktiv\b|aktiv eiendomsmegling|"
     r"privatmegler|krogsveen|\bnordvik\b|\bnotar\b|sørmegler|garanti eiendom|"
-    r"proaktiv|\beie\b", re.I)
+    r"proaktiv|\beie\b|re/?max|\battentus\b|^pm\s|"
+    # "[Navn] & Partner(e/s/ne)" er kjede-navnekonvensjon (PrivatMegleren,
+    # Partners, Aktiv). Web-verifisert: ~90% er kjede. Nedprioriteres.
+    r"&\s*partner(e|s|ne|ere)?\b|^ask\s", re.I)
 # Store næringsmeglere / kommersielle kjeder (regnes som "kjede"/nedprioritert
 # fordi de ikke er uavhengige boligmeglere).
+# Off-target for Krevlas boligsalg-pitch: næringsmegling, oppgjør, utleie.
 NARING = re.compile(
     r"næringsmegl|naeringsmegl|næringseiendom|corporate real estate|"
     r"property advisor|leietaker|\bmalling\b|colliers|cushman|newsec|"
-    r"akershus eiendom|union norsk", re.I)
+    r"akershus eiendom|union norsk|realkapital|"
+    r"\butleie\b|boligutleie|eiendomsoppgj|oppgjør|oppgjor", re.I)
 
 
 def domene(s):
@@ -110,8 +117,55 @@ def main():
         w.writeheader()
         w.writerows(rader)
 
+    # --- Klar-til-send e-postliste (kun uavhengige/uavklarte med e-post;
+    #     "selvstendig kontor"-pitchen passer ikke kjeder) ---
+    EMNE = "Flere av nettbesøkene deres blir til verdivurderinger"
+
+    def epost_tekst(r):
+        fn = (r["daglig_leder"].split()[0] if r["daglig_leder"] else "")
+        firma = r["firmanavn"].title().replace(" As", " AS")
+        hei = f"Hei {fn}," if fn else "Hei,"
+        return (
+            f"{hei}\n\n"
+            f"Jeg tar kontakt fordi {firma} er et selvstendig meglerkontor – "
+            f"nettopp de vi jobber best med i Krevla.\n\n"
+            f"Vi leverer en AI-drevet kundedialog (chat) som ligger på nettsiden "
+            f"deres og svarer boligkjøpere og potensielle oppdragsgivere døgnet "
+            f"rundt. Den fanger opp besøkende som ellers hadde klikket videre, "
+            f"kvalifiserer dem og booker verdivurderinger rett inn – så flere av "
+            f"nettbesøkene blir til reelle oppdrag, uten at dere må bemanne en "
+            f"chat selv.\n\n"
+            f"Har du 15 minutter til en uforpliktende prat om hvordan dette "
+            f"kan se ut for {firma}?\n\n"
+            f"Mvh\n[DITT NAVN]\nKrevla\n[TELEFON / NETTSIDE]"
+        )
+
+    epost_klar = [r for r in rader
+                  if r["epost"] and r["daglig_leder"] and r["type"] != "kjede"]
+    with open("krevla_eposter.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["til_epost", "til_navn", "firma", "type", "poststed",
+                    "emne", "melding"])
+        for r in epost_klar:
+            w.writerow([r["epost"], r["daglig_leder"], r["firmanavn"],
+                        r["type"], r["poststed"], EMNE, epost_tekst(r)])
+
+    # --- Telefon-liste (uavhengige/uavklarte med telefon, uten e-post) ---
+    tlf_klar = [r for r in rader if not r["epost"] and r["telefon"]
+                and r["daglig_leder"] and r["type"] != "kjede"]
+    with open("krevla_telefon.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["prioritet", "type", "firmanavn", "antall_ansatte",
+                    "daglig_leder", "telefon", "nettside", "poststed", "orgnr"])
+        for r in tlf_klar:
+            w.writerow([r["prioritet"], r["type"], r["firmanavn"],
+                        r["antall_ansatte"], r["daglig_leder"], r["telefon"],
+                        r["nettside"], r["poststed"], r["orgnr"]])
+
     from collections import Counter
     c = Counter(r["type"] for r in rader)
+    print(f"E-post-klar (ikke kjede): {len(epost_klar)}")
+    print(f"Telefon-klar (ikke kjede): {len(tlf_klar)}")
     print(f"Totalt: {len(rader)} kontorer")
     for t in ("uavhengig", "uavklart", "kjede"):
         rr = [r for r in rader if r["type"] == t]
