@@ -50,50 +50,62 @@ KJEDE_DOMENER = [
     "krogsveen.no",
 ]
 
-# Signaturer på vanlige chatbot-widgets.
-# Nøkkelen er navnet på widgeten (til rapportering), verdien er en liste
-# med substrings vi leter etter i sidens HTML.
-CHATBOT_SIGNATURER = {
-    "Intercom": ["intercom.io", "intercomcdn.com", "widget.intercom.io"],
-    "Drift": ["driftt.com", "drift.com/anonymous", "js.driftt.com"],
-    "Tidio": ["tidio.co", "tidiochat.com", "code.tidio.co"],
-    "Botpress": ["botpress.cloud", "botpress.io", "cdn.botpress.cloud"],
-    "Kindly": ["kindly.ai", "chat.kindlycdn.com", "kindlycdn.com"],
-    "Boost.ai": ["boost.ai", "boostai.com", "cdn.boost.ai"],
-    "Zendesk Chat": ["zdassets.com", "zopim.com", "static.zdassets.com"],
-    "LiveChat": ["livechatinc.com", "cdn.livechatinc.com"],
-    "Crisp": ["crisp.chat", "client.crisp.chat"],
-    "Freshchat": ["freshchat.com", "wchat.freshchat.com"],
-    "HubSpot Chat": ["js.hs-scripts.com", "js.hs-banner.com", "js.usemessages.com"],
-    "Tawk.to": ["tawk.to", "embed.tawk.to"],
-    "Zoho SalesIQ": ["zohopublic.com/salesiq", "salesiq.zoho.com"],
-    "Chatra": ["chatra.io", "call.chatra.io"],
-    "Puzzel": ["puzzel.com", "chat.puzzel.com"],
-}
+# Kategorier for chat-funn. Skillet er poenget med hele lista: et kontor
+# som allerede har en AI-bot er dårlig prospekt, mens et kontor med
+# bemannet live-chat har bevist behovet og bare mangler automatiseringen.
+KATEGORI_AI = "AI-chatbot"
+KATEGORI_LIVE = "Live-chat (menneske)"
 
-# Pauselengder mellom forespørsler mot Proff.no (sekunder).
-PROFF_PAUSE_MIN = 3.0
-PROFF_PAUSE_MAX = 5.0
+# Signaturer på vanlige chat-widgets.
+# Nøkkelen er widgetnavnet (til rapportering), verdien er
+# (liste med substrings vi leter etter, kategori).
+CHATBOT_SIGNATURER = {
+    # Plattformer som primært selges som AI-/bot-løsninger
+    "Kindly": (["kindly.ai", "chat.kindlycdn.com", "kindlycdn.com"], KATEGORI_AI),
+    "Boost.ai": (["boost.ai", "boostai.com", "cdn.boost.ai"], KATEGORI_AI),
+    "Botpress": (["botpress.cloud", "botpress.io", "cdn.botpress.cloud"], KATEGORI_AI),
+    "Intercom": (["intercom.io", "intercomcdn.com", "widget.intercom.io"], KATEGORI_AI),
+    "Drift": (["driftt.com", "drift.com/anonymous", "js.driftt.com"], KATEGORI_AI),
+    "Dialogflow": (["dialogflow.com", "dialogflow.cloud.google.com"], KATEGORI_AI),
+    "Voiceflow": (["voiceflow.com", "general-runtime.voiceflow.com"], KATEGORI_AI),
+    "Certainly": (["certainly.io", "cdn.certainly.io"], KATEGORI_AI),
+    "GetJenny": (["getjenny.com", "widget.getjenny.com"], KATEGORI_AI),
+    "Supersales": (["supersales.no", "supersales.ai"], KATEGORI_AI),
+    "Puzzel": (["puzzel.com", "chat.puzzel.com"], KATEGORI_AI),
+    "ChatGPT-widget": (["chatbase.co", "chatbotkit.com", "customgpt.ai",
+                        "chatsimple.ai", "denser.ai"], KATEGORI_AI),
+    # Klassiske live-chat-verktøy der et menneske svarer
+    "Tidio": (["tidio.co", "tidiochat.com", "code.tidio.co"], KATEGORI_LIVE),
+    "Zendesk Chat": (["zdassets.com", "zopim.com", "static.zdassets.com"], KATEGORI_LIVE),
+    "LiveChat": (["livechatinc.com", "cdn.livechatinc.com"], KATEGORI_LIVE),
+    "Crisp": (["crisp.chat", "client.crisp.chat"], KATEGORI_LIVE),
+    "Freshchat": (["freshchat.com", "wchat.freshchat.com"], KATEGORI_LIVE),
+    "HubSpot Chat": (["js.hs-scripts.com", "js.hs-banner.com",
+                      "js.usemessages.com"], KATEGORI_LIVE),
+    "Tawk.to": (["tawk.to", "embed.tawk.to"], KATEGORI_LIVE),
+    "Zoho SalesIQ": (["zohopublic.com/salesiq", "salesiq.zoho.com"], KATEGORI_LIVE),
+    "Chatra": (["chatra.io", "call.chatra.io"], KATEGORI_LIVE),
+    "Trengo": (["trengo.com", "static.widget.trengo.eu"], KATEGORI_LIVE),
+    "Userlike": (["userlike.com", "userlike-cdn.com"], KATEGORI_LIVE),
+    "Smartsupp": (["smartsupp.com", "smartsuppchat.com"], KATEGORI_LIVE),
+    "Facebook Messenger": (["connect.facebook.net/en_US/sdk/xfbml.customerchat",
+                            "facebook.com/plugins/customer_chat"], KATEGORI_LIVE),
+}
 
 # Timeout for nettside-sjekk (millisekunder for Playwright)
 NETTSIDE_TIMEOUT_MS = 15000
 
-# Ansattgrupper vi jakter på. Hver gruppe er (min, maks, etikett) med
-# inklusive grenser. Grensene overlapper ikke (15-30 betyr 16-30 osv.)
-# slik at hvert kontor havner i nøyaktig én gruppe.
+# Ansattgrupper vi jakter på. Kjerneintervallet er 3–15 ansatte.
+# Toleransen på ±5 tas ut oppover (16–20); nedover ville den gitt 1–2
+# ansatte, som i praksis er enkeltmannsforetak uten eget kontor — og
+# Brreg har uansett null meglerforetak registrert med 1–2 ansatte.
 ANSATT_GRUPPER = [
-    (3, 15, "3-15"),
-    (16, 30, "15-30"),
-    (31, 50, "30-50"),
+    (3, 15, "3-15 (kjerne)"),
+    (16, 20, "16-20 (±5)"),
 ]
 
-# Bakoverkompatible grenser (minste og største av gruppene)
 MIN_ANSATTE = ANSATT_GRUPPER[0][0]
 MAKS_ANSATTE = ANSATT_GRUPPER[-1][1]
-
-# Pause mellom oppslag mot 1881.no (sekunder) — vær skånsom
-KATALOG_PAUSE_MIN = 2.0
-KATALOG_PAUSE_MAX = 3.5
 
 # Grenser for prioritetsklassifisering
 PRIORITET_HOY_MIN = 80

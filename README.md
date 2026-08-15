@@ -1,31 +1,51 @@
 # Leadmaskin – eiendomsmegling
 
-Enkel pipeline som finner små, uavhengige eiendomsmeglerkontorer i Norge og
-scorer dem etter hvor gode salgsleads de er.
+Finner små, uavhengige eiendomsmeglerkontorer i Norge, sjekker om nettsiden
+deres allerede har en chatbot, og peker ut hvem på kontoret som er rett
+person å kontakte om AI-chatbot.
 
 ## Hva den gjør
 
-1. Søker på **Proff.no** etter bransjen `eiendomsmegling` i valgte regioner.
-2. Trekker ut firmanavn, daglig leder, telefon, e-post, antall ansatte,
-   by og nettside-URL for hvert foretak.
-3. Filtrerer bort kontorer med færre enn 3 eller flere enn 15 ansatte.
-4. Ekskluderer store kjeder (DNB Eiendom, EiendomsMegler 1, Aktiv,
-   PrivatMegleren, Krogsveen).
-5. Besøker nettsiden til hvert kontor og ser etter kjente chatbot-widgets
-   (Intercom, Drift, Tidio, Botpress, Kindly, boost.ai m.fl.).
-6. Scorer hvert kontor 0–100:
-   - `+30` for 3–15 ansatte
-   - `+40` hvis nettsiden ikke har chatbot
-   - `+30` hvis kontoret er uavhengig
-7. Lagrer alt i `leads.csv` sortert etter score med kolonnen `prioritet`
-   (HØY / MIDDELS / LAV).
+1. Henter alle foretak med næringskode `68.310` (eiendomsmegling) fra
+   **Enhetsregisteret**.
+2. Beholder kontorer med **3–20 ansatte** — kjernemålet er 3–15, og
+   toleransen på ±5 tas ut oppover. Konkurs og selskaper under avvikling
+   luker vi bort.
+3. Luker ut **kjedekontorer** (DNB Eiendom, EiendomsMegler 1, Aktiv,
+   PrivatMegleren, Krogsveen) både på navn og på nettside-domene, siden en
+   franchisefilial sjelden kjøper verktøy selv.
+4. **Finner nettsiden** til hvert kontor: registrert hjemmeside i Brreg,
+   ellers domenegjetting ut fra firmanavnet, ellers oppslag i 1881.
+5. **Sjekker etter chat-widget** — først i rå HTML, deretter ved å rendre
+   siden i Chromium, som fanger widgets lastet via Google Tag Manager.
+6. **Finner kontaktpersonen** ved å lese kontorets egne «om oss»- og
+   «ansatte»-sider, og rangere de ansatte etter hvem som er rett inngang.
+7. Scorer og sorterer leadene, og skriver både `leads.csv` og `leads.md`.
 
-## Skånsomt mot Proff.no
+## De to viktigste designvalgene
 
-- 3–5 sekunders tilfeldig pause mellom hver forespørsel til Proff.no.
-- Ved blokkering (captcha/403/429) faller pipeline automatisk over til
-  **Brønnøysundregistrenes åpne API** for grunndata, og fortsetter
-  nettside-sjekken derfra.
+**AI-chatbot skilles fra bemannet live-chat.** Et kontor med Kindly eller
+boost.ai er allerede dekket og scorer lavt. Et kontor med bemannet LiveChat
+scorer *høyest* av alle: de har allerede bestemt at chat er riktig kanal og
+betaler i dag med bemanning, så veien til et salg er kort.
+
+**«Fant ingen chatbot» og «fant ingen nettside» er ikke det samme.**
+Kontorer vi ikke fant nettside for havner i kategorien `ukjent`, ikke blant
+dem uten chatbot. Ellers ville lista påstått noe vi ikke har sjekket.
+
+## Verifisering av nettsider
+
+Domenegjetting alene gir mange falske treff — `kursiv.no` er et grafisk
+byrå, ikke Kursiv Eiendomsmegling, og `valkyrien.no` er et kjøpesenter.
+Derfor godtas et domene bare når organisasjonsnummeret står på siden,
+domenet er bygget av foretakets egne navneord, eller navnet står i
+tittel/overskrift *og* siden handler om eiendomsmegling. Portaler som
+finn.no og eiendomspriser.no avvises alltid.
+
+Tilsvarende for kontaktpersoner: et navn forkastes hvis det inneholder ord
+som ikke finnes i personnavn (`Om Partners`, `Coop Obs Bygg`), eller hvis
+det bare er firmanavnet igjen. En e-post knyttes til en person først når
+lokaldelen faktisk matcher navnet — ellers blir den stående som firmapost.
 
 ## Installasjon
 
@@ -36,40 +56,33 @@ python -m playwright install chromium
 
 ## Kjøring
 
-Standard er hele landet (alle 15 fylker):
-
 ```bash
-python -m src.main
-```
-
-Begrens til utvalgte fylker:
-
-```bash
-python -m src.main --regioner Oslo Akershus Buskerud Østfold
-```
-
-Utfil:
-
-```bash
-python -m src.main --utfil mine_leads.csv
+python -m src.main                      # hele landet
+python -m src.main --maks 25            # testkjøring
+python -m src.main --uten-nettleser     # raskere, mindre presist
+python -m src.main --utfil mine.csv     # egen utfil
 ```
 
 ## Struktur
 
 ```
 src/
-  config.py        # regioner, kjeder, chatbot-signaturer, tersker
-  brreg.py         # fallback via Brønnøysundregistrenes åpne API
-  proff.py         # Playwright-scraper for Proff.no
-  chat_detector.py # laster nettsider og speider etter chatbot-scripts
-  scoring.py       # filtrering + poengberegning + prioritet
-  csv_writer.py    # CSV-eksport
-  main.py          # orkestrator/CLI
+  config.py          # næringskode, kjeder, chatbot-signaturer, ansattgrupper
+  brreg.py           # Enhetsregisteret: foretak og daglig leder
+  nettside_finder.py # finner og verifiserer foretakets nettside
+  chat_detector.py   # chat-widgets i rå HTML og i rendret side
+  kontaktperson.py   # ansatte fra nettsiden + valg av rett kontakt
+  scoring.py         # filtrering, score og prioritet
+  csv_writer.py      # CSV-eksport
+  rapport.py         # lesbar markdown-liste
+  main.py            # orkestrator/CLI
 ```
 
 ## Merk
 
-- Sjekk at bruken av Proff.no er i tråd med deres vilkår før du kjører
-  ved høyt volum.
-- Chatbot-listen i `config.py` er ikke uttømmende — legg gjerne til flere
+- Rekkevidden er begrenset av at bare rundt hvert femte foretak har
+  hjemmeside registrert i Brreg. Resten avhenger av navnegjetting, så en
+  del kontorer blir stående uten nettside og med `ukjent` chat-status.
+- Chatbot-listen i `config.py` er ikke uttømmende — legg til flere
   signaturer etter behov.
+- Sjekk vilkårene til 1881.no før kjøring i stort volum.
